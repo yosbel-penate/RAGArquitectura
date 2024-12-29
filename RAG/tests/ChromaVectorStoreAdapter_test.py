@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import MagicMock
 from src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 
-class TestChromaVectorStoreAdapter(unittest.TestCase):
+class ChromaVectorStoreAdapter(unittest.TestCase):
 
     def setUp(self):
         self.adapter = ChromaVectorStoreAdapter()
