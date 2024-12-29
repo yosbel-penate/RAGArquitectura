@@ -1,7 +1,8 @@
+from RAG.src.core.VectorStorePort import VectorStorePort
 from RAG.src.core.ports import (
     DocumentSourcePort, GenerationPort,
     InputPort, OutputPort,
-    RetrievalPort, VectorStorePort)
+    RetrievalPort)
 
 
 class ProcessRequestAdapter:

@@ -1,4 +1,4 @@
-from RAG.src.core.ports import VectorStorePort
+from RAG.src.core.VectorStorePort import VectorStorePort
 
 
 class SimpleVectorStoreAdapter(VectorStorePort):

@@ -20,15 +20,6 @@ class OutputPort(ABC):
     def present_response(self, response: str) -> None:
         pass
 
-class VectorStorePort(ABC):
-    @abstractmethod
-    def search_fragments(self, query: str) -> list:
-        pass
-
-    @abstractmethod
-    def index_documents(self, documents: list) -> None:
-        pass
-
 class DocumentSourcePort(ABC):
     @abstractmethod
     def get_documents(self) -> list:
