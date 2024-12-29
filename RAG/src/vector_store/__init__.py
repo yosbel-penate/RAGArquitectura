@@ -1,1 +1,1 @@
-from ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
+from .ChromaVectorStoreAdapter import ChromaVectorStoreAdapter

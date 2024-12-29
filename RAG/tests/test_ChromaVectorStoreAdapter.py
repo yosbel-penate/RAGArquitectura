@@ -1,17 +1,9 @@
 import unittest
 from unittest.mock import MagicMock
-from ..src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
-
-# tests/test_ChromaVectorStoreAdapter.py
-import unittest
-from unittest.mock import patch, MagicMock
-
 import sys
 import os
 
-# Agregar la ruta al directorio src para importaciones relativas
-src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
-sys.path.insert(0, src_path)
+from ..src.vector_store import ChromaVectorStoreAdapter
 
 class TestChromaVectorStoreAdapter(unittest.TestCase):
 
