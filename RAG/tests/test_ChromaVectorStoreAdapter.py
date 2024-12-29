@@ -1,28 +1,69 @@
 import unittest
 from unittest.mock import MagicMock
-from src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
+from ..src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
+
+# tests/test_ChromaVectorStoreAdapter.py
+import unittest
+from unittest.mock import patch, MagicMock
+
+import sys
+import os
+
+# Agregar la ruta al directorio src para importaciones relativas
+src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.insert(0, src_path)
 
 class TestChromaVectorStoreAdapter(unittest.TestCase):
 
     def setUp(self):
+        """Configuración para cada test."""
+        self.mock_client = MagicMock()
         self.adapter = ChromaVectorStoreAdapter()
-        self.adapter.client = MagicMock()
+        self.adapter.client = self.mock_client  # Inyectar el mock
 
-    def test_search_fragments(self):
-        query = "test query"
-        expected_results = [{'fragment': 'fragment1'}, {'fragment': 'fragment2'}]
-        self.adapter.client.query.return_value = expected_results
-
+    def test_search_fragments_success(self):
+        """Test de búsqueda de fragmentos exitosa."""
+        mock_results = {
+            'results': [{
+                'documents': ["fragment1", "fragment2"]
+            }]
+        }
+        self.mock_client.query.return_value = mock_results
+        query = "mi consulta"
         results = self.adapter.search_fragments(query)
-        self.assertEqual(results, ['fragment1', 'fragment2'])
-        self.adapter.client.query.assert_called_once_with(query)
+        self.assertEqual(results, [["fragment1", "fragment2"]])
+        self.mock_client.query.assert_called_once_with(query_texts=[query])
 
-    def test_index_documents(self):
-        documents = ['doc1', 'doc2']
+    def test_search_fragments_empty(self):
+        """Test de búsqueda de fragmentos vacía."""
+        mock_results = {
+            'results': [{
+                'documents': []
+            }]
+        }
+        self.mock_client.query.return_value = mock_results
+        query = "mi consulta"
+        results = self.adapter.search_fragments(query)
+        self.assertEqual(results, [[]])
+        self.mock_client.query.assert_called_once_with(query_texts=[query])
+
+    def test_index_documents_success(self):
+        """Test de indexado de documentos exitoso."""
+        documents = ["documento1", "documento2"]
         self.adapter.index_documents(documents)
-        self.assertEqual(self.adapter.client.index.call_count, len(documents))
-        self.adapter.client.index.assert_any_call('doc1')
-        self.adapter.client.index.assert_any_call('doc2')
+        self.mock_client.add.assert_called_once_with(documents=documents)
+
+    def test_index_documents_empty(self):
+        """Test de indexado de documentos con una lista vacía."""
+        documents = []
+        self.adapter.index_documents(documents)
+        self.mock_client.add.assert_called_once_with(documents=[])
+
+    def test_index_documents_single(self):
+        """Test de indexado de documentos con un solo documento"""
+        documents = ["documento1"]
+        self.adapter.index_documents(documents)
+        self.mock_client.add.assert_called_once_with(documents=documents)
 
 if __name__ == '__main__':
     unittest.main()
