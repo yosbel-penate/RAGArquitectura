@@ -1,6 +1,6 @@
 from chromadb import Client
 from chromadb.config import Settings
-from ..core import VectorStorePort
+from RAG.src.core import VectorStorePort
 
 class ChromaVectorStoreAdapter(VectorStorePort):
     def __init__(self):
