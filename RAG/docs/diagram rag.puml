@@ -1,0 +1,35 @@
+@startuml
+' === Estilo y Configuracion ===
+skinparam componentStyle uml2
+skinparam monochrome true
+
+' === Componentes ===
+[Usuario] as User
+component Input as "Componente de Entrada\n(Input)"
+component Retrieval as "Componente de Recuperación\n(Retrieval)"
+component Generation as "Componente de Generación\n(Generation)"
+component Output as "Componente de Salida\n(Output)"
+component VectorStore as "Vector Store\n(FAISS, Chroma, etc.)"
+component Documents as "Documentos\n(Fuente de Conocimiento)"
+component Gemini as "Gemini\n(Modelo de Lenguaje)"
+
+' === Conexiones y Flujo de Datos ===
+User --> Input : Consulta del Usuario
+Input --> Retrieval : Consulta
+Retrieval --> VectorStore : Búsqueda de Fragmentos
+VectorStore --> Retrieval : Fragmentos Recuperados
+Documents .> VectorStore : Indexación
+Retrieval --> Generation : Documentos Recuperados y Consulta
+Generation --> Gemini : Prompt
+Gemini --> Generation : Respuesta
+Generation --> Output : Respuesta Generada
+Output --> User : Respuesta
+
+' === Indicaciones ===
+note left of Input : \tAcepta la consulta del\nusuario. Posible\npreprocesamiento.
+note right of Retrieval : \tRecupera documentos\nrelevantes. Incluye\nindexación y búsqueda.
+note right of Generation : \tGenera respuesta usando\nlos documentos\ny consulta + Gemini
+note left of Output : \tPresenta la respuesta al\nusuario. Posible\npostprocesamiento.
+note right of VectorStore : Almacena los embeddings y fragmentos para\nuna búsqueda semántica eficiente
+note bottom of Documents : \tArchivos, Bases de Datos,\nAPIs, etc.
+@enduml
