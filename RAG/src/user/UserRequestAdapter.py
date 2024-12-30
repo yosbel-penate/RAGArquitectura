@@ -3,8 +3,7 @@ from RAG.src.core.IInputPort import IInputPort
 from RAG.src.core.IOutputPort import IOutputPort
 from RAG.src.core.IRetrievalPort import IRetrievalPort
 from RAG.src.core.IVectorStorePort import IVectorStorePort
-from RAG.src.core.IDocumentSourcePort import (
-    IDocumentSourcePort)
+from RAG.src.core.IDocumentSourcePort import IDocumentSourcePort
 
 
 class UserRequestAdapter:
