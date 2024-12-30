@@ -1,3 +1,8 @@
+import logging
+
+# Configurar logging
+logging.basicConfig(level=logging.INFO)
+
 from RAG.src.documents.SimpleDocumentSourceAdapter import SimpleDocumentSourceAdapter
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.input.SimpleInputAdapter import SimpleInputAdapter
@@ -10,7 +15,7 @@ from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageMode
 
 if __name__ == "__main__":
     adapter = ProcessRequestAdapter(input_adapter = SimpleInputAdapter(),
-                            retrieval_adapter = SimpleRetrievalAdapter(),
+                            retrieval_adapter = SimpleRetrievalAdapter(ChromaVectorStoreAdapter()),
                             generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter()),
                             output_adapter = SimpleOutputAdapter(),
                             vector_store_adapter = ChromaVectorStoreAdapter(),
