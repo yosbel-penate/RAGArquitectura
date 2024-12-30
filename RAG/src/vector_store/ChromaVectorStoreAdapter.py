@@ -20,4 +20,5 @@ class ChromaVectorStoreAdapter(VectorStorePort):
 
     def index_documents(self, documents: list) -> None:
         # Implementación de la indexación de documentos utilizando Chroma
-        self.collection.add(documents=documents) #Uso el add para insertar directamente la lista de documentos
+        ids = [str(i) for i in range(len(documents))]
+        self.collection.add(documents=documents, ids=ids)

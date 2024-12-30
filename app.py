@@ -14,10 +14,20 @@ from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageMode
 
 
 if __name__ == "__main__":
+    vector_store_adapter = ChromaVectorStoreAdapter()
+
+    # Añadir documentos a la colección
+    documentos = [
+        "París es la capital de Francia.",
+        "Berlín es la capital de Alemania.",
+        "Madrid es la capital de España."
+    ]
+    vector_store_adapter.index_documents(documentos)
+
     adapter = ProcessRequestAdapter(input_adapter = SimpleInputAdapter(),
-                            retrieval_adapter = SimpleRetrievalAdapter(ChromaVectorStoreAdapter()),
+                            retrieval_adapter = SimpleRetrievalAdapter(vector_store_adapter),
                             generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter()),
                             output_adapter = SimpleOutputAdapter(),
-                            vector_store_adapter = ChromaVectorStoreAdapter(),
+                            vector_store_adapter = vector_store_adapter,
                             document_source_adapter = SimpleDocumentSourceAdapter())
-    adapter.run("¿Cuál es la capital de Francia?")
+    adapter.run("¿Cuál es la capital de Estonia?")
