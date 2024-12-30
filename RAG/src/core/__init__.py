@@ -1,1 +1,1 @@
-from VectorStorePort import VectorStorePort
+from .VectorStorePort import VectorStorePort

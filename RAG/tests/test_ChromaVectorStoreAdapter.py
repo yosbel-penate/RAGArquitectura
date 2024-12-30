@@ -1,13 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
-import sys
-import os
 
-# Agregar la ruta al directorio src para importaciones relativas
-src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
-sys.path.insert(0, src_path)
-
-from vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
+from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 
 class TestChromaVectorStoreAdapter(unittest.TestCase):
 
@@ -24,7 +18,7 @@ class TestChromaVectorStoreAdapter(unittest.TestCase):
                 'documents': ["fragment1", "fragment2"]
             }]
         }
-        self.mock_client.query.return_value = mock_results
+        self.mock_client.query.return_value = mock_results['results']
         query = "mi consulta"
         results = self.adapter.search_fragments(query)
         self.assertEqual(results, [["fragment1", "fragment2"]])
@@ -37,7 +31,7 @@ class TestChromaVectorStoreAdapter(unittest.TestCase):
                 'documents': []
             }]
         }
-        self.mock_client.query.return_value = mock_results
+        self.mock_client.query.return_value = mock_results['results']
         query = "mi consulta"
         results = self.adapter.search_fragments(query)
         self.assertEqual(results, [[]])
@@ -47,19 +41,19 @@ class TestChromaVectorStoreAdapter(unittest.TestCase):
         """Test de indexado de documentos exitoso."""
         documents = ["documento1", "documento2"]
         self.adapter.index_documents(documents)
-        self.mock_client.add.assert_called_once_with(documents=documents)
+        self.mock_client.index.assert_called_once_with(documents=documents)
 
     def test_index_documents_empty(self):
         """Test de indexado de documentos con una lista vacía."""
         documents = []
         self.adapter.index_documents(documents)
-        self.mock_client.add.assert_called_once_with(documents=[])
+        self.mock_client.index.assert_called_once_with(documents=[])
 
     def test_index_documents_single(self):
         """Test de indexado de documentos con un solo documento"""
         documents = ["documento1"]
         self.adapter.index_documents(documents)
-        self.mock_client.add.assert_called_once_with(documents=documents)
+        self.mock_client.index.assert_called_once_with(documents=documents)
 
 if __name__ == '__main__':
     unittest.main()
