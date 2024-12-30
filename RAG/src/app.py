@@ -5,14 +5,14 @@ from RAG.src.output.SimpleOutputAdapter import SimpleOutputAdapter
 from RAG.src.retrieval.SimpleRetrievalAdapter import SimpleRetrievalAdapter
 from RAG.src.user.ProcessRequestAdapter import ProcessRequestAdapter
 from RAG.src.vector_store.ChromaVectorStoreAdapter import SimpleVectorStoreAdapter
-from RAG.src.leguage_model.SimpleLanguageModelAdapter import (
-    SimpleLanguageModelAdapter
+from RAG.src.leguage_model.GeminiLanguageModelAdapter import (
+    GeminiLanguageModelAdapter
 )
 
 if __name__ == "__main__":
     adapter = ProcessRequestAdapter(input_adapter = SimpleInputAdapter(),
                             retrieval_adapter = SimpleRetrievalAdapter(),
-                            generation_adapter = SimpleGenerationAdapter(SimpleLanguageModelAdapter()),
+                            generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter()),
                             output_adapter = SimpleOutputAdapter(),
                             vector_store_adapter = SimpleVectorStoreAdapter(),
                             document_source_adapter = SimpleDocumentSourceAdapter())
