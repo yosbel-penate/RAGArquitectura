@@ -20,5 +20,7 @@ class ChromaVectorStoreAdapter(IVectorStorePort):
 
     def index_documents(self, documents: list) -> None:
         # Implementación de la indexación de documentos utilizando Chroma
+        if not documents:
+            raise ValueError("La lista de textos no puede estar vacía.")
         ids = [str(i) for i in range(len(documents))]
         self.collection.add(documents=documents, ids=ids)

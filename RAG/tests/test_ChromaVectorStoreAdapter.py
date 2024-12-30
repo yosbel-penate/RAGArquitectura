@@ -47,8 +47,10 @@ class TestChromaVectorStoreAdapter(unittest.TestCase):
     def test_index_documents_empty(self):
         """Test de indexado de documentos con una lista vacía."""
         documents = []
-        self.adapter.index_documents(documents)
-        self.mock_client.index.assert_called_once_with(documents=[])
+        with self.assertRaises(ValueError) as context:
+            self.adapter.index_documents(documents)
+        self.assertEqual(str(context.exception), "La lista de textos no puede estar vacía.")
+        self.mock_client.index.assert_not_called()
 
     def test_index_documents_single(self):
         """Test de indexado de documentos con un solo documento"""
