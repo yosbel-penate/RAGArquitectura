@@ -5,7 +5,7 @@ from RAG.src.output.SimpleOutputAdapter import SimpleOutputAdapter
 from RAG.src.retrieval.SimpleRetrievalAdapter import SimpleRetrievalAdapter
 from RAG.src.user.ProcessRequestAdapter import ProcessRequestAdapter
 from RAG.src.vector_store.ChromaVectorStoreAdapter import SimpleVectorStoreAdapter
-from RAG.src.leguage_model.GeminiLanguageModelAdapter import (
+from RAG.src.language_model.GeminiLanguageModelAdapter import (
     GeminiLanguageModelAdapter
 )
 
