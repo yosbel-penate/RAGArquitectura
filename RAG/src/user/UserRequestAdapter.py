@@ -5,7 +5,7 @@ from RAG.src.core.ports import (
     RetrievalPort)
 
 
-class ProcessRequestAdapter:
+class UserRequestAdapter:
     def __init__(self, input_adapter: InputPort,
                 retrieval_adapter: RetrievalPort,
                 generation_adapter: GenerationPort,
