@@ -22,12 +22,12 @@ class AppApiTestCase(unittest.TestCase):
         self.assertIn('answer', response.json)
 
     def test_get_document(self):
-        response = self.app.get('/get_document/1')
+        response = self.app.get('/get_document/doc1')
         self.assertEqual(response.status_code, 200)
         self.assertIn('document', response.json)
 
     def test_delete_document(self):
-        response = self.app.delete('/delete_document/1')
+        response = self.app.delete('/delete_document/doc1')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, {"status": "success"})
 
