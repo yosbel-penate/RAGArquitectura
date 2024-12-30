@@ -1,7 +1,7 @@
-from RAG.src.core.ports import DocumentSourcePort
+from RAG.src.core.IDocumentSourcePort import IDocumentSourcePort
 
 
-class SimpleDocumentSourceAdapter(DocumentSourcePort):
+class SimpleDocumentSourceAdapter(IDocumentSourcePort):
     def get_documents(self) -> list:
         # Implementación de la obtención de documentos
         return ["doc1", "doc2"]

@@ -1,17 +1,19 @@
-from RAG.src.core.VectorStorePort import VectorStorePort
-from RAG.src.core.ports import (
-    DocumentSourcePort, GenerationPort,
-    InputPort, OutputPort,
-    RetrievalPort)
+from RAG.src.core.IGenerationPort import IGenerationPort
+from RAG.src.core.IInputPort import IInputPort
+from RAG.src.core.IOutputPort import IOutputPort
+from RAG.src.core.IRetrievalPort import IRetrievalPort
+from RAG.src.core.IVectorStorePort import IVectorStorePort
+from RAG.src.core.IDocumentSourcePort import (
+    IDocumentSourcePort)
 
 
 class UserRequestAdapter:
-    def __init__(self, input_adapter: InputPort,
-                retrieval_adapter: RetrievalPort,
-                generation_adapter: GenerationPort,
-                output_adapter: OutputPort,
-                vector_store_adapter: VectorStorePort,
-                document_source_adapter: DocumentSourcePort):
+    def __init__(self, input_adapter: IInputPort,
+                retrieval_adapter: IRetrievalPort,
+                generation_adapter: IGenerationPort,
+                output_adapter: IOutputPort,
+                vector_store_adapter: IVectorStorePort,
+                document_source_adapter: IDocumentSourcePort):
 
         self.input_adapter = input_adapter
         self.retrieval_adapter = retrieval_adapter

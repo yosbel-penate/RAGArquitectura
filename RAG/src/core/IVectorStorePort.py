@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class VectorStorePort(ABC):
+class IVectorStorePort(ABC):
     @abstractmethod
     def search_fragments(self, query: str) -> list:
         pass

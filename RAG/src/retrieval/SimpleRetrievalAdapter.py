@@ -1,8 +1,8 @@
-from RAG.src.core.ports import RetrievalPort
-from ..core import VectorStorePort
+from RAG.src.core.IRetrievalPort import IRetrievalPort
+from ..core import IVectorStorePort
 
-class SimpleRetrievalAdapter(RetrievalPort):
-    def __init__(self, vectorStorePort: VectorStorePort):
+class SimpleRetrievalAdapter(IRetrievalPort):
+    def __init__(self, vectorStorePort: IVectorStorePort):
         self.vector_store = vectorStorePort
 
     def retrieve_documents(self, query: str) -> list:

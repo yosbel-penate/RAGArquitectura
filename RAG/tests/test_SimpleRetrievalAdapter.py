@@ -1,12 +1,12 @@
 import unittest
 from unittest.mock import MagicMock
 from RAG.src.retrieval.SimpleRetrievalAdapter import SimpleRetrievalAdapter
-from RAG.src.core import VectorStorePort
+from RAG.src.core import IVectorStorePort
 
 class TestSimpleRetrievalAdapter(unittest.TestCase):
     def setUp(self):
         # Crear un mock para VectorStorePort
-        self.mock_vector_store_port = MagicMock(spec=VectorStorePort)
+        self.mock_vector_store_port = MagicMock(spec=IVectorStorePort)
         self.adapter = SimpleRetrievalAdapter(self.mock_vector_store_port)
 
     def test_retrieve_documents(self):

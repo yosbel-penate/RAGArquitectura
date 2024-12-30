@@ -1,5 +1,5 @@
 import unittest
-from RAG.src.output.SimpleOutputAdapter import SimpleOutputAdapter
+from RAG.src.output.ConsoleOutputAdapter import ConsoleOutputAdapter
 
 from unittest.mock import patch
 import sys
@@ -12,7 +12,7 @@ sys.path.insert(0, src_path)
 
 class TestSimpleOutputAdapter(unittest.TestCase):
     def test_present_response(self):
-        adapter = SimpleOutputAdapter()
+        adapter = ConsoleOutputAdapter()
         response = "Esta es una respuesta de prueba."
         with patch('sys.stdout') as mock_stdout:
             adapter.present_response(response)

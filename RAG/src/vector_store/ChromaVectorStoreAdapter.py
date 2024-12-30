@@ -1,10 +1,10 @@
 from chromadb import Client
 from chromadb.config import Settings
 
-from RAG.src.core.VectorStorePort import VectorStorePort
+from RAG.src.core.IVectorStorePort import IVectorStorePort
 
 
-class ChromaVectorStoreAdapter(VectorStorePort):
+class ChromaVectorStoreAdapter(IVectorStorePort):
     def __init__(self):
         self.client = Client(Settings())
         self.collection_name = "mi_coleccion"

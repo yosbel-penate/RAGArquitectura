@@ -10,7 +10,7 @@ class TestConsoleDocumentProcessor(unittest.TestCase):
         self.processor = ConsoleDocumentProcessor(self.vector_store_adapter, ["Documento 1", "Documento 2"])
 
     def test_process_documents(self):
-        self.processor.process_documents()
+        self.processor.process_documents_and_get_answer()
         self.vector_store_adapter.index_documents.assert_called_once_with(["Documento 1", "Documento 2"])
 
 if __name__ == '__main__':

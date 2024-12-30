@@ -1,8 +1,9 @@
-from RAG.src.core.ports import GenerationPort, LanguageModelPort
+from RAG.src.core.IGenerationPort import IGenerationPort
+from RAG.src.core.ILanguageModelPort import ILanguageModelPort
 
 
-class SimpleGenerationAdapter(GenerationPort):
-    def __init__(self, language_model: LanguageModelPort):
+class SimpleGenerationAdapter(IGenerationPort):
+    def __init__(self, language_model: ILanguageModelPort):
         self.language_model = language_model
 
     def generate_response(self, documents: list, query: str) -> str:

@@ -1,7 +1,7 @@
-from RAG.src.core.ports import OutputPort
+from RAG.src.core.IOutputPort import IOutputPort
 
 
-class SimpleOutputAdapter(OutputPort):
+class ConsoleOutputAdapter(IOutputPort):
     def present_response(self, response: str) -> None:
         # Implementación de la presentación de la respuesta
         print(response)

@@ -1,11 +1,11 @@
 import unittest
 from unittest.mock import MagicMock
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
-from RAG.src.core.ports import LanguageModelPort
+from RAG.src.core.ILanguageModelPort import ILanguageModelPort
 
 class TestSimpleGenerationAdapter(unittest.TestCase):
     def setUp(self):
-        self.mock_language_model = MagicMock(spec=LanguageModelPort)
+        self.mock_language_model = MagicMock(spec=ILanguageModelPort)
         self.adapter = SimpleGenerationAdapter(self.mock_language_model)
 
     def test_generate_response(self):

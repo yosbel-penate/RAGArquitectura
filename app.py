@@ -5,10 +5,12 @@ logging.basicConfig(level=logging.INFO)
 
 from RAG.src.user.ConsoleDocumentProcessor import ConsoleDocumentProcessor
 from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
+from RAG.src.output.ConsoleOutputAdapter import ConsoleOutputAdapter
 
 
 if __name__ == "__main__":
     vector_store_adapter = ChromaVectorStoreAdapter()
+    output_adapter = ConsoleOutputAdapter()
 
     # Añadir documentos a la colección
     documentos = [
@@ -16,5 +18,5 @@ if __name__ == "__main__":
         "Berlín es la capital de Alemania.",
         "Madrid es la capital de España."
     ]
-    processor = ConsoleDocumentProcessor(vector_store_adapter, documentos)
-    processor.process_documents()
+    processor = ConsoleDocumentProcessor(vector_store_adapter, documentos, output_adapter=output_adapter)
+    processor.process_documents_and_get_answer("¿Cuál es la capital de Alemania?")

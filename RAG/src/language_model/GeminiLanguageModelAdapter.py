@@ -1,4 +1,4 @@
-from RAG.src.core.ports import LanguageModelPort
+from RAG.src.core.ILanguageModelPort import ILanguageModelPort
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class GeminiLanguageModelAdapter(LanguageModelPort):
+class GeminiLanguageModelAdapter(ILanguageModelPort):
     def __init__(self):
         # Obtener la clave API de las variables de entorno
         api_key = os.getenv("GEMINI_API_KEY")
