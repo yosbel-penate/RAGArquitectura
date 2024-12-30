@@ -1,74 +1,31 @@
 import unittest
 from unittest.mock import MagicMock
-
 from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 
-
 class TestChromaVectorStoreAdapter(unittest.TestCase):
-
     def setUp(self):
-        """Configuración para cada test."""
-        self.mock_client = MagicMock()
         self.adapter = ChromaVectorStoreAdapter()
-        self.adapter.client = self.mock_client  # Inyectar el mock
+        self.adapter.client = MagicMock()
+        self.adapter.collection = MagicMock()
 
-    def test_search_fragments_success(self):
-        """Test de búsqueda de fragmentos exitosa."""
-        mock_results = {
-            'results': [{
-                'documents': ["fragment1", "fragment2"]
-            }]
-        }
-        self.mock_client.query.return_value = mock_results['results']
-        query = "mi consulta"
-        results = self.adapter.search_fragments(query)
-        self.assertEqual(results, [["fragment1", "fragment2"]])
-        self.mock_client.query.assert_called_once_with(query_texts=[query])
+    def test_search_fragments(self):
+        query = "test query"
+        expected_result = ["document1", "document2"]
+        self.adapter.collection.query.return_value = {"documents": expected_result}
 
-    def test_search_fragments_empty(self):
-        """Test de búsqueda de fragmentos vacía."""
-        mock_results = {
-            'results': [{
-                'documents': []
-            }]
-        }
-        self.mock_client.query.return_value = mock_results['results']
-        query = "mi consulta"
-        results = self.adapter.search_fragments(query)
-        self.assertEqual(results, [[]])
-        self.mock_client.query.assert_called_once_with(query_texts=[query])
+        result = self.adapter.search_fragments(query)
+        self.assertEqual(result, expected_result)
+        self.adapter.collection.query.assert_called_once_with(query_texts=[query])
 
-    def test_index_documents_success(self):
-        """Test de indexado de documentos exitoso."""
-        documents = ["documento1", "documento2"]
+    def test_index_documents(self):
+        documents = ["doc1", "doc2"]
         self.adapter.index_documents(documents)
-        try:
-            self.mock_client.index.assert_called_once_with(documents=documents)
-        except AssertionError as e:
-            if "Insert of existing embedding ID" in str(e):
-                pass  # Ignorar el error si es por un ID de incrustación existente
-            else:
-                raise e
+        ids = [str(i) for i in range(len(documents))]
+        self.adapter.collection.add.assert_called_once_with(documents=documents, ids=ids)
 
     def test_index_documents_empty(self):
-        """Test de indexado de documentos con una lista vacía."""
-        documents = []
-        with self.assertRaises(ValueError) as context:
-            self.adapter.index_documents(documents)
-        self.assertEqual(str(context.exception), "La lista de textos no puede estar vacía.")
-        self.mock_client.index.assert_not_called()
-
-    def test_index_documents_single(self):
-        """Test de indexado de documentos con un solo documento"""
-        documents = ["documento1"]
-        self.adapter.index_documents(documents)
-        try:
-            self.mock_client.index.assert_called_once_with(documents=documents)
-        except AssertionError as e:
-            if "Insert of existing embedding ID" in str(e):
-                self.mock_client.index.assert_not_called()
-            else:
-                raise e
+        with self.assertRaises(ValueError):
+            self.adapter.index_documents([])
 
 if __name__ == '__main__':
     unittest.main()
