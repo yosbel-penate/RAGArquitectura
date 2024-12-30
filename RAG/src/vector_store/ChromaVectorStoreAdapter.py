@@ -8,9 +8,18 @@ class ChromaVectorStoreAdapter(VectorStorePort):
 
     def search_fragments(self, query: str) -> list:
         # Implementación de la búsqueda de fragmentos utilizando Chroma
-        results = self.client.query(query_texts=[query])
-        return [result['documents'] for result in results]
+        try:
+            results = self.client.query(query_texts=[query])
+            return [result['documents'] for result in results]
+        except Exception as e:
+            # Manejo de excepciones
+            print(f"Error al buscar fragmentos: {e}")
+            return []
 
     def index_documents(self, documents: list) -> None:
         # Implementación de la indexación de documentos utilizando Chroma
-        self.client.index(documents=documents)
+        try:
+            self.client.index(documents=documents)
+        except Exception as e:
+            # Manejo de excepciones
+            print(f"Error al indexar documentos: {e}")

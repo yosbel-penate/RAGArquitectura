@@ -3,6 +3,7 @@ from unittest.mock import MagicMock
 
 from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 
+
 class TestChromaVectorStoreAdapter(unittest.TestCase):
 
     def setUp(self):
