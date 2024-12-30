@@ -7,7 +7,8 @@ class TestConsoleDocumentProcessor(unittest.TestCase):
     def setUp(self):
         self.vector_store_adapter = ChromaVectorStoreAdapter()
         self.vector_store_adapter.index_documents = MagicMock()
-        self.processor = ConsoleDocumentProcessor(self.vector_store_adapter, ["Documento 1", "Documento 2"])
+        self.output_adapter = MagicMock()
+        self.processor = ConsoleDocumentProcessor(self.vector_store_adapter, ["Documento 1", "Documento 2"], self.output_adapter)
 
     def test_process_documents(self):
         self.processor.process_documents_and_get_answer()

@@ -5,20 +5,18 @@ from RAG.src.core import IVectorStorePort
 
 class TestSimpleRetrievalAdapter(unittest.TestCase):
     def setUp(self):
-        # Crear un mock para VectorStorePort
-        self.mock_vector_store_port = MagicMock(spec=IVectorStorePort)
-        self.adapter = SimpleRetrievalAdapter(self.mock_vector_store_port)
+        """Configuración para cada test."""
+        self.mock_vector_store = MagicMock()
+        self.adapter = SimpleRetrievalAdapter(self.mock_vector_store)
 
     def test_retrieve_documents(self):
-        # Configurar el mock para devolver un resultado específico
-        query = "test query"
-        expected_result = ["doc1", "doc2"]
-        self.mock_vector_store_port().search_fragments.return_value = expected_result
-
-        # Llamar al método y verificar el resultado
+        """Test de recuperación de documentos."""
+        query = "mi consulta"
+        expected_result = ['doc1', 'doc2']
+        self.mock_vector_store.search_fragments.return_value = expected_result
         result = self.adapter.retrieve_documents(query)
         self.assertEqual(result, expected_result)
-        self.mock_vector_store_port().search_fragments.assert_called_once_with(query)
+        self.mock_vector_store.search_fragments.assert_called_once_with(query)
 
 if __name__ == '__main__':
     unittest.main()
