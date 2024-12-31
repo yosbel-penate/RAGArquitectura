@@ -9,6 +9,13 @@ app = Flask(__name__)
 vector_store_adapter = ChromaVectorStoreAdapter()
 generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter())
 
+documentos = [
+        "París es la capital de Francia.",
+        "Berlín es la capital de Alemania.",
+        "Madrid es la capital de España."
+    ]
+vector_store_adapter.index_documents(documentos)
+
 @app.route('/add_documents', methods=['POST'])
 def add_documents():
     documentos = request.json.get('documents', [])
@@ -25,7 +32,7 @@ def search():
 def generate_answer():
     query = request.json.get('query')
     results = vector_store_adapter.search_fragments(query)
-    answer = generation_adapter.generate(query, results)
+    answer = generation_adapter.generate_response(query, results)
     return jsonify({"answer": answer}), 200
 
 @app.route('/get_document/<doc_id>', methods=['GET'])
