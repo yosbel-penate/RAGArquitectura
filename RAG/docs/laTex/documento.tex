@@ -1,0 +1,195 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Implementación de un Sistema RAG para el Curso de Introducción a la Programación de la Universidad de Matanzas}
+\author{Tu Nombre (o el nombre del equipo)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introducción}
+
+    \subsection{Contexto y Motivación}
+        \begin{itemize}
+            \item Breve descripción del curso de Introducción a la Programación en la Universidad de Matanzas.
+            \item Desafíos comunes en el aprendizaje de programación para estudiantes principiantes (dificultad en la búsqueda de información específica, necesidad de respuestas contextualizadas, etc.).
+            \item Justificación de la implementación de un sistema RAG como solución para mejorar el aprendizaje y el soporte a los estudiantes.
+        \end{itemize}
+
+    \subsection{Objetivos del Proyecto}
+        \begin{itemize}
+            \item Objetivo general del proyecto: mejorar el acceso a la información y el soporte de aprendizaje mediante la implementación de un sistema RAG.
+            \item Objetivos específicos:
+                \begin{itemize}[label=\textbullet]
+                    \item Facilitar el acceso a información relevante de los materiales del curso.
+                    \item Proporcionar respuestas contextualizadas y personalizadas a las preguntas de los estudiantes.
+                    \item Mejorar la comprensión de los conceptos de programación.
+                    \item Aumentar la autonomía y el compromiso de los estudiantes con el curso.
+                \end{itemize}
+        \end{itemize}
+
+    \subsection{Alcance del Proyecto}
+        \begin{itemize}
+            \item Definición de los materiales del curso que se utilizarán como base de conocimiento (conferencias en PDF, guías de estudio, ejercicios).
+            \item Tipos de preguntas que el sistema RAG deberá poder responder (conceptos teóricos, sintaxis de código, resolución de problemas).
+            \item Usuarios objetivo: estudiantes del curso de Introducción a la Programación.
+        \end{itemize}
+
+\section{Diseño del Sistema RAG}
+
+    \subsection{Arquitectura General del Sistema}
+        \begin{itemize}
+            \item Descripción de la arquitectura del sistema RAG: componentes (modelo de recuperación, modelo de generación, base de conocimiento), flujo de información.
+            \item Diagrama de la arquitectura del sistema.
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=0.8\textwidth]{ruta_a_tu_diagrama.pdf}
+                \caption{Diagrama de la arquitectura del sistema RAG}
+            \end{figure}
+        \end{itemize}
+
+    \subsection{Preprocesamiento de los Documentos}
+        \begin{itemize}
+            \item Extracción de texto de los PDFs (bibliotecas utilizadas: PyPDF2, pdfplumber, Tesseract OCR).
+            \item Limpieza y normalización del texto (eliminación de caracteres especiales, minúsculas, lematización, etc.).
+            \item Fragmentación del texto en unidades semánticas (párrafos, secciones, etc.).
+        \end{itemize}
+
+    \subsection{Modelo de Recuperación}
+        \begin{itemize}
+            \item Selección del modelo de embeddings (Sentence Transformers, OpenAI Embeddings, otros).
+            \item Justificación de la elección del modelo.
+            \item Generación de embeddings para los fragmentos de texto.
+            \item Creación del índice de búsqueda vectorial (Faiss, Annoy, bases de datos vectoriales).
+            \item Optimización del índice.
+        \end{itemize}
+
+    \subsection{Modelo de Generación}
+         \begin{itemize}
+            \item Selección del LLM (OpenAI GPT-3.5/4, Llama, Mistral, otros).
+            \item Justificación de la elección del LLM.
+            \item Diseño del prompt para el LLM para la utilización de la información recuperada.
+         \end{itemize}
+
+
+    \subsection{Integración del Modelo de Recuperación y Generación}
+        \begin{itemize}
+            \item Descripción del proceso de recuperación de fragmentos relevantes.
+            \item Descripción del proceso de aumento de la consulta con la información recuperada.
+            \item Descripción del proceso de generación de la respuesta por parte del LLM.
+        \end{itemize}
+
+\section{Implementación del Sistema}
+
+    \subsection{Herramientas y Tecnologías Utilizadas}
+         \begin{itemize}
+             \item Bibliotecas y frameworks de Python utilizados: (Transformers, Faiss/Annoy, LangChain/LlamaIndex).
+             \item Bases de datos vectoriales utilizadas: (si aplica)
+             \item Entorno de desarrollo: (IDE, sistema operativo).
+         \end{itemize}
+
+    \subsection{Desarrollo del Pipeline de RAG}
+        \begin{itemize}
+           \item Pasos detallados para la implementación del pipeline (carga de documentos, preprocesamiento, generación de embeddings, indexación, búsqueda, generación de respuesta).
+           \item Fragmentos de código relevantes (ejemplos).
+                \begin{lstlisting}[language=Python, caption=Ejemplo de preprocesamiento]
+                    def preprocess_text(text):
+                        text = text.lower()
+                        # ... otros pasos ...
+                        return text
+                \end{lstlisting}
+         \end{itemize}
+
+   \subsection{Despliegue del Sistema (si aplica)}
+        \begin{itemize}
+            \item Descripción del entorno de despliegue (servidor, nube, etc.)
+            \item Tecnologías y herramientas utilizadas para el despliegue (Docker, etc.).
+        \end{itemize}
+
+\section{Evaluación del Sistema}
+
+    \subsection{Diseño de la Evaluación}
+        \begin{itemize}
+           \item Definición de las métricas de evaluación:
+               \begin{itemize}[label=\textbullet]
+                   \item Relevancia de los documentos recuperados.
+                   \item Precisión y calidad de las respuestas generadas.
+                   \item Fluidez y coherencia de las respuestas.
+                   \item Cobertura de las respuestas.
+                \end{itemize}
+            \item Metodología de evaluación:
+                 \begin{itemize}[label=\textbullet]
+                    \item Creación de un conjunto de datos de Ground Truth.
+                    \item Pruebas con usuarios reales.
+                 \end{itemize}
+        \end{itemize}
+
+    \subsection{Resultados de la Evaluación}
+        \begin{itemize}
+            \item Presentación de los resultados de la evaluación usando las métricas definidas.
+             \begin{itemize}[label=\textbullet]
+                 \item Presentación de los resultados de la evaluación usando las métricas definidas.
+                 \item Análisis de los puntos fuertes y débiles del sistema.
+                 \item Identificación de áreas de mejora.
+            \end{itemize}
+        \end{itemize}
+
+\section{Análisis y Discusión}
+
+    \subsection{Beneficios del Sistema RAG}
+        \begin{itemize}
+            \item Mejora del acceso a la información y la comprensión de conceptos.
+            \item Reducción del tiempo de búsqueda y solución de dudas.
+            \item Aumento de la autonomía del estudiante.
+            \item Potencial para personalizar el aprendizaje.
+        \end{itemize}
+
+    \subsection{Desafíos y Limitaciones}
+         \begin{itemize}
+            \item Dificultades técnicas encontradas durante el desarrollo.
+            \item Limitaciones del sistema RAG (comprensión de preguntas ambiguas, posibles errores en las respuestas).
+            \item Potenciales sesgos y limitaciones en el conjunto de datos y los modelos.
+            \item Recomendaciones para superar estos desafíos.
+        \end{itemize}
+
+\section{Conclusiones y Trabajo Futuro}
+
+   \subsection{Conclusiones}
+        \begin{itemize}
+            \item Resumen de los logros del proyecto.
+            \item Respuesta a los objetivos planteados.
+            \item Reflexión sobre el impacto del sistema en el proceso de aprendizaje.
+        \end{itemize}
+
+   \subsection{Trabajo Futuro}
+        \begin{itemize}
+            \item Propuestas para mejorar el sistema RAG (fine-tuning, nuevos modelos, mejorar la calidad de datos).
+            \item Posibles extensiones del sistema (integración con otras herramientas, personalización más avanzada).
+            \item Investigaciones futuras.
+        \end{itemize}
+
+\section{Anexos}
+    \subsection{Código fuente (snippets relevantes)}
+
+    \subsection{Tablas y gráficos con resultados de evaluación.}
+
+    \subsection{Glosario de términos técnicos.}
+
+    \subsection{Bibliografía y referencias.}
+
+\end{document}

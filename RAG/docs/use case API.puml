@@ -1,0 +1,14 @@
+@startuml
+  left to right direction
+
+  actor Usuario as us
+
+  rectangle API {
+    us -->(Añadir Documentos) : POST /add_documents
+    us -->(Buscar Fragmentos) : GET /search
+    us -->(Generar Respuesta) : POST /generate_answer
+    us -->(Obtener Documento) : GET /get_document/{doc_id}
+    us -->(Eliminar Documento) : DELETE /delete_document/{doc_id}
+  }
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+skinparam style strictuml
+
+' Participantes
+actor Usuario as User
+participant "Telegram Bot" as Bot
+participant "Flask API" as API
+
+' Secuencia
+' Caso de uso: Comando /start
+User -> Bot : /start
+activate Bot
+Bot --> User : Hola! Envíame una pregunta y te responderé.
+deactivate Bot
+
+' Caso de uso: Mensaje de usuario
+User -> Bot : Pregunta del usuario
+activate Bot
+Bot -> API : POST /generate_answer {query: pregunta}
+activate API
+API --> Bot : Respuesta del modelo
+deactivate API
+Bot --> User : Respuesta del modelo
+deactivate Bot
+@enduml

@@ -1,0 +1,69 @@
+@startuml
+skinparam style strictuml
+' Participantes
+actor Usuario
+participant "Flask API" as API
+participant "ChromaVectorStoreAdapter" as VectorStore
+participant "SimpleGenerationAdapter" as Generation
+participant "GeminiLanguageModelAdapter" as LanguageModel
+
+' Secuencia
+' Caso de uso: add_documents
+Usuario -> API : POST /add_documents
+activate API
+API -> VectorStore : index_documents(documentos)
+activate VectorStore
+VectorStore --> API : Confirmación de indexado
+deactivate VectorStore
+API --> Usuario : 200 OK ({"status": "success"})
+deactivate API
+
+' Caso de uso: search
+Usuario -> API : GET /search?query=consulta
+activate API
+API -> VectorStore : search_fragments(consulta)
+activate VectorStore
+VectorStore --> API : Resultados de la búsqueda
+deactivate VectorStore
+API --> Usuario : 200 OK ({"results": resultados})
+deactivate API
+
+' Caso de uso: generate_answer
+Usuario -> API : POST /generate_answer
+activate API
+API -> VectorStore : search_fragments(consulta)
+activate VectorStore
+VectorStore --> API : Resultados de la búsqueda
+deactivate VectorStore
+API -> Generation : generate_response(consulta, resultados)
+activate Generation
+Generation -> LanguageModel: Llamada al modelo
+activate LanguageModel
+LanguageModel --> Generation : Respuesta del modelo
+deactivate LanguageModel
+Generation --> API : Respuesta generada
+deactivate Generation
+API --> Usuario : 200 OK ({"answer": respuesta})
+deactivate API
+
+' Caso de uso: get_document
+Usuario -> API : GET /get_document/{doc_id}
+activate API
+API -> VectorStore : get_document(doc_id)
+activate VectorStore
+VectorStore --> API : Documento
+deactivate VectorStore
+API --> Usuario : 200 OK ({"document": documento})
+deactivate API
+
+' Caso de uso: delete_document
+Usuario -> API : DELETE /delete_document/{doc_id}
+activate API
+API -> VectorStore : delete_document(doc_id)
+activate VectorStore
+VectorStore --> API : Confirmación de eliminación
+deactivate VectorStore
+API --> Usuario : 200 OK ({"status": "success"})
+deactivate API
+
+@enduml
