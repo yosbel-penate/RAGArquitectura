@@ -1,0 +1,223 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Implementación de un Sistema RAG para el Curso de Introducción a la Programación de la Universidad de Matanzas}
+\author{MSc. Yosbel Peñate Barceló}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introducción}
+
+    \subsection{Contexto y Motivación}
+
+El curso de Introducción a la Programación de la carrera de Ingeniería Informática en la Universidad de Matanzas tiene como objetivo fundamental capacitar a los estudiantes en la solución de problemas mediante el uso de computadoras. El plan de estudios se estructura en torno a tres temas principales. Inicialmente, en el Tema I, se aborda la Algoritmización, donde los estudiantes aprenden a resolver problemas utilizando algoritmos informales. Posteriormente, en el Tema II, se introducen las Estructuras de control, cubriendo conceptos clave como tipos de datos, variables, constantes, asignación, expresiones, así como las estructuras de control alternativas y repetitivas, culminando con el estudio de funciones. Finalmente, en el Tema III, se exploran los Arreglos, tanto unidimensionales como bidimensionales, y se analizan algoritmos básicos para su manipulación. El curso proporciona una base sólida en los conceptos fundamentales de la programación, preparando a los estudiantes para abordar problemas computacionales de manera metódica y estructurada.
+
+Los estudiantes que se inician en el aprendizaje de programación, y en particular al abordar el contenido específico del curso, a menudo se enfrentan a dificultades que pueden obstaculizar su comprensión y progreso. Uno de los principales desafíos surge de la dificultad para encontrar información específica dentro de los materiales del curso. Aunque las conferencias y guías de estudio proporcionan una base teórica, a menudo carecen de la granularidad necesaria para responder a preguntas puntuales que los estudiantes puedan tener al trabajar en ejercicios prácticos. Los conceptos clave pueden estar dispersos en varios documentos, lo que dificulta la localización de información específica cuando se necesita una referencia rápida o una aclaración sobre un detalle concreto. Esta dificultad en encontrar información puntual puede llevar a los estudiantes a dedicar un tiempo excesivo a la búsqueda, en detrimento del tiempo que dedican a la práctica.
+
+Además, los estudiantes principiantes a menudo luchan con la necesidad de respuestas contextualizadas que estén alineadas con el contenido del curso. Aunque los materiales didácticos explican los conceptos fundamentales como las estructuras de control o los arreglos, los estudiantes necesitan ejemplos prácticos y aclaraciones que demuestren cómo aplicar estas herramientas a los problemas específicos planteados en los ejercicios y talleres del curso. Las respuestas generales o teóricas pueden resultar insuficientes para comprender cómo implementar un algoritmo de búsqueda en un arreglo unidimensional o cómo anidar estructuras de control para resolver un problema específico del curso. La falta de ejemplos y explicaciones que se vinculen directamente con el contenido y el nivel del curso puede dificultar que los estudiantes apliquen los conocimientos adquiridos de manera efectiva.
+
+    \subsection{Objetivos del Proyecto}
+             \noindent  \textbf{Objetivo general del proyecto:} mejorar el acceso a la información y el soporte de aprendizaje en el curso de Introducción a la Programación de la Universidad de Matanzas mediante la implementación de un sistema de Generación Aumentada por Recuperación (RAG).
+
+\medskip
+            \noindent  \textbf{Objetivos específicos:}
+                \begin{itemize}[label=\textbullet]
+                    \item Recopilar y organizar exhaustivamente todos los materiales del curso en un corpus digital. 
+                    \item Diseñar e implementar un sistema RAG eficiente que integre un motor de búsqueda semántico y un modelo de lenguaje, asegurando respuestas relevantes y contextualizadas.
+                    \item Adaptar las respuestas generadas al contexto específico del curso, proporcionando ejemplos prácticos y explicaciones alineadas con los temas tratados. 
+                    \item Facilitar la búsqueda de información puntual, permitiendo a los estudiantes encontrar rápidamente lo que necesitan. 
+		\item  Evaluar y mejorar continuamente el sistema a través del feedback de usuarios y métricas de rendimiento.
+                \end{itemize}
+
+    \subsection{Alcance del Proyecto}
+	\noindent El alcance de este proyecto se centra en el desarrollo e implementación de un sistema de Generación Aumentada por Recuperación (RAG), específicamente diseñado para apoyar a los estudiantes del curso de Introducción a la Programación de la carrera de Ingeniería Informática de la Universidad de Matanzas. Este sistema actuará como una herramienta de aprendizaje que facilitará el acceso a información relevante y contextualizada, ayudando a los estudiantes a comprender y aplicar los conceptos clave del curso de manera más efectiva.
+
+\medskip
+
+\noindent \textbf{Materiales del Curso como Base de Conocimiento:} El sistema RAG utilizará como base de conocimiento los materiales del curso, incluyendo las conferencias en formato PDF, las guías de estudio, los enunciados de ejercicios y talleres. Estos documentos, que abarcan la teoría y la práctica del curso, serán procesados para extraer su contenido textual, limpiarlo y tokenizarlo, generando así los embeddings que permitirán una búsqueda semántica eficiente. Adicionalmente, los materiales procesados se almacenarán en una base de datos vectorial, facilitando la recuperación rápida y precisa de la información relevante en respuesta a las preguntas de los estudiantes.
+
+\medskip
+
+\noindent \textbf{Tipos de Preguntas que el Sistema RAG Debe Responder:} El sistema RAG estará diseñado para responder una amplia gama de preguntas, abarcando desde conceptos teóricos hasta la sintaxis de código y la resolución de problemas específicos del curso. Esto incluye consultas sobre definiciones y explicaciones de conceptos clave, preguntas sobre el funcionamiento de los algoritmos y las estructuras de datos, así como preguntas sobre la sintaxis y el uso de palabras reservadas de Java. Además, el sistema deberá ofrecer ejemplos de código que ilustren cómo aplicar los conceptos aprendidos, y ayudar a los estudiantes a abordar los problemas planteados en los ejercicios y talleres del curso, proporcionando explicaciones contextualizadas y ejemplos prácticos. Sin embargo, es importante destacar que el sistema debe estar diseñado para guiar el aprendizaje y ayudar al entendimiento, no para resolver los problemas por los estudiantes, ni para responder preguntas que estén fuera del ámbito del curso.
+
+\medskip
+
+\noindent \textbf{Usuarios Objetivo:} Los usuarios principales de este sistema RAG son los estudiantes del curso de Introducción a la Programación. Se considerará que estos estudiantes son principiantes en el mundo de la programación, por lo que las respuestas proporcionadas por el sistema serán claras, sencillas y evitarán el uso de jerga técnica innecesaria. Además, el sistema será accesible a través de una interfaz web intuitiva y fácil de usar, que permitirá a los estudiantes formular sus preguntas en lenguaje natural sin necesidad de tener conocimientos técnicos avanzados. La interacción con el sistema estará diseñada para ser lo más sencilla y natural posible, facilitando su uso por parte de todos los estudiantes del curso.
+
+\medskip
+
+\noindent \textbf{Énfasis en la Usabilidad:} La usabilidad del sistema RAG será una prioridad clave. Se desarrollará una interfaz de usuario simple y fácil de usar, que permitirá a los estudiantes formular sus preguntas y recibir respuestas de manera eficiente. Las respuestas generadas por el sistema serán claras, concisas y fáciles de entender para los estudiantes principiantes. Además, el sistema incluirá un mecanismo para que los usuarios puedan proporcionar feedback sobre la calidad de las respuestas recibidas, lo que facilitará la mejora continua del sistema y su adaptación a las necesidades específicas de los estudiantes del curso.
+
+
+\section{Diseño del Sistema RAG}
+
+    \subsection{Arquitectura General del Sistema}
+ 
+\noindent El sistema RAG, cuya arquitectura se muestra en la \hyperref[fig:diagramaRAG]{\textbf{Figura 1}}, se organiza como un flujo de procesamiento de información que integra el componente de Retrieval con el componente de Generation buscando responder a las consultas del Usuario de manera informada y contextualizada la arquitectura se compone de siete elementos principales representados en el diagrama el Usuario que inicia el proceso el Componente de Entrada (Input) que recibe la consulta el Componente de Recuperación (Retrieval) encargado de buscar información relevante el Almacén Vectorial (Vector Store) que gestiona los embeddings el Componente de Generación (Generation) que prepara el prompt el modelo de lenguaje Gemini y el Componente de Salida (Output) que presenta la respuesta El Usuario es el actor principal que inicia el proceso ingresando una consulta específica el Componente de Entrada (Input) recibe esta consulta preparándola para su procesamiento posterior este componente aplica pasos de limpieza normalización y tokenización El Componente de Recuperación (Retrieval) es responsable de buscar en la fuente de conocimiento la información relevante para la consulta procesada utilizando para ello el Almacén Vectorial (Vector Store) este componente realiza una búsqueda vectorial obteniendo los fragmentos más relevantes el Almacén Vectorial (Vector Store) es una base de datos especializada que gestiona las representaciones vectoriales de la Documentos almacenados en la fuente de conocimiento realizando la indexación búsqueda y almacenamiento de los embeddings el Componente de Generación (Generation) actúa como puente entre el Componente de Recuperación (Retrieval) y el modelo de lenguaje Gemini combinando la consulta original con los fragmentos recuperados para construir un prompt para el modelo Gemini el modelo Gemini utiliza su conocimiento interno y el contexto del prompt para generar una respuesta coherente y relevante el Componente de Salida (Output) recibe esta respuesta formateándola y presentándola al Usuario el flujo de datos comienza con la consulta del Usuario que pasa por el Componente de Entrada (Input) luego al Componente de Recuperación (Retrieval) que consulta al Almacén Vectorial (Vector Store) este retorna fragmentos que son procesados por el Componente de Recuperación (Retrieval) y enviados al Componente de Generación (Generation) que genera el prompt para el modelo Gemini que produce la respuesta que el Componente de Salida (Output) presenta al Usuario de esta forma el sistema RAG aprovecha las capacidades de los LLMs como el modelo Gemini para generar texto y la búsqueda semántica del Almacén Vectorial ofreciendo resultados más precisos y contextualizados la estructura modular permite que cada componente sea adaptado a las necesidades del dominio y a los objetivos específicos del sistema.
+
+\medskip
+
+            \begin{figure}[h]
+                	\centering
+                	\includegraphics[width=0.8\textwidth]{rag_diagram_latex/rag_arquitecture.jpg}
+                 	\caption{Diagrama de la arquitectura del sistema RAG \textbf{(Figura 1)}}
+		\label{fig:diagramaRAG}
+            \end{figure}
+
+\noindent Este diagrama de secuencia \hyperref[fig:diagramaBot]{\textbf{Figura 2}} ilustra el funcionamiento de un chatbot de inteligencia artificial basado en la técnica RAG (Retrieval-Augmented Generation) que opera a través de Telegram. El usuario inicia la interacción enviando un mensaje al bot, que a su vez lo reenvía a una API Gateway. Esta API Gateway dirige la solicitud a un Back-end Service, que se encarga de la lógica RAG. El Back-end Service primero consulta un Vector Store para obtener fragmentos relevantes de información según la pregunta del usuario. Luego, utiliza esta información contextual, junto con la pregunta original, para enviarla a un Language Model, el cual genera una respuesta. La respuesta es devuelta al Back-end Service, que a su vez la envía a la API Gateway, y esta última la transmite al bot de Telegram. Finalmente, el bot de Telegram entrega la respuesta generada al usuario. Este diagrama destaca la separación de responsabilidades entre los componentes: el bot como interfaz, el API Gateway como punto de entrada, el Back-end Service con la lógica RAG, el Vector Store para la recuperación de información, y el Language Model para la generación de respuestas. En resumen, el diagrama muestra el flujo completo de un sistema RAG, desde la interacción del usuario hasta la generación de una respuesta informada y contextual.
+
+\medskip
+
+	      \begin{figure}[h]
+	                	\centering
+	                	\includegraphics[width=0.8\textwidth]{rag_diagram_latex/rag_bot_secuence.png}
+	                 	\caption{Diagrama de secuencia del bot \textbf{(Figura 2)}}
+			\label{fig:diagramaBot}
+	            \end{figure}
+
+    \subsection{Preprocesamiento de los Documentos}
+        \begin{itemize}
+            \item Extracción de texto de los PDFs (bibliotecas utilizadas: PyPDF2, pdfplumber, Tesseract OCR).
+            \item Limpieza y normalización del texto (eliminación de caracteres especiales, minúsculas, lematización, etc.).
+            \item Fragmentación del texto en unidades semánticas (párrafos, secciones, etc.).
+        \end{itemize}
+
+    \subsection{Modelo de Recuperación}
+        \begin{itemize}
+            \item Selección del modelo de embeddings (Sentence Transformers, OpenAI Embeddings, otros).
+            \item Justificación de la elección del modelo.
+            \item Generación de embeddings para los fragmentos de texto.
+            \item Creación del índice de búsqueda vectorial (Faiss, Annoy, bases de datos vectoriales).
+            \item Optimización del índice.
+        \end{itemize}
+
+    \subsection{Modelo de Generación}
+         \begin{itemize}
+            \item Selección del LLM (OpenAI GPT-3.5/4, Llama, Mistral, otros).
+            \item Justificación de la elección del LLM.
+            \item Diseño del prompt para el LLM para la utilización de la información recuperada.
+         \end{itemize}
+
+
+    \subsection{Integración del Modelo de Recuperación y Generación}
+        \begin{itemize}
+            \item Descripción del proceso de recuperación de fragmentos relevantes.
+            \item Descripción del proceso de aumento de la consulta con la información recuperada.
+            \item Descripción del proceso de generación de la respuesta por parte del LLM.
+        \end{itemize}
+
+\section{Implementación del Sistema}
+
+    \subsection{Herramientas y Tecnologías Utilizadas}
+         \begin{itemize}
+             \item Bibliotecas y frameworks de Python utilizados: (Transformers, Faiss/Annoy, LangChain/LlamaIndex).
+             \item Bases de datos vectoriales utilizadas: (si aplica)
+             \item Entorno de desarrollo: (IDE, sistema operativo).
+         \end{itemize}
+
+    \subsection{Desarrollo del Pipeline de RAG}
+        \begin{itemize}
+           \item Pasos detallados para la implementación del pipeline (carga de documentos, preprocesamiento, generación de embeddings, indexación, búsqueda, generación de respuesta).
+           \item Fragmentos de código relevantes (ejemplos).
+                \begin{lstlisting}[language=Python, caption=Ejemplo de preprocesamiento]
+                    def preprocess_text(text):
+                        text = text.lower()
+                        # ... otros pasos ...
+                        return text
+                \end{lstlisting}
+         \end{itemize}
+
+   \subsection{Despliegue del Sistema (si aplica)}
+        \begin{itemize}
+            \item Descripción del entorno de despliegue (servidor, nube, etc.)
+            \item Tecnologías y herramientas utilizadas para el despliegue (Docker, etc.).
+        \end{itemize}
+
+\section{Evaluación del Sistema}
+
+    \subsection{Diseño de la Evaluación}
+        \begin{itemize}
+           \item Definición de las métricas de evaluación:
+               \begin{itemize}[label=\textbullet]
+                   \item Relevancia de los documentos recuperados.
+                   \item Precisión y calidad de las respuestas generadas.
+                   \item Fluidez y coherencia de las respuestas.
+                   \item Cobertura de las respuestas.
+                \end{itemize}
+            \item Metodología de evaluación:
+                 \begin{itemize}[label=\textbullet]
+                    \item Creación de un conjunto de datos de Ground Truth.
+                    \item Pruebas con usuarios reales.
+                 \end{itemize}
+        \end{itemize}
+
+    \subsection{Resultados de la Evaluación}
+        \begin{itemize}
+            \item Presentación de los resultados de la evaluación usando las métricas definidas.
+             \begin{itemize}[label=\textbullet]
+                 \item Presentación de los resultados de la evaluación usando las métricas definidas.
+                 \item Análisis de los puntos fuertes y débiles del sistema.
+                 \item Identificación de áreas de mejora.
+            \end{itemize}
+        \end{itemize}
+
+\section{Análisis y Discusión}
+
+    \subsection{Beneficios del Sistema RAG}
+        \begin{itemize}
+            \item Mejora del acceso a la información y la comprensión de conceptos.
+            \item Reducción del tiempo de búsqueda y solución de dudas.
+            \item Aumento de la autonomía del estudiante.
+            \item Potencial para personalizar el aprendizaje.
+        \end{itemize}
+
+    \subsection{Desafíos y Limitaciones}
+         \begin{itemize}
+            \item Dificultades técnicas encontradas durante el desarrollo.
+            \item Limitaciones del sistema RAG (comprensión de preguntas ambiguas, posibles errores en las respuestas).
+            \item Potenciales sesgos y limitaciones en el conjunto de datos y los modelos.
+            \item Recomendaciones para superar estos desafíos.
+        \end{itemize}
+
+\section{Conclusiones y Trabajo Futuro}
+
+   \subsection{Conclusiones}
+        \begin{itemize}
+            \item Resumen de los logros del proyecto.
+            \item Respuesta a los objetivos planteados.
+            \item Reflexión sobre el impacto del sistema en el proceso de aprendizaje.
+        \end{itemize}
+
+   \subsection{Trabajo Futuro}
+        \begin{itemize}
+            \item Propuestas para mejorar el sistema RAG (fine-tuning, nuevos modelos, mejorar la calidad de datos).
+            \item Posibles extensiones del sistema (integración con otras herramientas, personalización más avanzada).
+            \item Investigaciones futuras.
+        \end{itemize}
+
+\section{Anexos}
+    \subsection{Código fuente (snippets relevantes)}
+
+    \subsection{Tablas y gráficos con resultados de evaluación.}
+
+    \subsection{Glosario de términos técnicos.}
+
+    \subsection{Bibliografía y referencias.}
+
+\end{document}

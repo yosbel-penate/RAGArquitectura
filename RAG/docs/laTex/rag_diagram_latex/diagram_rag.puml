@@ -3,7 +3,6 @@
 skinparam componentStyle uml2
 skinparam monochrome true
 
-
 ' === Componentes ===
 [Usuario] as User
 component Input as "Componente de Entrada\n(Input)"
@@ -26,11 +25,4 @@ Gemini --> Generation : Respuesta
 Generation --> Output : Respuesta Generada
 Output --> User : Respuesta
 
-' === Indicaciones ===
-note left of Input : \tAcepta la consulta del\nusuario. Posible\npreprocesamiento.
-note right of Retrieval : \tRecupera documentos\nrelevantes. Incluye\nindexación y búsqueda.
-note right of Generation : \tGenera respuesta usando\nlos documentos\ny consulta + Gemini
-note left of Output : \tPresenta la respuesta al\nusuario. Posible\npostprocesamiento.
-note right of VectorStore : Almacena los embeddings y fragmentos para\nuna búsqueda semántica eficiente
-note bottom of Documents : \tArchivos, Bases de Datos,\nAPIs, etc.
 @enduml

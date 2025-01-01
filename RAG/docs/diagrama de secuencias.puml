@@ -1,0 +1,62 @@
+@startuml
+skinparam style strictuml
+skinparam ParticipantPadding 10
+skinparam BoxPadding 5
+' Aumentar el tamaño de la fuente general
+skinparam defaultFontsize 16
+
+' Ajustes para participantes
+skinparam ParticipantFontsize 16
+
+
+' Ajustes para mensajes
+skinparam ArrowFontsize 14
+
+skinparam NoteFontsize 14
+
+' Participantes abreviados
+actor User as U
+participant "Telegram Bot" as Bot
+participant "API Gateway" as GW
+participant "Back-end Service" as Svc
+participant "Vector Store" as VS
+participant "Language Model" as LM
+
+' Secuencia Principal
+' 1. Usuario inicia conversación
+U -> Bot : Mensaje del \nusuario
+activate Bot
+
+' 2. Bot envía a API
+Bot -> GW : Envía solicitud \n/process_message
+activate GW
+
+' 3. GW redirige a Servicio
+GW -> Svc : Procesa \nconsulta RAG
+activate Svc
+
+' 4. Servicio consulta Vector Store
+Svc -> VS : Busca \nfragmentos
+activate VS
+VS --> Svc : Fragmentos \nrelevantes
+deactivate VS
+
+' 5. Servicio consulta LLM
+Svc -> LM : Genera \nrespuesta
+activate LM
+LM --> Svc : Respuesta \ngenerada
+deactivate LM
+
+' 6. Servicio responde a API
+Svc --> GW : Respuesta \ngenerada
+deactivate Svc
+
+' 7. GW responde a Bot
+GW --> Bot : Respuesta \ndel modelo
+deactivate GW
+
+' 8. Bot responde a Usuario
+Bot --> U : Respuesta \nal usuario
+deactivate Bot
+
+@enduml
