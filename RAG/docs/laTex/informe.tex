@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{geometry}
+\usepackage{hyphenat} 
 \geometry{a4paper, margin=1in}
 
 \title{Implementación de un Sistema RAG para el Curso de Introducción a la Programación de la Universidad de Matanzas}
@@ -95,15 +96,15 @@ Además, los estudiantes principiantes a menudo luchan con la necesidad de respu
         \noindent En la implementación del sistema RAG para el curso de Introducción a la Programación, el preprocesamiento de los documentos constituyó una etapa importante que implicó decisiones técnicas precisas. Para la extracción de texto desde los archivos PDF, se optó inicialmente por la biblioteca PyPDF2 por su sencillez. En esencia, PyPDF2 funciona analizando la estructura interna de un archivo PDF, localizando los objetos de texto y extrayendo su contenido en forma de cadenas. Esta biblioteca resulta efectiva con archivos PDF creados desde software de edición de texto, donde el texto es una capa editable dentro del documento. Sin embargo, su principal limitación reside en su dificultad para manejar PDFs con texto dentro de imágenes o con estructuras complejas, como tablas o columnas, a diferencia de bibliotecas como pdfplumber, que abordan estos desafíos con precisión, y Tesseract OCR, especializada en el reconocimiento óptico de caracteres para PDFs escaneados. Tras la extracción, el paso siguiente se centró en la limpieza y normalización. Este proceso inició con la eliminación de caracteres especiales sin valor semántico para el texto, como símbolos o caracteres no pertenecientes al alfabeto estándar. Después, se procedió a la conversión a minúsculas para asegurar uniformidad y evitar que el sistema tratase palabras escritas de manera diferente como términos distintos. Por último, para estandarizar las palabras y reducir las variaciones lingüísticas, se aplicó un proceso de lematización, que convierte las palabras a su forma base, logrando una representación consistente del vocabulario. La fragmentación del texto se realizó mediante una técnica específica que dividió el texto en bloques de tamaño fijo con solapamiento entre ellos. A diferencia de métodos que fragmentan el texto según la estructura del documento (párrafos, secciones) o mediante unidades semánticas complejas, el enfoque de fragmentación en bloques con tamaño fijo y solapamiento tiene la ventaja de asegurar que cada fragmento contenga una cantidad predecible de información y que no se pierda contexto relevante al final de un bloque y al inicio del siguiente. El solapamiento entre los bloques, en particular, resulta fundamental para evitar que información crucial entre dos bloques sea omitida o que su contexto se pierda en el proceso; este solapamiento actúa como "ventana deslizante" que asegura que la información entre bloques siempre se considere, lo que difiere de la fragmentación por párrafos, con tamaño difícil de fijar, o la fragmentación por secciones, con fragmentos de longitud variable; sin considerar la estructura del texto, este enfoque asegura uniformidad y recuperación contextualizada, sin sesgos.
 
     \subsection{Modelo de Recuperación}
- \textbf{Selección del modelo de embeddings:} La selección del modelo de embeddings es crucial para el rendimiento del sistema de recuperación. En este proyecto, se considerará el modelo text-davinci-002, perteneciente a la familia GPT-3.5 de OpenAI, junto con embeddings de 1536 dimensiones \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+ \textbf{Selección del modelo de embeddings:} La selección del modelo de embeddings es crucial para el rendimiento del sistema de recuperación. En este proyecto, se considerará el modelo text-davinci-002, perteneciente a la familia GPT-3.5 de OpenAI, junto con embeddings de 1536 dimensiones \cite{seabra2024}.
 \medskip
- \textbf{Justificación de la elección del modelo:} text-davinci-002 se destaca por su capacidad para procesar largas secuencias de texto, manteniendo una comprensión clara del contexto \cite{seabra2024dynamicmultiagentorchestrationretrieval}. Esta característica es fundamental al trabajar con documentos extensos donde la información puede estar dispersa en varias secciones. El modelo puede rastrear el contexto de la consulta del usuario y recuperar o generar respuestas coherentes y relevantes dinámicamente \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+ \textbf{Justificación de la elección del modelo:} text-davinci-002 se destaca por su capacidad para procesar largas secuencias de texto, manteniendo una comprensión clara del contexto \cite{seabra2024}. Esta característica es fundamental al trabajar con documentos extensos donde la información puede estar dispersa en varias secciones. El modelo puede rastrear el contexto de la consulta del usuario y recuperar o generar respuestas coherentes y relevantes dinámicamente \cite{seabra2024}.
 \medskip
-La adopción de embeddings con una dimensionalidad de 1536 posibilita una representación más precisa de las intrincadas relaciones semánticas presentes en el texto, especialmente en aquellos documentos donde el significado se construye sobre sutiles distinciones en la articulación lingüística según \cite{seabra2024dynamicmultiagentorchestrationretrieval}. Esto resulta particularmente útil para diferenciar términos similares pero contextualmente diferentes, lo que permite que el sistema recupere los fragmentos más relevantes \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+La adopción de embeddings con una dimensionalidad de 1536 posibilita una representación más precisa de las intrincadas relaciones semánticas presentes en el texto, especialmente en aquellos documentos donde el significado se construye sobre sutiles distinciones en la articulación lingüística según \cite{seabra2024}. Esto resulta particularmente útil para diferenciar términos similares pero contextualmente diferentes, lo que permite que el sistema recupere los fragmentos más relevantes \cite{seabra2024}.
 \medskip
  \textbf{Generación de embeddings para los fragmentos de texto:} Una vez seleccionado el modelo, se procede a la generación de embeddings para cada fragmento de texto. Este proceso implica lo siguiente:
 \medskip
-	\begin{itemize}[label=\textbullet]
+	\begin{itemize}
 		\item Tokenización: El texto se divide en unidades más pequeñas, como palabras o frases, utilizando el modelo text-embedding-ada-002 de OpenAI \cite{Toro2023}.
 		\item Conversión a vectores: Cada token se transforma en un vector numérico que representa su significado semántico, utilizando el modelo text-embedding-ada-002 \cite{Toro2023}.
 		\item Almacenamiento de embeddings: Los vectores generados se almacenan en una base de datos vectorial, como ChromaDB \cite{Toro2023}.
@@ -114,17 +115,15 @@ La adopción de embeddings con una dimensionalidad de 1536 posibilita una repres
 \medskip
  \textbf{Optimización del índice:} ChromaDB utiliza el algoritmo de búsqueda de grafos Hierarchical Navigable Small World (HNSW) para una recuperación eficiente de los objetos coincidentes \cite{Toro2023}. Este algoritmo ofrece un buen equilibrio entre velocidad y precisión en la búsqueda de vecinos más cercanos.
 \medskip
-Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, como el número de conexiones por nodo y el tamaño de la lista de candidatos. También se puede considerar la adición de metadatos a los fragmentos de texto para una búsqueda más precisa. Por ejemplo, se pueden agregar etiquetas de tipo de documento o etiquetas de sección \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, como el número de conexiones por nodo y el tamaño de la lista de candidatos. También se puede considerar la adición de metadatos a los fragmentos de texto para una búsqueda más precisa. Por ejemplo, se pueden agregar etiquetas de tipo de documento o etiquetas de sección \cite{seabra2024}.
 
     \subsection{Modelo de Generación}
 \begin{itemize}
-    \item \textbf{Selección del LLM}
-        \begin{itemize}
-            \item Para la generación de respuestas en este proyecto, se ha seleccionado Gemini, el modelo multimodal de lenguaje desarrollado por Google.
-        \end{itemize}
+    \item \textbf{Selección del LLM:} Para la generación de respuestas en este proyecto, se ha seleccionado Gemini, el modelo multimodal de lenguaje desarrollado por Google.
+
     \item \textbf{Justificación de la elección del LLM}
          \begin{itemize}
-           \item La decisión de utilizar Gemini se basa en un análisis exhaustivo de las capacidades de diversos LLMs, incluyendo GPT-4-1106-preview, Llama 2 y Mistral. Gemini se destaca por las siguientes razones:
+           \item La decisión de utilizar Gemini se basa en un análisis de las capacidades de diversos LLMs, incluyendo GPT-4-1106-preview, Llama 2 y Mistral. Gemini se destaca por las siguientes razones:
            \begin{itemize}
              \item \textbf{Rendimiento superior:} Gemini ha demostrado un rendimiento de vanguardia en numerosos benchmarks, incluyendo MMLU, donde alcanzó un nivel de precisión comparable al de expertos humanos \cite{Manmathan2024}. Este alto rendimiento garantiza la generación de respuestas precisas y de alta calidad para las consultas de los usuarios.
             \item \textbf{Capacidades multimodales:} A diferencia de otros modelos como GPT-4, Gemini está diseñado para procesar y comprender información multimodal, incluyendo texto, imágenes y audio. Esta capacidad abre un abanico de posibilidades para integrar diferentes tipos de contenido en el chatbot y ofrecer una experiencia más rica e interactiva a los usuarios.
@@ -141,16 +140,12 @@ Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, 
                 \item \textbf{Formato de salida:} Se especificará el formato de salida deseado para la respuesta (texto plano, lista, tabla, etc.), dependiendo de la naturaleza de la consulta.
             \end{itemize}
              \item  \textbf{Ejemplo de prompt:}
-\begin{verbatim}
-Contexto: {fragmentos de texto recuperados}
 
-Pregunta: {pregunta del usuario}
-
+"Contexto: <fragmentos de texto recuperados>
+Pregunta: <pregunta del usuario>
 Instrucción: Genera una respuesta concisa y precisa a la pregunta
 del usuario utilizando la información del contexto.
-Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
-\end{verbatim}
-             \item Este diseño de prompt, junto con las capacidades avanzadas de Gemini, permitirá la creación de un chatbot que ofrece respuestas informativas, precisas y contextualmente relevantes a las consultas de los usuarios.
+Formato de salida: <texto plano, lista con viñetas, tabla, etc.>"
         \end{itemize}
 \end{itemize}
 
@@ -170,7 +165,7 @@ Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
                 \begin{itemize}
                     \item El proceso de aumento de la consulta implica combinar la consulta original del usuario con los fragmentos de texto recuperados para proporcionar un contexto más rico al LLM. El objetivo es mejorar la precisión y la relevancia de la respuesta generada.
                     \item En la conversación previa se definió un prompt para Gemini que incluye la información contextual, la pregunta del usuario y la instrucción para generar una respuesta precisa utilizando la información proporcionada. El prompt se estructura de la siguiente manera:
-\begin{verbatim}
+
 Contexto: {fragmentos de texto recuperados}
 
 Pregunta: {pregunta del usuario}
@@ -178,7 +173,7 @@ Pregunta: {pregunta del usuario}
 Instrucción: Genera una respuesta concisa y precisa a la pregunta
 del usuario utilizando la información del contexto. 
 Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
-                    \end{verbatim}
+
                      \item Al incluir los fragmentos de texto recuperados en el "Contexto" del prompt, se guía al LLM para que considere esta información al generar la respuesta, asegurando que la respuesta sea contextualmente relevante y esté respaldada por la información del corpus.
                 \end{itemize}
             \item \textbf{Descripción del proceso de generación de la respuesta por parte del LLM.}
@@ -195,48 +190,100 @@ Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
 
 \section{Implementación del Sistema}
 
-    \subsection{Herramientas y Tecnologías Utilizadas}
-         \begin{itemize}
-             \item Bibliotecas y frameworks de Python utilizados: (Transformers, Faiss/Annoy, LangChain/LlamaIndex).
-             \item Bases de datos vectoriales utilizadas: (si aplica)
-             \item Entorno de desarrollo: (IDE, sistema operativo).
-         \end{itemize}
+\subsection{Herramientas y Tecnologías Utilizadas}
+\medskip
+\textbf{Bibliotecas y frameworks de Python utilizados:} La implementación del sistema requirió el uso de Python, núcleo del proyecto, junto a bibliotecas y frameworks específicos. La biblioteca `google-ai-generativelanguage` facilitó la comunicación con el modelo Gemini, gestionando prompts y respuestas. `huggingface-hub` proporcionó acceso a modelos pre-entrenados y recursos de la comunidad PLN. El framework `Flask` se empleó para construir la API web y la interfaz de la aplicación, permitiendo la interacción con el sistema.  Para la integración con la plataforma de mensajería Telegram se utilizó `python-telegram-bot`, que simplificó el proceso de creación del bot y facilitó la comunicación con los usuarios en dicho canal. El uso de estas herramientas refleja un enfoque modular en el diseño, donde cada componente específico del sistema se beneficia de la funcionalidad que proporcionan estas bibliotecas, y facilitó el desarrollo y la escalabilidad del sistema. La selección de estas herramientas consideró su capacidad para simplificar el desarrollo y acelerar la implementación del sistema RAG. Estas bibliotecas demostraron ser eficientes para realizar tareas específicas en un entorno científico.
+
+\medskip
+\textbf{Bases de datos vectoriales utilizadas:} Para el almacenamiento y búsqueda de representaciones vectoriales de texto, se implementó `chromadb`, una base de datos vectorial eficiente en la recuperación semántica. ChromaDB permite almacenar y consultar representaciones vectoriales, lo que resulta esencial para sistemas de búsqueda basados en la similitud semántica. La selección de esta base de datos se basó en su facilidad de uso, su integración con Python, su licencia de código abierto y su eficiencia en la gestión de datos vectoriales. La API de ChromaDB permitió una rápida implementación, facilitando el indexado de los embeddings generados a partir del corpus de texto, lo que a su vez permitió una búsqueda eficiente. La escalabilidad de ChromaDB hace posible la manipulación de grandes volúmenes de datos vectoriales, garantizando la eficiencia del sistema en el procesamiento de un creciente corpus. Su documentación resultó relevante durante la implementación, siendo fundamental para comprender y aplicar los mecanismos de la base de datos en la tarea de recuperación de información. Esta herramienta sirvió como componente central para la funcionalidad de recuperación, permitiendo búsquedas rápidas y relevantes a las consultas.
+
+\medskip
+\textbf{Entorno de desarrollo:} La gestión y el versionado del código se realizaron en `vscode`, un entorno de desarrollo integrado en el sistema operativo `Windows 11 Pro`. Visual Studio Code, fue elegido por su versatilidad y su soporte para la manipulación y la depuración del código. La selección de este IDE se fundamentó en su amplio conjunto de extensiones, las cuales ofrecieron soporte para diversos lenguajes, frameworks y herramientas útiles para el desarrollo del sistema RAG. La integración de VS Code con el sistema de control de versiones Git facilitó el registro y la gestión de cambios en el código, promoviendo la colaboración en el desarrollo del sistema. La versión Pro del sistema operativo Windows 11 facilitó la compatibilidad con bibliotecas, frameworks y herramientas necesarias durante el proceso de implementación. La elección de este entorno permitió un flujo de trabajo adecuado para la escritura, versionado, manipulación y procesamiento del código, junto a herramientas para la gestión del proyecto y el despliegue del sistema. Este entorno de trabajo facilitó el desarrollo del proyecto.
 
     \subsection{Desarrollo del Pipeline de RAG}
-        \begin{itemize}
-           \item Pasos detallados para la implementación del pipeline (carga de documentos, preprocesamiento, generación de embeddings, indexación, búsqueda, generación de respuesta).
-           \item Fragmentos de código relevantes (ejemplos).
-                \begin{lstlisting}[language=Python, caption=Ejemplo de preprocesamiento]
-                    def preprocess_text(text):
-                        text = text.lower()
-                        # ... otros pasos ...
-                        return text
-                \end{lstlisting}
-         \end{itemize}
+ 
+\textbf{Pasos detallados para la implementación del pipeline:}
+    \begin{itemize}
+        \item \textbf{Carga de Documentos:} Inicialmente, el sistema carga los documentos desde las fuentes establecidas (PDFs). Se emplean bibliotecas como PyPDF2, pdfplumber, o Tesseract OCR, según la naturaleza del documento, para extraer el contenido textual. Esta etapa implica el análisis de la estructura del documento y la recuperación del texto en formato adecuado para su posterior procesamiento.
+        \item \textbf{Preprocesamiento:} El texto extraído se somete a una serie de pasos de preprocesamiento, como la conversión a minúsculas, la eliminación de caracteres especiales y la lematización. Estas transformaciones buscan uniformizar el texto y reducir el ruido, facilitando la posterior indexación y recuperación de la información.
+ 	\item \textbf{Fragmentación del Texto:} Después del preprocesamiento, el texto se divide en fragmentos de tamaño fijo con solapamiento fijo. Los valores exactos del tamaño del fragmento y el solapamiento se determinan empíricamente, basándose en pruebas y experimentación con el objetivo de optimizar la coherencia de la información recuperada. Esta técnica garantiza una cantidad predecible de información en cada fragmento, permitiendo que la recuperación sea precisa y contextual.         
+	\item \textbf{Generación de Embeddings:}  Una vez preprocesado, el texto se convierte en representaciones vectoriales, conocidas como embeddings.  Para ello, se emplea un modelo específico, en este caso, se recurrió al modelo predeterminado de ChromaDB, que transforma el texto en vectores que capturan su significado semántico. Estos embeddings permiten comparar textos en función de su similitud semántica.
+        \item \textbf{Indexación:}  Los vectores resultantes se indexan en una base de datos vectorial, ChromaDB, para la búsqueda rápida y eficiente. Esta base de datos permite encontrar los fragmentos de texto más relevantes para una consulta, usando la similitud vectorial. La indexación requiere la organización de los embeddings en una estructura de datos que facilite la búsqueda rápida, y eficiente a través de algoritmos de vecinos próximos aproximados (ANN).
+        \item \textbf{Búsqueda:} Al recibir la consulta de un usuario, se repiten los pasos de preprocesamiento y generación de embeddings, y se realiza una búsqueda en el índice para encontrar los fragmentos de texto más relevantes. La búsqueda emplea la similitud del coseno para comparar la consulta con los fragmentos indexados.
+         \item \textbf{Generación de Respuesta:} Finalmente, los fragmentos de texto recuperados se incorporan a un prompt, junto con la consulta original del usuario, para que Gemini genere una respuesta coherente, precisa y contextualmente relevante. El prompt también puede incluir instrucciones para el formato de la respuesta (texto plano, lista, tabla, etc.).
+\end{itemize}
 
-   \subsection{Despliegue del Sistema (si aplica)}
-        \begin{itemize}
-            \item Descripción del entorno de despliegue (servidor, nube, etc.)
-            \item Tecnologías y herramientas utilizadas para el despliegue (Docker, etc.).
-        \end{itemize}
 
 \section{Evaluación del Sistema}
 
     \subsection{Diseño de la Evaluación}
+
+\textbf{Definición de las métricas de evaluación}
+
+\noindent Para evaluar la eficacia del sistema de chatbot, se utilizarán las siguientes métricas:
+
+\begin{itemize}
+    \item \textbf{Relevancia de los documentos recuperados:}
         \begin{itemize}
-           \item Definición de las métricas de evaluación:
-               \begin{itemize}[label=\textbullet]
-                   \item Relevancia de los documentos recuperados.
-                   \item Precisión y calidad de las respuestas generadas.
-                   \item Fluidez y coherencia de las respuestas.
-                   \item Cobertura de las respuestas.
-                \end{itemize}
-            \item Metodología de evaluación:
-                 \begin{itemize}[label=\textbullet]
-                    \item Creación de un conjunto de datos de Ground Truth.
-                    \item Pruebas con usuarios reales.
-                 \end{itemize}
+            \item \textit{Precisión:} Se medirá la proporción de documentos recuperados que son realmente relevantes para la consulta del usuario.\cite{Radeva2024}
+            \item \textit{Exhaustividad:} Se evaluará la capacidad del sistema para recuperar todos los documentos relevantes del corpus.\cite{Radeva2024}
         \end{itemize}
+    \item \textbf{Precisión y calidad de las respuestas generadas:}
+        \begin{itemize}
+            \item \textit{Exactitud:} Se determinará si las respuestas generadas por el LLM son factualmente correctas y están alineadas con la información proporcionada en los documentos recuperados.\cite{Radeva2024}\cite{Morales2024}
+            \item \textit{Completitud:} Se evaluará si las respuestas proporcionan toda la información relevante para la consulta del usuario.\cite{Radeva2024}
+        \end{itemize}
+    \item \textbf{Fluidez y coherencia de las respuestas:}
+        \begin{itemize}
+            \item \textit{Gramaticalidad:} Se verificará que las respuestas estén bien formadas gramaticalmente y sintácticamente.\cite{Radeva2024}
+             \item \textit{Cohesión:} Se evaluará la fluidez del lenguaje y la conexión lógica entre las oraciones de la respuesta.\cite{Radeva2024}
+        \end{itemize}
+    \item \textbf{Cobertura de las respuestas:} Se analizará la capacidad del sistema para responder a una amplia gama de preguntas y temas dentro del dominio de conocimiento.\cite{Radeva2024}
+\end{itemize}
+
+
+\textbf{Métricas específicas}
+
+\noindent Se utilizarán las siguientes métricas específicas:
+
+\begin{itemize}
+   \item METEOR: Evalúa la fluidez y la adecuación de la respuesta generada, considerando la sinonimia y la paráfrasis.\cite{Radeva2024}
+   \item ROUGE: Mide el grado de solapamiento entre la respuesta generada y las respuestas de referencia, evaluando la exhaustividad, la precisión y la puntuación F1.\cite{Radeva2024}
+   \item BLEU: Cuantifica la similitud entre la respuesta generada y las respuestas de referencia, analizando la presencia de n-gramas compartidos.\cite{Radeva2024}
+    \item Perplejidad (PPL): Evalúa la capacidad del modelo lingüístico para predecir la siguiente palabra en una secuencia, lo que indica la fluidez y la naturalidad de la respuesta.\cite{Radeva2024}
+   \item Similitud del coseno: Mide la similitud semántica entre la consulta del usuario y los documentos recuperados, lo que permite evaluar la relevancia de los resultados de la búsqueda.\cite{Radeva2024}
+  \item Puntuación F1: Combina la precisión y la exhaustividad para proporcionar una medida general del rendimiento del sistema en la recuperación de información.\cite{Radeva2024}
+\end{itemize}
+
+\textbf{Herramientas de evaluación}
+
+\noindent Se utilizarán las siguientes herramientas para la evaluación:
+
+\begin{itemize}
+    \item ChromaDB: Se utilizará para la búsqueda semántica y la evaluación de la similitud del coseno.\cite{Morales2024} \cite{Herwanza2024}
+    \item LangChain: Proporcionará herramientas para la tokenización, el embedding y la evaluación de las respuestas generadas.\cite{Ong2024} \cite{Morales2024} \cite{Herwanza2024}
+\end{itemize}
+
+\textbf{Aspectos adicionales a considerar}
+
+\noindent  Además, se considerarán los siguientes aspectos:
+
+\begin{itemize}
+    \item Facilidad de uso: Se evaluará la interfaz de usuario del chatbot para determinar su facilidad de uso e intuitividad.
+    \item Tiempo de respuesta: Se medirá el tiempo que tarda el sistema en generar una respuesta, teniendo en cuenta la eficiencia del proceso de recuperación y generación.
+    \item Robustez: Se analizará la capacidad del sistema para manejar consultas complejas o ambiguas, así como errores en la entrada del usuario.
+\end{itemize}
+
+\noindent La evaluación del sistema se lleva a cabo con la participación de usuarios reales, que interactuan con el chatbot y proporcionan retroalimentación sobre su experiencia. Los resultados de la evaluación se utilizan para mejorar el sistema de chatbot y garantizar que satisfaga las necesidades de los usuarios.
+
+\medskip
+ \begin{samepage}
+\textbf{Metodología de evaluación:}	
+                 \begin{itemize}
+                    \item  \textit{Creación de un conjunto de datos de Ground Truth:} La metodología de evaluación se sustenta en dos pilares fundamentales: la creación de un conjunto de datos de Ground Truth y las pruebas con usuarios reales. La creación de un conjunto de datos de Ground Truth es esencial para medir la precisión y relevancia de las respuestas generadas por el sistema RAG. Este conjunto de datos se construye con preguntas, respuestas ideales y los documentos de referencia correspondientes, permitiendo una comparación objetiva del rendimiento del sistema. Esta etapa asegura que las métricas de evaluación se calculen a partir de una base sólida de información verificada, que sirva como una base para la evaluación cuantitativa del sistema.
+                    \item  \textit{Pruebas con usuarios reales:} Las pruebas con usuarios reales son indispensables para evaluar la utilidad y la usabilidad del sistema RAG en un entorno de uso real. A través de estas pruebas, los usuarios interactuarán con el chatbot, formulando preguntas y evaluando la relevancia, precisión y calidad de las respuestas generadas. Esta etapa permite identificar aspectos de mejora que podrían no ser evidentes en una evaluación basada únicamente en datos, además de proporcionar un feedback cualitativo sobre la experiencia de usuario. La combinación de ambas aproximaciones asegura una evaluación rigurosa y exhaustiva del sistema RAG.
+                 \end{itemize}
+ \end{samepage}
 
     \subsection{Resultados de la Evaluación}
         \begin{itemize}
