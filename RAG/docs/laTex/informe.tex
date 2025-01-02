@@ -117,11 +117,41 @@ La adopción de embeddings con una dimensionalidad de 1536 posibilita una repres
 Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, como el número de conexiones por nodo y el tamaño de la lista de candidatos. También se puede considerar la adición de metadatos a los fragmentos de texto para una búsqueda más precisa. Por ejemplo, se pueden agregar etiquetas de tipo de documento o etiquetas de sección \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
 
     \subsection{Modelo de Generación}
+\begin{itemize}
+    \item \textbf{Selección del LLM}
+        \begin{itemize}
+            \item Para la generación de respuestas en este proyecto, se ha seleccionado Gemini, el modelo multimodal de lenguaje desarrollado por Google.
+        \end{itemize}
+    \item \textbf{Justificación de la elección del LLM}
          \begin{itemize}
-            \item Selección del LLM (OpenAI GPT-3.5/4, Llama, Mistral, otros).
-            \item Justificación de la elección del LLM.
-            \item Diseño del prompt para el LLM para la utilización de la información recuperada.
+           \item La decisión de utilizar Gemini se basa en un análisis exhaustivo de las capacidades de diversos LLMs, incluyendo GPT-4-1106-preview, Llama 2 y Mistral. Gemini se destaca por las siguientes razones:
+           \begin{itemize}
+             \item \textbf{Rendimiento superior:} Gemini ha demostrado un rendimiento de vanguardia en numerosos benchmarks, incluyendo MMLU, donde alcanzó un nivel de precisión comparable al de expertos humanos \cite{Manmathan2024}. Este alto rendimiento garantiza la generación de respuestas precisas y de alta calidad para las consultas de los usuarios.
+            \item \textbf{Capacidades multimodales:} A diferencia de otros modelos como GPT-4, Gemini está diseñado para procesar y comprender información multimodal, incluyendo texto, imágenes y audio. Esta capacidad abre un abanico de posibilidades para integrar diferentes tipos de contenido en el chatbot y ofrecer una experiencia más rica e interactiva a los usuarios.
+            \item \textbf{Precisión en tareas clave:} Las fuentes destacan que Gemini presenta una precisión superior al 94\% en la generación de preguntas y la evaluación de respuestas \cite{Manmathan2024}, dos funcionalidades cruciales para un chatbot efectivo. Esta precisión asegura la creación de preguntas relevantes y la evaluación precisa de las respuestas proporcionadas por los usuarios.
+          \end{itemize}
+          \item Si bien la integración con LangChain para Gemini aún necesita ser verificada, su potencial en términos de rendimiento y capacidades multimodales lo convierten en la mejor opción para este proyecto.
          \end{itemize}
+    \item \textbf{Diseño del prompt para el LLM para la utilización de la información recuperada.}
+        \begin{itemize}
+            \item El diseño del prompt para Gemini se enfoca en proporcionar al modelo la información necesaria para generar respuestas relevantes y precisas a las consultas de los usuarios. El prompt incluirá:
+            \begin{itemize}
+                \item \textbf{Información contextual:} Se proporcionarán los fragmentos de texto recuperados mediante la búsqueda semántica, ofreciendo a Gemini el contexto necesario para comprender la consulta del usuario.
+                \item \textbf{Instrucción clara:} Se indicará a Gemini que genere una respuesta concisa y precisa que responda directamente a la pregunta del usuario, utilizando la información contextual proporcionada.
+                \item \textbf{Formato de salida:} Se especificará el formato de salida deseado para la respuesta (texto plano, lista, tabla, etc.), dependiendo de la naturaleza de la consulta.
+            \end{itemize}
+             \item  \textbf{Ejemplo de prompt:}
+             \begin{verbatim}
+                Contexto: {fragmentos de texto recuperados}
+
+                Pregunta: {pregunta del usuario}
+
+                Instrucción: Genera una respuesta concisa y precisa a la pregunta del usuario utilizando la información del contexto.
+                Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
+             \end{verbatim}
+             \item Este diseño de prompt, junto con las capacidades avanzadas de Gemini, permitirá la creación de un chatbot que ofrece respuestas informativas, precisas y contextualmente relevantes a las consultas de los usuarios.
+        \end{itemize}
+\end{itemize}
 
 
     \subsection{Integración del Modelo de Recuperación y Generación}
