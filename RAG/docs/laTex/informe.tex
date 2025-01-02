@@ -92,20 +92,29 @@ Además, los estudiantes principiantes a menudo luchan con la necesidad de respu
 	            \end{figure}
 
     \subsection{Preprocesamiento de los Documentos}
-        \begin{itemize}
-            \item Extracción de texto de los PDFs (bibliotecas utilizadas: PyPDF2, pdfplumber, Tesseract OCR).
-            \item Limpieza y normalización del texto (eliminación de caracteres especiales, minúsculas, lematización, etc.).
-            \item Fragmentación del texto en unidades semánticas (párrafos, secciones, etc.).
-        \end{itemize}
+        \noindent En la implementación del sistema RAG para el curso de Introducción a la Programación, el preprocesamiento de los documentos constituyó una etapa importante que implicó decisiones técnicas precisas. Para la extracción de texto desde los archivos PDF, se optó inicialmente por la biblioteca PyPDF2 por su sencillez. En esencia, PyPDF2 funciona analizando la estructura interna de un archivo PDF, localizando los objetos de texto y extrayendo su contenido en forma de cadenas. Esta biblioteca resulta efectiva con archivos PDF creados desde software de edición de texto, donde el texto es una capa editable dentro del documento. Sin embargo, su principal limitación reside en su dificultad para manejar PDFs con texto dentro de imágenes o con estructuras complejas, como tablas o columnas, a diferencia de bibliotecas como pdfplumber, que abordan estos desafíos con precisión, y Tesseract OCR, especializada en el reconocimiento óptico de caracteres para PDFs escaneados. Tras la extracción, el paso siguiente se centró en la limpieza y normalización. Este proceso inició con la eliminación de caracteres especiales sin valor semántico para el texto, como símbolos o caracteres no pertenecientes al alfabeto estándar. Después, se procedió a la conversión a minúsculas para asegurar uniformidad y evitar que el sistema tratase palabras escritas de manera diferente como términos distintos. Por último, para estandarizar las palabras y reducir las variaciones lingüísticas, se aplicó un proceso de lematización, que convierte las palabras a su forma base, logrando una representación consistente del vocabulario. La fragmentación del texto se realizó mediante una técnica específica que dividió el texto en bloques de tamaño fijo con solapamiento entre ellos. A diferencia de métodos que fragmentan el texto según la estructura del documento (párrafos, secciones) o mediante unidades semánticas complejas, el enfoque de fragmentación en bloques con tamaño fijo y solapamiento tiene la ventaja de asegurar que cada fragmento contenga una cantidad predecible de información y que no se pierda contexto relevante al final de un bloque y al inicio del siguiente. El solapamiento entre los bloques, en particular, resulta fundamental para evitar que información crucial entre dos bloques sea omitida o que su contexto se pierda en el proceso; este solapamiento actúa como "ventana deslizante" que asegura que la información entre bloques siempre se considere, lo que difiere de la fragmentación por párrafos, con tamaño difícil de fijar, o la fragmentación por secciones, con fragmentos de longitud variable; sin considerar la estructura del texto, este enfoque asegura uniformidad y recuperación contextualizada, sin sesgos.
 
     \subsection{Modelo de Recuperación}
-        \begin{itemize}
-            \item Selección del modelo de embeddings (Sentence Transformers, OpenAI Embeddings, otros).
-            \item Justificación de la elección del modelo.
-            \item Generación de embeddings para los fragmentos de texto.
-            \item Creación del índice de búsqueda vectorial (Faiss, Annoy, bases de datos vectoriales).
-            \item Optimización del índice.
-        \end{itemize}
+ \textbf{Selección del modelo de embeddings:} La selección del modelo de embeddings es crucial para el rendimiento del sistema de recuperación. En este proyecto, se considerará el modelo text-davinci-002, perteneciente a la familia GPT-3.5 de OpenAI, junto con embeddings de 1536 dimensiones \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+\medskip
+ \textbf{Justificación de la elección del modelo:} text-davinci-002 se destaca por su capacidad para procesar largas secuencias de texto, manteniendo una comprensión clara del contexto \cite{seabra2024dynamicmultiagentorchestrationretrieval}. Esta característica es fundamental al trabajar con documentos extensos donde la información puede estar dispersa en varias secciones. El modelo puede rastrear el contexto de la consulta del usuario y recuperar o generar respuestas coherentes y relevantes dinámicamente \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+\medskip
+La adopción de embeddings con una dimensionalidad de 1536 posibilita una representación más precisa de las intrincadas relaciones semánticas presentes en el texto, especialmente en aquellos documentos donde el significado se construye sobre sutiles distinciones en la articulación lingüística según \cite{seabra2024dynamicmultiagentorchestrationretrieval}. Esto resulta particularmente útil para diferenciar términos similares pero contextualmente diferentes, lo que permite que el sistema recupere los fragmentos más relevantes \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+\medskip
+ \textbf{Generación de embeddings para los fragmentos de texto:} Una vez seleccionado el modelo, se procede a la generación de embeddings para cada fragmento de texto. Este proceso implica lo siguiente:
+\medskip
+	\begin{itemize}[label=\textbullet]
+		\item Tokenización: El texto se divide en unidades más pequeñas, como palabras o frases, utilizando el modelo text-embedding-ada-002 de OpenAI \cite{Toro2023}.
+		\item Conversión a vectores: Cada token se transforma en un vector numérico que representa su significado semántico, utilizando el modelo text-embedding-ada-002 \cite{Toro2023}.
+		\item Almacenamiento de embeddings: Los vectores generados se almacenan en una base de datos vectorial, como ChromaDB \cite{Toro2023}.
+ 	\end{itemize}
+\medskip
+\textbf{Creación del índice de búsqueda vectorial:} Para una búsqueda eficiente de los embeddings, se creará un índice de búsqueda vectorial utilizando ChromaDB \cite{Toro2023}. Esta base de datos de código abierto se caracteriza por su simplicidad y estrecha integración con flujos de trabajo de aprendizaje automático, lo que la hace ideal para tareas de recuperación basadas en embeddings en proyectos de investigación y de menor escala \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
+	
+\medskip
+ \textbf{Optimización del índice:} ChromaDB utiliza el algoritmo de búsqueda de grafos Hierarchical Navigable Small World (HNSW) para una recuperación eficiente de los objetos coincidentes \cite{Toro2023}. Este algoritmo ofrece un buen equilibrio entre velocidad y precisión en la búsqueda de vecinos más cercanos.
+\medskip
+Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, como el número de conexiones por nodo y el tamaño de la lista de candidatos. También se puede considerar la adición de metadatos a los fragmentos de texto para una búsqueda más precisa. Por ejemplo, se pueden agregar etiquetas de tipo de documento o etiquetas de sección \cite{seabra2024dynamicmultiagentorchestrationretrieval}.
 
     \subsection{Modelo de Generación}
          \begin{itemize}
@@ -219,5 +228,8 @@ Además, los estudiantes principiantes a menudo luchan con la necesidad de respu
     \subsection{Glosario de términos técnicos.}
 
     \subsection{Bibliografía y referencias.}
+
+\bibliographystyle{plain}
+\bibliography{citation}
 
 \end{document}
