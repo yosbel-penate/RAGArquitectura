@@ -141,24 +141,56 @@ Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, 
                 \item \textbf{Formato de salida:} Se especificará el formato de salida deseado para la respuesta (texto plano, lista, tabla, etc.), dependiendo de la naturaleza de la consulta.
             \end{itemize}
              \item  \textbf{Ejemplo de prompt:}
-             \begin{verbatim}
-                Contexto: {fragmentos de texto recuperados}
+\begin{verbatim}
+Contexto: {fragmentos de texto recuperados}
 
-                Pregunta: {pregunta del usuario}
+Pregunta: {pregunta del usuario}
 
-                Instrucción: Genera una respuesta concisa y precisa a la pregunta del usuario utilizando la información del contexto.
-                Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
-             \end{verbatim}
+Instrucción: Genera una respuesta concisa y precisa a la pregunta
+del usuario utilizando la información del contexto.
+Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
+\end{verbatim}
              \item Este diseño de prompt, junto con las capacidades avanzadas de Gemini, permitirá la creación de un chatbot que ofrece respuestas informativas, precisas y contextualmente relevantes a las consultas de los usuarios.
         \end{itemize}
 \end{itemize}
 
 
-    \subsection{Integración del Modelo de Recuperación y Generación}
+\subsection{Integración del Modelo de Recuperación y Generación}
         \begin{itemize}
-            \item Descripción del proceso de recuperación de fragmentos relevantes.
-            \item Descripción del proceso de aumento de la consulta con la información recuperada.
-            \item Descripción del proceso de generación de la respuesta por parte del LLM.
+            \item \textbf{Descripción del proceso de recuperación de fragmentos relevantes.}
+                \begin{itemize}
+                    \item El proceso de recuperación de fragmentos relevantes se basa en la técnica de búsqueda semántica. Esta técnica permite encontrar información relevante en un corpus de documentos, incluso si no hay una coincidencia exacta de palabras clave. El proceso se puede describir en los siguientes pasos:
+                      \begin{enumerate}
+                        \item Tokenización y embedding de la consulta: La consulta del usuario se tokeniza, es decir, se divide en palabras o frases individuales. Luego, se utiliza un modelo de embedding, como text-embedding-3-large de OpenAI, para convertir cada token en una representación vectorial \cite{Herwanza2024}.
+                        \item Búsqueda de similitud en la base de datos vectorial: La representación vectorial de la consulta se compara con las representaciones vectoriales de los fragmentos de texto almacenados en una base de datos vectorial, como ChromaDB \cite{Mamalis2024} \cite{Jeong2023} \cite{Keith2024}. Se utilizan algoritmos de búsqueda de vecinos próximos aproximados (ANN) para encontrar los fragmentos de texto más similares a la consulta.\cite{Herwanza2024}
+                        \item Clasificación de los resultados: Los fragmentos de texto más similares se clasifican según su puntuación de similitud, calculada mediante la similitud del coseno\cite{Herwanza2024}. Esto garantiza que los fragmentos más relevantes se presenten primero al LLM.\cite{Herwanza2024}
+                      \end{enumerate}
+                \end{itemize}
+            \item \textbf{Descripción del proceso de aumento de la consulta con la información recuperada.}
+                \begin{itemize}
+                    \item El proceso de aumento de la consulta implica combinar la consulta original del usuario con los fragmentos de texto recuperados para proporcionar un contexto más rico al LLM. El objetivo es mejorar la precisión y la relevancia de la respuesta generada.
+                    \item En la conversación previa se definió un prompt para Gemini que incluye la información contextual, la pregunta del usuario y la instrucción para generar una respuesta precisa utilizando la información proporcionada. El prompt se estructura de la siguiente manera:
+\begin{verbatim}
+Contexto: {fragmentos de texto recuperados}
+
+Pregunta: {pregunta del usuario}
+
+Instrucción: Genera una respuesta concisa y precisa a la pregunta
+del usuario utilizando la información del contexto. 
+Formato de salida: {texto plano, lista con viñetas, tabla, etc.}
+                    \end{verbatim}
+                     \item Al incluir los fragmentos de texto recuperados en el "Contexto" del prompt, se guía al LLM para que considere esta información al generar la respuesta, asegurando que la respuesta sea contextualmente relevante y esté respaldada por la información del corpus.
+                \end{itemize}
+            \item \textbf{Descripción del proceso de generación de la respuesta por parte del LLM.}
+                \begin{itemize}
+                    \item El LLM, en este caso Gemini, recibe el prompt aumentado con la información recuperada y genera una respuesta en lenguaje natural. El proceso de generación de la respuesta es el siguiente:
+                       \begin{enumerate}
+                         \item Codificación del prompt: Gemini procesa el prompt y lo codifica en una representación interna.
+                        \item Generación de texto: Utilizando su conocimiento del lenguaje y la información contextual del prompt, Gemini genera una respuesta palabra por palabra, prediciendo la siguiente palabra más probable en función del contexto.
+                        \item Decodificación y formateo de la respuesta: La respuesta generada se decodifica y se formatea según las instrucciones del prompt, ya sea como texto plano, una lista con viñetas o una tabla.
+                       \end{enumerate}
+                    \item El resultado final es una respuesta que combina el conocimiento general del LLM con la información específica recuperada del corpus de documentos, proporcionando una respuesta precisa, relevante y contextualmente apropiada a la consulta del usuario.
+                \end{itemize}
         \end{itemize}
 
 \section{Implementación del Sistema}
