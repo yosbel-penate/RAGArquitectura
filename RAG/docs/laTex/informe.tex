@@ -96,10 +96,13 @@ Además, los estudiantes principiantes a menudo luchan con la necesidad de respu
 
     \subsection{Modelo de Recuperación}
 \textbf{Selección del modelo de embeddings:} La selección del modelo de embeddings es crucial para el rendimiento del sistema de recuperación. En este proyecto, se considerará el modelo text-davinci-002, perteneciente a la familia GPT-3.5 de OpenAI, junto con embeddings de 1536 dimensiones \cite{seabra2024}.
+
 \medskip
 \textbf{Justificación de la elección del modelo:} text-davinci-002 se destaca por su capacidad para procesar largas secuencias de texto, manteniendo una comprensión clara del contexto \cite{seabra2024}. Esta característica es fundamental al trabajar con documentos extensos donde la información puede estar dispersa en varias secciones. El modelo puede rastrear el contexto de la consulta del usuario y recuperar o generar respuestas coherentes y relevantes dinámicamente \cite{seabra2024}.
+
 \medskip
 La adopción de embeddings con una dimensionalidad de 1536 posibilita una representación más precisa de las intrincadas relaciones semánticas presentes en el texto, especialmente en aquellos documentos donde el significado se construye sobre sutiles distinciones en la articulación lingüística según \cite{seabra2024}. Esto resulta particularmente útil para diferenciar términos similares pero contextualmente diferentes, lo que permite que el sistema recupere los fragmentos más relevantes \cite{seabra2024}.
+
 \medskip
 \textbf{Generación de embeddings para los fragmentos de texto:} Una vez seleccionado el modelo, se procede a la generación de embeddings para cada fragmento de texto. Este proceso implica lo siguiente:
 \medskip
@@ -108,10 +111,13 @@ La adopción de embeddings con una dimensionalidad de 1536 posibilita una repres
 	\item Conversión a vectores: Cada token se transforma en un vector numérico que representa su significado semántico, utilizando el modelo text-embedding-ada-002 \cite{Toro2023}.
 	\item Almacenamiento de embeddings: Los vectores generados se almacenan en una base de datos vectorial, como ChromaDB \cite{Toro2023}.
 \end{itemize}
+
 \medskip
 \textbf{Creación del índice de búsqueda vectorial:} Para una búsqueda eficiente de los embeddings, se creará un índice de búsqueda vectorial utilizando ChromaDB \cite{Toro2023}. Esta base de datos de código abierto se caracteriza por su simplicidad y estrecha integración con flujos de trabajo de aprendizaje automático, lo que la hace ideal para tareas de recuperación basadas en embeddings en proyectos de investigación y de menor escala \cite{seabra2024}.
+
 \medskip
 \textbf{Optimización del índice:} ChromaDB utiliza el algoritmo de búsqueda de grafos Hierarchical Navigable Small World (HNSW) para una recuperación eficiente de los objetos coincidentes \cite{Toro2023}. Este algoritmo ofrece un buen equilibrio entre velocidad y precisión en la búsqueda de vecinos más cercanos.
+
 \medskip
 Para optimizar aún más el índice, se pueden ajustar los parámetros de HNSW, como el número de conexiones por nodo y el tamaño de la lista de candidatos. También se puede considerar la adición de metadatos a los fragmentos de texto para una búsqueda más precisa. Por ejemplo, se pueden agregar etiquetas de tipo de documento o etiquetas de sección \cite{seabra2024}.
 
