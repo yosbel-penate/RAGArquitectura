@@ -1,5 +1,4 @@
-Okay, aquí tienes la información organizada de la presentación sobre "Bifurcaciones o Sentencias Condicionales", incluyendo la información de cada diapositiva, su número de página y una descripción detallada en español:
-
+**Tema II Introducción al lenguaje de programación Java
 **Presentación: Bifurcaciones o Sentencias Condicionales**
 
 **1. Diapositiva: Título (Página 1)**
@@ -328,5 +327,3 @@ Okay, aquí tienes la información organizada de la presentación sobre "Bifurca
     *   Lema: cosechando el saber.
     *   Texto: FIN.
 *   **Descripción:** Esta es la diapositiva final, indicando el **cierre** de la presentación.
-
-Este resumen detallado debería proporcionarte una visión clara y completa de la presentación, incluyendo su contenido, organización y la información clave de cada diapositiva. ¡Espero que te sea de gran utilidad!

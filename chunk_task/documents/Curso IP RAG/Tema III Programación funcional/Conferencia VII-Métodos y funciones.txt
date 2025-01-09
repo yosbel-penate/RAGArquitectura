@@ -1,5 +1,4 @@
-Okay, here's the organized content of the presentation on "Métodos y Funciones", including the slide number, page number, and a detailed description in Spanish for each slide:
-
+**Tema III Programación funcional
 **Presentación: Métodos y Funciones**
 
 **1. Diapositiva: Título (Página 1)**
@@ -299,5 +298,3 @@ Okay, here's the organized content of the presentation on "Métodos y Funciones"
     *   Lema: cosechando el saber.
     *   Texto: FIN.
 *   **Descripción:** Esta es la diapositiva final, indicando el **cierre de la presentación**.
-
-Espero que esta descripción detallada te sea útil. Si tienes alguna otra pregunta, no dudes en consultarme.

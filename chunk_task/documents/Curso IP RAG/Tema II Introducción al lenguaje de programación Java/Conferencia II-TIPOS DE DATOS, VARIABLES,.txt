@@ -1,5 +1,4 @@
-¡Claro! Aquí tienes las descripciones de cada diapositiva en español, organizadas de manera clara y concisa:
-
+**Tema II Introducción al lenguaje de programación Java
 **Presentación: Tipos de Datos, Variables, Constantes, Identificadores**
 
 **Diapositiva 1: Título**
@@ -115,5 +114,3 @@
 
 **Diapositiva 38: Fin**
 *   **Página 38:** Es la diapositiva de **cierre**, con el logo de la Universidad y el lema "cosechando el saber".
-
-Espero que esta descripción detallada te sea útil. ¡Avísame si necesitas algo más!

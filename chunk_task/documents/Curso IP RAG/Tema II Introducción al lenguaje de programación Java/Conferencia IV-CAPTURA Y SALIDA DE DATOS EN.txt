@@ -1,5 +1,4 @@
-Okay, here's the organized content of the presentation "Captura y Salida de Datos en Java (Teclado y Pantalla)", including the slide number, page number, and a detailed description in Spanish for each slide:
-
+**Tema II Introducción al lenguaje de programación Java
 **Presentación: Captura y Salida de Datos en Java (Teclado y Pantalla)**
 
 **1. Diapositiva: Título (Página 1)**
@@ -261,5 +260,3 @@ Okay, here's the organized content of the presentation "Captura y Salida de Dato
     *   Lema: cosechando el saber.
     *   Texto: FIN.
 *   **Descripción:**  Esta diapositiva indica el **final de la presentación**, con el logo de la universidad, su lema y la palabra "FIN".
-
-Este resumen detallado debería proporcionarte una visión completa de la presentación, incluyendo su contenido, organización y la información clave de cada diapositiva. ¡Espero que te sea de gran utilidad!

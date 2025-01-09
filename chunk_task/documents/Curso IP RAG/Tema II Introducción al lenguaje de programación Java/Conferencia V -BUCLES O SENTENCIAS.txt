@@ -1,5 +1,4 @@
-¡Claro! Aquí está el contenido de la presentación "Bucles o Sentencias Repetitivas", organizado con la información de cada diapositiva, su número de página y una descripción detallada en español:
-
+Tema II Introducción al lenguaje de programación Java
 **Presentación: Bucles o Sentencias Repetitivas**
 
 **1. Diapositiva: Título (Página 1)**
@@ -210,5 +209,3 @@
     *   Lema: cosechando el saber.
     *   Texto: FIN.
 *   **Descripción:** Esta es la diapositiva final, indicando el **cierre de la presentación**.
-
-Este resumen detallado debería proporcionarte una visión completa y clara del contenido de la presentación. Si necesitas alguna otra aclaración, no dudes en consultarme.

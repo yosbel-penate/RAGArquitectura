@@ -1,5 +1,4 @@
-¡Claro! Aquí está el contenido de la presentación "Operadores y Expresiones" organizado, incluyendo la información de cada diapositiva, su página correspondiente y una descripción detallada en español:
-
+**Tema II Introducción al lenguaje de programación Java
 **Presentación: Operadores y Expresiones**
 
 **1. Diapositiva: Título (Página 1)**
@@ -266,5 +265,3 @@
     *   Lema: cosechando el saber.
     *   Texto: FIN.
 *   **Descripción:** Esta es la diapositiva de **cierre** de la presentación, con el logo de la universidad, su lema y la palabra "FIN".
-
-Este resumen detallado debería proporcionarte una visión clara y completa del contenido de la presentación. ¡Avísame si necesitas algo más!

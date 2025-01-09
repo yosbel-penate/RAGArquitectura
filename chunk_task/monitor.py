@@ -1,42 +1,36 @@
 import os
-import time
-import redis
-from rq import Queue
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
-from tasks import process_file
 
-# URL de conexión a Redis
-redis_url = os.getenv('REDISTOGO_URL', 'redis://localhost:6379')
-conn = redis.from_url(redis_url)
-q = Queue(connection=conn)
+def get_txt_files(directory):
+    txt_files = []
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.txt'):
+                txt_files.append(os.path.join(root, file))
+    return txt_files
 
-class Watcher:
-    DIRECTORY_TO_WATCH = "./documents"
+def read_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return file.read()
 
-    def __init__(self):
-        self.observer = Observer()
+def chunk_text(text, chunk_size=5000, overlap=1000):
+    chunks = []
+    start = 0
+    while start < len(text):
+        end = start + chunk_size
+        chunks.append(text[start:end])
+        start += chunk_size - overlap
+    return chunks
 
-    def run(self):
-        event_handler = Handler()
-        self.observer.schedule(event_handler, self.DIRECTORY_TO_WATCH, recursive=True)
-        self.observer.start()
-        try:
-            while True:
-                time.sleep(5)
-        except KeyboardInterrupt:
-            self.observer.stop()
-        self.observer.join()
+def main():
+    directory = './documents'
+    txt_files = get_txt_files(directory)
+    all_chunks = []
+    for file_path in txt_files:
+        text = read_file(file_path)
+        chunks = chunk_text(text)
+        all_chunks.extend(chunks)
+    # Aquí puedes hacer algo con all_chunks, como guardarlos en un archivo o procesarlos
+    print(f"Total de fragmentos: {len(all_chunks)}")
 
-class Handler(FileSystemEventHandler):
-    @staticmethod
-    def on_created(event):
-        if event.is_directory:
-            return None
-        elif event.src_path.endswith('.txt'):
-            print(f"Nuevo archivo detectado: {event.src_path}")
-            q.enqueue(process_file, event.src_path)
-
-if __name__ == '__main__':
-    w = Watcher()
-    w.run()
+if __name__ == "__main__":
+    main()
