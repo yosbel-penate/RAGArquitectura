@@ -1,0 +1,265 @@
+Okay, here's the organized content of the presentation "Captura y Salida de Datos en Java (Teclado y Pantalla)", including the slide number, page number, and a detailed description in Spanish for each slide:
+
+**Presentación: Captura y Salida de Datos en Java (Teclado y Pantalla)**
+
+**1. Diapositiva: Título (Página 1)**
+
+*   **Información:**
+    *   Logo de la Universidad de Matanzas.
+    *   Título: CAPTURA Y SALIDA DE DATOS EN JAVA (TECLADO Y PANTALLA).
+    *   Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
+    *   Fecha: Agosto / 2019.
+*   **Descripción:** Esta diapositiva es la **portada** de la presentación, presentando el tema y el contexto de la misma. Incluye el logo de la Universidad de Matanzas, el título principal y la fecha.
+
+**2. Diapositiva: Objetivos (Página 2)**
+
+*   **Información:**
+    *   Objetivo 1: Caracterizar la captura de datos como parte de la construcción de un programa computacional.
+    *   Objetivo 2: Caracterizar la salida de datos como parte de la construcción de un programa computacional.
+*   **Descripción:** Esta diapositiva define los **objetivos** de la presentación, que son: comprender el proceso de captura de datos y comprender el proceso de salida de datos, como partes fundamentales en la construcción de un programa.
+
+**3. Diapositiva: Sumario (Página 3)**
+
+*   **Información:**
+    *   Temas: Captura de datos por teclado con Java. Salida de datos por pantalla con Java.
+*   **Descripción:**  Presenta un **resumen** de los temas principales que se abordarán en la presentación: la captura de datos a través del teclado y la salida de datos hacia la pantalla, ambos en Java.
+
+**4. Diapositiva: Bibliografía (Página 4)**
+
+*   **Información:**
+    *   Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
+*  **Descripción:** Lista las **fuentes bibliográficas** que fueron utilizadas para la creación de esta presentación.
+
+**5. Diapositiva: Flujo (Introducción) (Página 5)**
+
+*   **Información:**
+    *   Definición: Por lo general, las operaciones de entrada y salida de datos se llevan a cabo con flujos, los cuales son secuencias de bytes.
+*   **Descripción:** Introduce el concepto de **flujo (stream)** como la forma general de manejar operaciones de entrada y salida, donde la información se maneja como secuencias de bytes.
+
+**6. Diapositiva: Flujo (Entrada) (Página 6)**
+
+*   **Información:**
+    *   Definición: En las operaciones de entrada, los bytes fluyen de un dispositivo (como un teclado, una unidad de disco, una conexión de red) a la memoria principal.
+*   **Descripción:** Describe el **flujo en las operaciones de entrada**, que ocurre cuando los bytes se transfieren desde un dispositivo externo a la memoria principal.
+
+**7. Diapositiva: Flujo (Salida) (Página 7)**
+
+*  **Información:**
+    * Definición: En las operaciones de salida, los bytes fluyen de la memoria principal a un dispositivo (como una pantalla, una impresora, una unidad de disco, una conexión de red).
+*  **Descripción:** Describe el **flujo en las operaciones de salida**, que ocurre cuando los bytes se transfieren desde la memoria principal a un dispositivo externo.
+
+**8. Diapositiva: Flujo (Conexiones Automáticas) (Página 8)**
+
+*  **Información:**
+    * Definición: Cuando empieza la ejecución de un programa, tres flujos se conectan a éste de manera automática.
+*  **Descripción:** Explica que al iniciar la ejecución de un programa, **tres flujos se conectan automáticamente** para la entrada, la salida y los errores.
+
+**9. Diapositiva: Flujo (Flujos Estándar) (Página 9)**
+
+*   **Información:**
+    *   Definición: El flujo de entrada estándar se conecta al teclado, y el flujo de salida estándar se conecta a la pantalla. El flujo de error estándar (System.err), se conecta generalmente a la pantalla.
+*  **Descripción:** Indica los **flujos estándar** utilizados por defecto: teclado para la entrada, pantalla para la salida y también para los errores.
+
+**10. Diapositiva: Clases de Java para Lectura y Escritura de Datos (Página 10)**
+
+*   **Información:**
+    *   Definición: El package `java.io` contiene las clases necesarias para la comunicación del programa con el exterior. Existen dos familias de jerarquías distintas para la entrada/salida de datos.
+*  **Descripción:** Introduce el **package `java.io`**, que contiene las clases necesarias para la comunicación entre un programa y el exterior, y las familias de jerarquías que existen para la entrada/salida de datos.
+
+**11. Diapositiva: Captura de Datos (Introducción) (Página 11)**
+
+*   **Información:**
+    *   Definición: En Java, la entrada desde teclado está regulado a través de la clase `System`. `System.in` es un objeto de la clase `InputStream` para recibir datos.
+*   **Descripción:** Inicia la sección sobre **captura de datos**, indicando que la clase `System` es la que maneja la entrada, y el objeto `System.in` es de la clase `InputStream`.
+
+**12. Diapositiva: Captura de Datos (InputStream.read()) (Página 12)**
+
+*   **Información:**
+    *   Definición: Para leer desde teclado se puede utilizar el método `System.in.read()` de la clase `InputStream`.
+*   **Descripción:** Presenta el método `read()` de la clase `InputStream` como una forma de **leer datos desde el teclado**.
+
+**13. Diapositiva: Captura de Datos (InputStream.read() - Conversión) (Página 13)**
+
+*   **Información:**
+    *   Definición: Este método lee un carácter por cada Ilamada y retorna un `int`. Si se espera otro tipo hay que hacer una conversión explícita mediante un `cast`.
+    *   Ejemplo: `char c = (char)System.in.read();`
+*   **Descripción:**  Explica cómo el método `read()` lee un carácter y retorna un `int`, y cómo debe realizarse un `cast` para convertir el resultado a un `char`.
+
+**14. Diapositiva: Captura de Datos (Lectura de Cadenas - Bucle) (Página 14)**
+
+*   **Información:**
+    *   Definición: Para leer datos más largos que un simple carácter es necesario emplear un bucle `while` o `for` y unir los caracteres.
+   *  Ejemplo de código:
+    ```java
+        char c;
+        String frase = new String("");
+        while((c=System.in.read()) != '\n')
+            frase = frase + c; // frase.append(c);
+    ```
+*   **Descripción:** Muestra la necesidad de usar un **bucle para leer cadenas de caracteres**, uniendo los caracteres leídos.
+
+**15. Diapositiva: Captura de Datos (BufferedReader - Introducción) (Página 15)**
+
+*   **Información:**
+    *   Definición: Para facilitar la lectura de teclado se puede conseguir que se lea una línea entera con una sola orden si se utiliza un objeto `BufferedReader`.
+*  **Descripción:** Presenta una alternativa para facilitar la lectura de texto, usando un objeto `BufferedReader`, que permite leer líneas enteras.
+
+**16. Diapositiva: Captura de Datos (BufferedReader - readLine()) (Página 16)**
+
+*   **Información:**
+    *   Definición: El método String `readLine()` perteneciente a `BufferedReader` lee todos los caracteres hasta encontrar un '\n' o '\r' y los devuelve como un `String` (sin incluir '\n' ni '\r').
+*   **Descripción:** Describe el funcionamiento del método `readLine()` de la clase `BufferedReader`, que lee caracteres hasta encontrar un salto de línea y devuelve un `String`.
+
+**17. Diapositiva: Captura de Datos (BufferedReader - Ejemplo) (Página 17)**
+
+*   **Información:**
+    * Ejemplo de código:
+     ```java
+      InputStreamReader isr = new InputStreamReader(System.in);
+      BufferedReader br = new BufferedReader(isr);
+      //o en una linea:
+      //BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
+      String frase = br2.readLine();
+      // Se lee la linea con una llamada
+     ```
+*   **Descripción:** Muestra un **ejemplo de código** para leer una línea completa de la entrada, usando `BufferedReader` con diferentes constructores.
+
+**18. Diapositiva: Captura de Datos (StringTokenizer) (Página 18)**
+
+*  **Información:**
+   *   Definición: La clase `java.util.StringTokenizer` da la posibilidad de separar una cadena de caracteres en las "palabras" (tokens) que la forman. Cuando sea preciso se pueden convertir las "palabras" en números.
+*  **Descripción:**  Introduce la clase `StringTokenizer`, que se utiliza para **dividir una cadena en tokens** o palabras.
+
+**19. Diapositiva: Captura de Datos (StringTokenizer - Referencia) (Página 19)**
+
+*   **Información:**
+    *   Referencia: En el libro "Aprenda Java como si estuviera en primero" página 154 están los métodos más prácticos de la clase StringTokenizer.
+*   **Descripción:** Indica una **referencia en el libro** "Aprenda Java como si estuviera en primero" donde se pueden encontrar los métodos de la clase `StringTokenizer`.
+
+**20. Diapositiva: Captura de Datos (Scanner - Introducción) (Página 20)**
+
+*   **Información:**
+    *   Definición: Otra variante para la lectura de datos en Java es utilizando la clase `Scanner`. La clase `Scanner` está disponible a partir de Java 5 y facilita la lectura de datos en los programas Java.
+*  **Descripción:** Introduce la clase `Scanner` como otra **alternativa para leer datos** desde la entrada estándar (teclado), disponible desde Java 5.
+
+**21. Diapositiva: Captura de Datos (Scanner - Import) (Página 21)**
+
+*   **Información:**
+    *   Instrucción: `import java.util.Scanner;`
+*   **Descripción:** Explica que, para usar la clase `Scanner`, es necesario incluir la instrucción `import java.util.Scanner;` al inicio del programa.
+
+**22. Diapositiva: Captura de Datos (Scanner - Import) (Página 22)**
+
+*   **Información:**
+    *   Instrucción: `import java.util.Scanner;`
+*   **Descripción:** Muestra nuevamente la instrucción `import java.util.Scanner;` que debe agregarse al inicio del programa para poder usar la clase `Scanner`
+
+**23. Diapositiva: Captura de Datos (Scanner - Creación de Objeto) (Página 23)**
+
+*   **Información:**
+    *   Instrucción: `Scanner sc = new Scanner(System.in);`
+*   **Descripción:** Explica cómo **crear un objeto** de la clase `Scanner` asociado a la entrada estándar.
+
+**24. Diapositiva: Captura de Datos (Scanner - Métodos nextXxx()) (Página 24)**
+
+*   **Información:**
+    *   Definición: Para leer datos podemos usar el método `nextXxx()` donde Xxx indica en tipo, por ejemplo `nextInt()` para leer un entero, `nextDouble()` para leer un double, etc.
+*   **Descripción:**  Describe los **métodos `nextXxx()`** de la clase `Scanner` para leer datos específicos (enteros, double, etc.) desde el teclado.
+
+**25. Diapositiva: Salida de Datos (Introducción) (Página 25)**
+
+*   **Información:**
+    *   Definición: En Java, la salida a pantalla está regulado a través de la clase `System`. `System.out` es un objeto de la clase `PrintStream` que imprimirá los datos.
+*   **Descripción:**  Inicia la sección sobre **salida de datos**, explicando que la salida a la pantalla se maneja a través de la clase `System`, con el objeto `System.out` de la clase `PrintStream`.
+
+**26. Diapositiva: Salida de Datos (System.out - print()) (Página 26)**
+
+*   **Información:**
+    *   Definición: Con la función `print()` imprime en pantalla el argumento que se le pase. Puede recibir cualquier tipo primitivo de variable de Java.
+    *   Ejemplo: `System.out.print("Hola, Mundo!");`
+*   **Descripción:** Explica el método `print()` de la clase `System.out`, indicando que imprime en la pantalla el argumento, que puede ser de cualquier tipo primitivo.
+
+**27. Diapositiva: Salida de Datos (System.out - println()) (Página 27)**
+
+*  **Información:**
+    *  Definición: Con la función `println()` imprime en pantalla el argumento que se le pase. Puede recibir cualquier tipo primitivo de variable de Java. Añadiendo `\n` al final.
+    * Ejemplo: `System.out.println("Hola, Mundo!");`
+*  **Descripción:**  Explica el método `println()` de la clase `System.out`, similar a `print()` pero añadiendo un salto de línea al final.
+
+**28. Diapositiva: Salida de Datos (System.out - Limitaciones) (Página 28)**
+
+*  **Información:**
+    * Explicación: Aunque imprime las variables de un modo legible, no permiten dar a la salida un formato (un valor real imprimir una cantidad determinada de lugares después de la coma) a medida. El programador no puede especificar un formato distinto al disponible por defecto.
+*  **Descripción:** Menciona una **limitación de `print()` y `println()`**: que no permiten personalizar el formato de la salida, como indicar la cantidad de decimales para números reales.
+
+**29. Diapositiva: Salida de Datos (System.out - printf() - Introducción) (Página 29)**
+
+*   **Información:**
+    *   Definición: Con `printf` podemos lograr un formato preciso en la salida.
+*   **Descripción:** Introduce el método `printf()` como una opción para obtener un **formato preciso** en la salida de datos.
+
+**30. Diapositiva: Salida de Datos (System.out - printf() - Prototipo) (Página 30)**
+
+*   **Información:**
+    *   Definición: La función `printf()` imprime el texto, las constantes y variables que se indiquen. Su prototipo: `System.out.printf("cadena_de_control", arg1, arg2, ..., argn);`
+*   **Descripción:** Presenta el **prototipo del método `printf()`**, que incluye una cadena de control y argumentos.
+
+**31. Diapositiva: Salida de Datos (System.out - printf() - Funcionamiento) (Página 31)**
+
+*  **Información:**
+    * Definición: La función `printf()` imprime el texto contenido en `cadena_de_control` junto con el valor de los otros argumentos, de acuerdo con los formatos incluidos en `cadena_de_control`.
+*   **Descripción:** Explica cómo el método `printf()` imprime texto y valores de argumentos basándose en el formato indicado en la `cadena_de_control`.
+
+**32. Diapositiva: Salida de Datos (System.out - printf() - Ejemplo) (Página 32)**
+
+*  **Información:**
+   *   Ejemplo:
+    ```java
+       int i=1;
+       double tiempo=2.4;
+       float masa=100.56;
+       System.out.printf("Resultado no: %d. En el instante %lf la masa vale %.4f\n",i, tiempo, masa);
+    ```
+*  **Descripción:** Muestra un **ejemplo** de cómo usar `printf()` con especificadores de formato, mostrando como imprimir diferentes tipos de datos.
+
+**33. Diapositiva: Salida de Datos (System.out - printf() - Referencia) (Página 33)**
+
+*   **Información:**
+    *   Referencia: Para conocer acerca de este aspecto puede consultar el libro "Cómo programar en Java" página 1276.
+*   **Descripción:** Indica una **referencia** para obtener mayor información sobre el uso del método `printf()`, remitiendo a la página 1276 del libro "Cómo programar en Java".
+
+**34. Diapositiva: Conclusiones (Captura de Datos) (Página 34)**
+
+*   **Información:**
+    *   Conclusiones sobre la Captura de datos:
+        1.  System.in
+        2.  BufferedReader + StringTokenizer
+        3.  Scanner
+*   **Descripción:**  Presenta un **resumen de las formas de captura de datos**, indicando las tres opciones principales vistas en la presentación: el uso directo de `System.in`, la combinación de `BufferedReader` y `StringTokenizer`, y la clase `Scanner`.
+
+**35. Diapositiva: Conclusiones (Salida de Datos) (Página 35)**
+
+*  **Información:**
+    * Conclusiones sobre la Salida de datos:
+         *   System.out
+             *   print()
+             *   println()
+             *   printf()
+     *    Texto: Existen otras variantes pero con lo anterior es suficiente por ahora.
+*   **Descripción:**  Presenta un **resumen de las formas de salida de datos** con los métodos `print()`, `println()` y `printf()` del objeto `System.out`, indicando que existen otras variantes.
+
+**36. Diapositiva: Estudio Independiente (Página 36)**
+
+*   **Información:**
+    *   Ejercicios: Realizar los ejercicios A+B y Harder A+B de Athens Online Judge (aoj.umcc.cu).
+*   **Descripción:**  Propone un **ejercicio práctico** para que los estudiantes utilicen los conceptos de entrada y salida de datos en el contexto de ejercicios publicados en el Athens Online Judge.
+
+**37. Diapositiva: Fin (Página 37)**
+
+*   **Información:**
+    *   Logo de la Universidad de Matanzas.
+    *   Lema: cosechando el saber.
+    *   Texto: FIN.
+*   **Descripción:**  Esta diapositiva indica el **final de la presentación**, con el logo de la universidad, su lema y la palabra "FIN".
+
+Este resumen detallado debería proporcionarte una visión completa de la presentación, incluyendo su contenido, organización y la información clave de cada diapositiva. ¡Espero que te sea de gran utilidad!

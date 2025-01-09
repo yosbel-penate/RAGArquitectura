@@ -1,0 +1,61 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema: Cadenas de caracteres.
+Unidad didáctica: Clase String. Sus principales métodos.
+1. Objetivos de la unidad didáctica:
+Caracterizar la clase String del lenguaje de programación Java.
+Identificar y caracterizar los principales métodos de la clase String.
+2. Introducción a la unidad didáctica:
+La clase String está orientada a manejar cadenas de caracteres constantes, es decir, que no pueden cambiar. [1]
+
+Los objetos de la clase String se pueden crear a partir de cadenas constantes o literals, definidas entre dobles comillas, como por ejemplo: "Hola". Java crea siempre un objeto String al encontrar una cadena entre comillas. A continuación se describen dos formas de crear objetos de la clase String. [2]
+
+String str1 = "Hola"; // el sistema más eficaz de crear Strings
+
+String str2 = new String("Hola"); // también se pueden crear con un constructor
+
+El primero de los métodos expuestos es el más eficiente, porque como al encontrar un texto entre comillas se crea automáticamente un objeto String, en la práctica utilizando new se llama al constructor dos veces. [2]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles. [3]
+Cree hábitos de estudio sistemático; para esto: [3]
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [3]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [4]
+Utilice técnicas de estudio: [4]
+Elija un entorno de estudio que resulte agradable y sin elementos que lo distraigan. [4]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [4]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [4]
+Interactúe con los materiales de estudio en tres fases: [5]
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [5]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [5]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [6]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [6]
+
+5. Actividades de auto-aprendizajes:
+Cuales métodos de la clase String determinan la longitud de una cadena, obtienen el carácter que se encuentra en una ubicación específica de una cadena y recuperan el conjunto completo de caracteres en una cadena. [6]
+Cuales métodos de la clase String permiten comparar dos cadenas. Caracterice el funcionamiento de cada una y establezca semejanzas y diferencias entre dichos métodos. [7]
+Cuales métodos de la clase String permiten localización de caracteres y subcadenas en las cadenas. Caracterice el funcionamiento de cada una y establezca semejanzas y diferencias entre dichos métodos. [7]
+Cuales métodos de la clase String permiten extracción de subcadenas de las cadenas. Caracterice el funcionamiento de cada una y establezca semejanzas y diferencias entre dichos métodos. [7]
+Cuales métodos de la clase String permiten concatenación de cadenas. Caracterice el funcionamiento de cada una y establezca semejanzas y diferencias entre dichos métodos. [8]
+6. Actividades de evaluación:
+Elabore un programa utilizando el lenguaje de programación Java que permita introducir al usuario una cadena de caracteres. Dicho programa debe determinar si la cadena de caracteres introducida por el usuario es palíndromo o no. Una cadena de caracteres es palíndromo cuando se puede leer los mismo de izquierda a derecha y de derecha a izquierda. [8] Por ejemplo la palabra somos es palíndromo. [9]
+Elabore un programa utilizando el lenguaje de programación Java que permita introducir al usuario dos cadenas de caracteres. Dicho programa debe determinar si las cadenas de caracteres introducidas por el usuario son anagramas. Dos cadenas son anagramas si cumplen: [9]
+Tienen las misma cantidad de caracteres [9]
+Tienen la misma cantidad de cada tipo de letra. [9]
+No son iguales. [9] Por ejemplo zorra y arroz son anagramas, pero alata y talla no lo son. [9]
+7. Resumen:
+Un punto importante a tener en cuenta es que hay métodos, tales como System.out.println(), que exigen que su argumento sea un objeto de la clase String. Si no lo es, habrá que utilizar algún método que lo convierta en String en este caso se puede utilizar valueOf. [10]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos: [10]
+
+Objeto de clase (en programación) [10]
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.2. [11]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 30 epigrafes 30.1, 30.2, 30.3 y 30.4. [11]
+
+10. Recursos educativos digitales RED: [11]
+11. Próxima unidad: Clase StringBuilder. [11]

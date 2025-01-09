@@ -1,0 +1,239 @@
+Okay, here is the detailed organization of the presentation "Matrices o Arreglos Bidimensionales," including the information of each slide, its page number, and a comprehensive description in Spanish:
+
+**Presentación: Matrices o Arreglos Bidimensionales**
+
+**1. Diapositiva: Título (Página 1)**
+*  **Información:**
+    * Logo de la Universidad de Matanzas.
+    * Título: MATRICES O ARREGLOS BIDIMENSIONALES.
+    * Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
+    * Fecha: Octubre / 2019.
+* **Descripción:**  Esta es la diapositiva de **portada** de la presentación. Contiene el logo de la Universidad de Matanzas, el título principal, el subtítulo con el contexto de la presentación y la fecha.
+
+**2. Diapositiva: Objetivos (Parte 1) (Página 2)**
+*  **Información:**
+    * Objetivo: Caracterizar los arreglos bidimensionales o matrices como parte de la construcción de un programa computacional.
+*  **Descripción:**  Presenta el primer **objetivo** de la presentación: comprender el papel de las matrices en la construcción de programas.
+
+**3. Diapositiva: Objetivos (Parte 2) (Página 3)**
+*  **Información:**
+    * Objetivo: Declarar matrices, inicializarlas y hacer referencia a elementos individuales de las matrices.
+*   **Descripción:** Presenta el segundo **objetivo** de la presentación, que es aprender a declarar matrices, inicializarlas y acceder a sus elementos.
+
+**4. Diapositiva: Objetivos (Parte 3) (Página 4)**
+*  **Información:**
+    * Objetivo 1: Utilizar la instrucción `for` para iterar a través de las matrices.
+    * Objetivo 2: Pasar matrices a los métodos como argumentos.
+*   **Descripción:** Define los dos objetivos siguientes: aprender a iterar sobre matrices usando el ciclo `for` y a pasar matrices como argumentos a los métodos.
+
+**5. Diapositiva: Sumario (Página 5)**
+*   **Información:**
+    *   Temas: Arreglos (Declaración y creación, Uso de un inicializador, Instrucción `for` para iterar, Paso de matrices a los métodos).
+*   **Descripción:**  Ofrece un **resumen** conciso de los temas principales que se abordarán en la presentación.
+
+**6. Diapositiva: Bibliografía (Página 6)**
+*  **Información:**
+    *  Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
+*  **Descripción:**  Lista las **referencias bibliográficas** utilizadas para la preparación de la presentación.
+
+**7. Diapositiva: Matrices (Definición Matemática) (Página 7)**
+
+*  **Información:**
+    * Definición: En matemática, una matriz es un arreglo bidimensional de números. Dado que puede definirse tanto la suma como el producto de matrices, en mayor generalidad se dice que son elementos de un anillo.
+*  **Descripción:**  Introduce la definición de **matrices en el contexto matemático**, mencionando la posibilidad de realizar operaciones como suma y producto.
+
+**8. Diapositiva: Matrices (Notación) (Página 8)**
+*  **Información:**
+    * Muestra la notación matemática de una matriz de dimensiones n x n
+*  **Descripción:**  Muestra la **notación formal de una matriz**, con filas y columnas indexadas, y presenta la estructura típica de una matriz.
+
+**9. Diapositiva: Matrices (Definición en Programación) (Página 9)**
+*  **Información:**
+    * Definición: Una matriz es un arreglo bidimensional de elementos (todos del mismo tipo de dato) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales.
+*  **Descripción:** Define una **matriz en el contexto de la programación**, como un arreglo bidimensional de elementos del mismo tipo, ordenados en filas y columnas.
+
+**10. Diapositiva: Matrices (n-por-m) (Página 10)**
+*   **Información:**
+    * Definición: A una matriz con n filas y m columnas se le denomina matriz n-por-m (escrito n × m)
+*   **Descripción:**  Explica la notación para describir una **matriz de `n` filas y `m` columnas**, denotada como "matriz n-por-m" o `n × m`.
+
+**11. Diapositiva: Matrices (Tipos de Referencia) (Página 11)**
+*   **Información:**
+    *   Definición: Los tipos en Java se dividen en dos categorías: tipos primitivos y tipos de referencia. Las matrices son objetos, por lo que se consideran como tipos de referencia.
+*   **Descripción:** Explica que las matrices son de **tipo de referencia** en Java, ya que son objetos.
+
+**12. Diapositiva: Matrices (Referencia a Elementos) (Página 12)**
+*   **Información:**
+   * Definición: Para hacer referencia a un elemento específico en una matriz, debemos especificar el nombre de la referencia de la matriz y el número de la fila y el número de la columna del elemento en la matriz.
+*   **Descripción:**  Explica cómo **acceder a elementos específicos de una matriz**, indicando que es necesario especificar el nombre de la matriz, el índice de la fila y el índice de la columna.
+
+**13. Diapositiva: Matrices (Posición de Elementos) (Página 13)**
+*   **Información:**
+    *   Definición: La posición del elemento se compone formalmente de la fila y la columna.
+*  **Descripción:** Indica que cada **elemento en la matriz** tiene una posición que se describe formalmente mediante la fila y la columna.
+
+**14. Diapositiva: Matrices (Expresión de Acceso) (Página 14)**
+*   **Información:**
+    *  Definición: Un programa puede hacer referencia a cualquiera de estos elementos mediante una expresión de acceso a una matriz que incluye el nombre de la matriz, seguido por el índice-fila del elemento específico encerrado entre corchetes seguido igualmente por el índice-columna del elemento específico encerrado entre corchetes ([ ][ ]).
+*   **Descripción:** Introduce la **forma de acceder a un elemento**, a través de la "expresión de acceso", mediante el uso del nombre de la matriz y el índice de la fila y columna entre corchetes `[][].`
+
+**15. Diapositiva: Matrices (Declaración y Creación - Introducción) (Página 15)**
+*  **Información:**
+    * Definición: Los objetos matrices ocupan espacio en memoria. Al igual que los demás objetos, los arreglos se crean con la palabra clave new.
+*  **Descripción:**  Inicia la explicación de **cómo crear matrices**, indicando que, al igual que los demás objetos, deben reservarse en memoria con la palabra clave `new`.
+
+**16. Diapositiva: Matrices (Declaración y Creación -  new) (Página 16)**
+*   **Información:**
+   * Definición: Para crear un objeto matriz, el programador especifica el tipo de cada elemento y el número de filas y columnas que se requieren para la matriz, como parte de una expresión para crear un arreglo que utiliza la palabra clave `new`.
+*  **Descripción:** Explica que para crear una matriz, se especifica el tipo de dato y la cantidad de filas y columnas, utilizando la palabra clave `new`.
+
+**17. Diapositiva: Matrices (Declaración y Creación - Sintaxis) (Página 17)**
+*  **Información:**
+    *  Sintaxis: `<TD> [][] <nombre> = new <TD> [<fil>][<col>];`
+     * Definiciones:
+        *   `<TD>`: Tipo de dato
+        *   `<nombre>`: Nombre de la matriz
+        *   `<fil>`: Cantidad de filas de la matriz
+        *   `<col>`: Cantidad de columnas de la matriz
+*   **Descripción:** Presenta la **sintaxis formal** para declarar y crear matrices en Java, describiendo cada componente: tipo de datos, nombre, cantidad de filas y cantidad de columnas.
+
+**18. Diapositiva: Matrices (Declaración y Creación - Ejemplo 1) (Página 18)**
+*  **Información:**
+    *   Código: `int[][] c = new int[12][10];`
+    * Texto: La siguiente declaración y expresión crea una matriz, que contiene 12 filas y 10 columnas int, y almacena la referencia de la matriz en la variable c
+*  **Descripción:**  Muestra un **ejemplo de código** de cómo declarar y crear una matriz de enteros de 12 filas y 10 columnas.
+
+**19. Diapositiva: Matrices (Declaración y Creación - Ejemplo 2) (Página 19)**
+*   **Información:**
+    * Ejemplo:
+        ```java
+            int [][] c;  // declara la variable matriz
+            c = new int[12][10]; /* crea la matriz; lo asigna a
+              la variable tipo matriz*/
+        ```
+*   **Descripción:**  Muestra cómo realizar la **creación de una matriz en dos pasos**, primero declarar la referencia y luego asignar el espacio de memoria.
+
+**20. Diapositiva: Matrices (Uso de un Inicializador - Introducción) (Página 20)**
+*   **Información:**
+    *   Definición: Al igual que los arreglos unidimensionales, los arreglos multidimensionales pueden inicializarse mediante inicializadores de arreglos en las declaraciones.
+*  **Descripción:**  Introduce la posibilidad de **inicializar matrices** utilizando inicializadores directamente en la declaración, de manera similar a los arreglos unidimensionales.
+
+**21. Diapositiva: Matrices (Uso de un Inicializador - Ejemplo) (Página 21)**
+*   **Información:**
+    *   Ejemplo: `int b[][] = {{1, 2}, {3, 4}};`
+    * Texto: Un arreglo bidimensional b con dos fi las y dos columnas podría declararse e inicializarse con inicializadores de arreglos anidados, como se muestra a continuación
+*   **Descripción:**  Muestra un **ejemplo de código** para declarar e inicializar una matriz bidimensional usando inicializadores anidados.
+
+**22. Diapositiva: Matrices (Uso de un Inicializador - Elementos) (Página 22)**
+*   **Información:**
+     * Definición: Los valores del inicializador se agrupan por fila entre llaves. Así, 1 y 2 inicializan a b[0][0] y b[0][1], respectivamente; 3 y 4 inicializan a b[1][0] y b[1][1], respectivamente.
+*   **Descripción:**  Explica cómo **se interpretan los valores** en un inicializador anidado, y cómo cada valor va correspondiendo a un elemento en la matriz.
+
+**23. Diapositiva: Matrices (Uso de un Inicializador - Arreglo de Arreglos) (Página 23)**
+*  **Información:**
+     *  Definición: Los arreglos multidimensionales se mantienen como arreglos de arreglos unidimensionales.
+*   **Descripción:**  Explica que **las matrices se gestionan como un arreglo de arreglos unidimensionales**.
+
+**24. Diapositiva: Matrices (Uso de un Inicializador - Desglose del Ejemplo) (Página 24)**
+*   **Información:**
+   *  Definición: el arreglo b en la declaración anterior está realmente compuesto de dos arreglos unidimensionales separados: uno que contiene los valores en la primera lista inicializadora anidada 1, 2 y uno que contiene los valores en la segunda lista inicializadora anidada 3, 4.
+*   **Descripción:**  Aclara la forma en que se asignan los valores, viendo al arreglo bidimensional como **un arreglo de arreglos unidimensionales**.
+
+**25. Diapositiva: Matrices (Instrucción for para Iterar - Introducción) (Página 25)**
+*   **Información:**
+   * Definición: Utilizar las instrucciones for controladas por un contador para iterar a través de los elementos en un arreglo es muy común. En caso de las matrices para iterar sobre ellas debes llevar dos contadores
+*   **Descripción:**  Introduce el uso del bucle `for` para **iterar sobre matrices**, indicando que se requiere un contador para filas y otro para columnas.
+
+**26. Diapositiva: Matrices (Instrucción for para Iterar - Contadores) (Página 26)**
+
+*   **Información:**
+     * Definición: En este caso un contador para fila y otro para la columna. Si para iterar en un arreglo hace falta un for en las matrices se utiliza un dos for anidados.
+*  **Descripción:** Explica que para iterar sobre matrices son necesarios **dos contadores** y, por tanto, **dos bucles `for` anidados**.
+
+**27. Diapositiva: Matrices (Instrucción for para Iterar - Ejemplos) (Página 27)**
+*  **Información:**
+   *  Ejemplo 1:
+       ```java
+            for(int i=0;i<filas;i++){
+              for(int j=0;j<columnas;j++){
+                 System.out.println(a[i][j]);
+              }
+           }
+        ```
+   * Ejemplo 2:
+       ```java
+          for(int i=0;i<columnas;i++) {
+              for(int j=0;j<filas;j++){
+                 System.out.println(a[j][i]);
+              }
+           }
+        ```
+*  **Descripción:** Muestra **dos ejemplos de cómo usar bucles `for` anidados** para recorrer todos los elementos de una matriz.
+
+**28. Diapositiva: Matrices (Instrucción for para Iterar - Recorrido) (Página 28)**
+*  **Información:**
+     * Definición: En ambos casos se logra iterar sobre cada uno de los elementos de matriz. Pero con recorridos diferentes
+*   **Descripción:** Aclara que ambos ejemplos visitan **todos los elementos**, pero que el orden del recorrido es diferente.
+
+**29. Diapositiva: Matrices (Paso de Matrices a los Métodos - Ejemplo) (Página 29)**
+
+*  **Información:**
+   *   Ejemplo:
+        ```java
+            double [][] temperaturasPorHoraYDia = new double [24][365];
+            modificarArreglo( temperaturasPorHoraYDia );
+        ```
+     * Texto:  Para pasar un argumento tipo matrices a un método, se especifica el nombre de la matriz sin corchetes.
+*   **Descripción:** Indica cómo **pasar una matriz como argumento a un método**, especificando solo su nombre (sin corchetes).
+
+**30. Diapositiva: Matrices (Paso de Arreglos a los Métodos - Argumentos Adicionales) (Página 30)**
+*   **Información:**
+    *   Definición: Toda fila de la matriz "conoce" su propia cantidad de columnas (a través de su campo length) y la matriz la cantidad de filas (a través de su campo length). Cuando pasamos a un método la referencia a un objeto matriz, no necesitamos pasar la cantidad de filas y columnas como argumentos adicionales.
+*   **Descripción:** Explica que **no es necesario pasar las dimensiones** de la matriz como argumentos adicionales ya que pueden consultarse dentro del método.
+
+**31. Diapositiva: Matrices (Paso de Arreglos a los Métodos - Parámetros) (Página 31)**
+
+*   **Información:**
+     *   Definición: Para que un método reciba una referencia de una matriz a través de una llamada a un método, la lista de parámetros del método debe especificar un parámetro tipo matriz.
+*   **Descripción:**  Indica que al declarar un método que recibe una matriz, es necesario especificar que el **parámetro es de tipo matriz**.
+
+**32. Diapositiva: Matriz (Paso de Arreglos a los Métodos - Encabezado) (Página 32)**
+*  **Información:**
+   * Ejemplo: `public static void modificarArreglo(int [][] b){ //... }`
+   *   Texto:  lo cual indica que modificarMatriz recibe la referencia de una matriz de enteros en el parámetro b.
+*   **Descripción:** Muestra cómo se declararía la **cabecera de un método** que recibe una matriz de enteros como parámetro.
+
+**33. Diapositiva: Matriz (Paso de Arreglos a los Métodos - Referencia) (Página 33)**
+*   **Información:**
+    *   Definición: La llamada a este método pasa la referencia a la matriz temperaturasPorHoraDia, de manera que cuando el método llamado utiliza la variable b tipo matriz, hace referencia al mismo objeto matriz como temperaturasPorHora en el método que hizo la llamada.
+*   **Descripción:** Aclara que al pasar la matriz al método, se **pasa la referencia al objeto**, no se crea una copia del mismo.
+
+**34. Diapositiva: Conclusiones (Grafos) (Página 34)**
+*   **Información:**
+   * Conclusión: En teoría de los grafos, a todo grafo etiquetado corresponde la matriz de adyacencia. Una matriz de permutación es una matriz que representa una permutación; matriz cuadrada cuyos coeficientes son 0 o 1, con un solo 1 en cada línea y cada columna. Estas matrices se utilizan en combinatorio.
+*   **Descripción:** Explica que las matrices se utilizan en la teoría de grafos, para la creación de **matriz de adyacencia** y  **matriz de permutación.**
+
+**35. Diapositiva: Conclusiones (Matriz de un Grafo) (Página 35)**
+*   **Información:**
+    *   Conclusión: En la teoría de grafos, se llama matriz de un grafo a la matriz que indica en la línea i y la columna j el número de aristas que enlazan el vértice i al vértice j. En un grafo no orientado, la matriz es simétrica.
+*  **Descripción:** Muestra otra aplicación de la **matriz de adyacencia** en grafos, ahora mostrando la relación entre los vértices del grafo.
+
+**36. Diapositiva: Conclusiones (Paso por Referencia y Matrices Anónimas) (Página 36)**
+*   **Información:**
+    * Conclusión 1: Como todos los objetos, las matrices se pasan como argumentos a los métodos por referencia.
+    * Conclusión 2: Se pueden crear matrices anónimas (por ejemplo, crear una nueva,matriz como argumento actual en la llamada a un método).
+*   **Descripción:** Resalta que las matrices se pasan a métodos **por referencia** y que pueden crearse **matrices anónimas** directamente en la llamada al método.
+
+**37. Diapositiva: Conclusiones (Iteración en Matrices) (Página 37)**
+*   **Información:**
+     * Conclusión: A veces el iterar o moverse dentro de una matriz de cierta manera puede contribuir de forma positiva o negativa en la búsqueda de la solución.
+*   **Descripción:** Advierte que la forma de **iterar sobre una matriz puede influir en la eficiencia del programa.**
+
+**38. Diapositiva: Fin (Página 38)**
+*   **Información:**
+    *   Logo de la Universidad de Matanzas.
+    *   Lema: cosechando el saber.
+    *   Texto: FIN.
+*  **Descripción:** Esta es la diapositiva de **cierre** de la presentación, con el logo de la universidad, su lema y la palabra "FIN".
+
+Este resumen detallado proporciona una visión clara y completa del contenido de la presentación, incluyendo la información clave de cada diapositiva en español. Si necesitas algo más, no dudes en preguntar.

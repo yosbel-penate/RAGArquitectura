@@ -1,0 +1,46 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Introducción al lenguaje de programación Java
+Unidad didáctica: Programación funcional. Ejercitación de los contenidos.
+1. Objetivos de la unidad didáctica:
+Diseñar e implementar funciones y métodos de clases.
+Invocación y llamadas a métodos y funciones de clases.
+Diseñar e implementar funciones y métodos de clases recursivos.
+2. Introducción a la unidad didáctica:
+La siguiente guía te propone una serie de ejercicios evaluativos los cuales debe realizar y subir a la plataforma en el espacio del curso en un fichero comprimido o enviar al correo luis.valido@umcc.cu . Dicho archivo debe estar en formato .zip y dentro tendrá una carpeta por cada ejercicio. Dentro de cada carpeta que hace referencia a un ejercicio debe estar el archivo .java donde esta la implementación utilizando el lenguaje de programación Java de la solución. El archivo comprimido su nombre debe tener la siguiente nomenclatura <nombre_estudiante>_info11-2021.zip donde <nombre_estudiante> se debe colocar el nombre y apellidos del estudiante. Por ejemplo para el estudiante Luis Andrés Valido Fajardo el archivo tendría el siguiente formato:
+
+luis_andres_valido_fajardo_info11-2021.zip
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles.
+Cree hábitos de estudio sistemático; para esto:
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora.
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo.
+Utilice técnicas de estudio:
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes.
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante.
+Interactúe con los materiales de estudio en tres fases:
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone.
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente.
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje.
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico.
+
+5. Actividades de auto-aprendizajes:
+No existen actividades de auto-aprendizaje
+
+6. Actividades de evaluación:
+Diseñe e implemente un método que reciba dos números enteros por parámetros y retorna la suma duplicada de estos . Dicho método no puede ser recursivo. Elabore un programa donde haga uso de este método. Utilice el lenguaje de programación Java.
+Diseñe e implemente un método que reciba dos números enteros por parámetros y retorna la suma duplicada de estos . Dicho método debe ser recursivo. Elabore un programa donde haga uso de este método. Utilice el lenguaje de programación Java.
+Diseñe e implemente un método que reciba un número natural por parámetros y retorna el numero natural invertido. Por ejemplo para 9 el método retorna 9 mientras para 123 el retorno debe ser 321. Dicho método no puede ser recursivo y solo se puede utilizar variables de tipo entero. Elabore un programa donde haga uso de este método. Utilice el lenguaje de programación Java.
+Diseñe e implemente un método que reciba un número natural por parámetros y retorna vel numero natural invertido. Por ejemplo para 9 el método retorna 9 mientras para 123 el retorno debe ser 321. Dicho método debe ser recursivo y solo se puede utilizar variables de tipo entero. Elabore un programa donde haga uso de este método. Utilice el lenguaje de programación Java.
+Diseñe e implemente un método que permita representar gráficamente un trampolín del deporte saltos ornamentales ( popularmente conocido como clavado) para un videojuego de consola MS-DOS. Para representar el trampolín así como la escalera para subir a el se utilizará el símbolo #. Aquí va un ejemplo de que debe imprimir el método para trampolines de alturas 3, 5 y 10 respectivamente.
+Los trampolines a utilizar en el videojuego sus alturas van oscilar en entre 3 y 20 por tanto el método a implementar debe recibir la altura e imprimir el trampolín correspondiente a esa altura. El método debe ser recursivo. Elabore un programa donde haga uso de este método. Utilice el lenguaje de programación Java.
+7. Resumen:
+Con la realización de esta guía de estudio evaluativa hemos culminado el tercer tema del curso donde se abordo uno de los paradigma de programación como es la programación funcional donde el elemento principal de dicho paradigma son los métodos y funciones. [1]
+
+8. Glosario de términos: [1]
+9. Bibliografía: [1]
+10. Recursos educativos digitales RED: [1]
+11. Próxima unidad: Arreglos y matrices. Introducción arreglos. [1]

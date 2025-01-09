@@ -1,0 +1,68 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Arreglos
+Unidad didáctica: Matrices. Introducción a las matrices.
+1. Objetivos de la unidad didáctica:
+Caracterizar una matriz en la programación.
+Caracterizar el acceso y modificación a los elementos de una matriz
+Caracterizar los recorridos por todos los elementos de una matriz
+2. Introducción a la unidad didáctica:
+Anteriormente se había abordado las ventajas de utilizar arreglos, ya que permiten almacenar, manipular varios valores que tienen en común se son de la misma clase o tipo de dato a través una sola variable la cual hace referencia a a varios lugares consecutivos en la memoria de la computadora. Esta idea nos permite por ejemplo si queremos trabajar con las temperaturas medida a la 9 mañana diariamente durante un mes los podemos almacenar de la siguiente manera:
+
+double [ ] temperatura = new double ;
+
+Pero si ahora queremos trabajar y almacenar las temperaturas medida a la 9 mañana diariamente durante un año agrupadas por meses. Aquí tenemos dos soluciones con las herramientas que contamos.
+
+La primera variante es crear doce arreglos cada uno de 31 capacidades donde cada arreglo representan un mes del año. Esta variante se me parece un poco cuando no sabíamos que existían los arreglos quisimos almacenar las 31 temperaturas del mes en 31 variables. El trabajo con estos doces arreglos sería bastante complejo. [1]
+
+Una segunda variante sería crear un arreglo con una capacidad de 12*31 donde de la posición 0 a la 30 irían las temperaturas del primer mes de las posiciones 31 a 61 las del segundo mes y de esta forma cada 31 posiciones consecutivas le correspondería a un mes. De esta forma almacenamos todos los valores en una sola referencia o variable que hace alusión a varios lugares consecutivos en la memoria de la computadora. La dificultad con esta variante recae en tener que crear una función matemática para que dada una posición del arreglo nos diga a que día y mes se corresponde de igual manera habría que crear una función matemática a la inversa que la anterior que dado un día y mes nos diga que posición del arreglo le corresponde. [2]
+
+Bueno la representación o almacenamiento de los datos anteriores se resuelve utilizando matrices pero primero veamos que matemáticamente que es una matriz. [3]
+
+Una matriz es un arreglo bidimensional de números (llamados entradas de la matriz) ordenados en filas (o renglones) y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. A una matriz con n filas y m columnas se le denomina matriz n-por-m (escrito n x m). [3]
+
+Bueno vamos a pensar lo siguiente: [3]
+
+Si podemos crear un arreglo de algún tipo de dato nativo del lenguaje donde en cada lugar o espacio almacenaré un valor asociado al tipo de dato nativo. Porque no crear un arreglo donde en cada posición en vez de guardar un valor almacenar un arreglo que si almacenara valores de algún tipo nativo del lenguaje. [4]
+
+A esto es lo que llamamos matriz en programación que se dice que es un arreglo de arreglos. [4]
+
+Con esta idea podemos crear un arreglo de 31 posiciones y en cada posición crear un arreglo de 12 posiciones. También pudieras ser un arreglo de 12 posiciones y en cada posición un arreglo de 31 capacidades. [4]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles. [5]
+Cree hábitos de estudio sistemático; para esto: [5]
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [5]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [6]
+Utilice técnicas de estudio: [6]
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan [6]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [6]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [6]
+Interactúe con los materiales de estudio en tres fases: [7]
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [7]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [7]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [8]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [8]
+
+5. Actividades de auto-aprendizajes:
+La matrices se pueden declarar de acuerdo a la situación y en el contexto que se quiera emplear. Defina la sintaxis de cada posible situación y ejemplifique en cada caso [8]
+Explique como podemos acceder o modificar los valores almacenados en una matriz [9]
+Para recorrer un arreglo y consultar cada elemento almacenado utilizamos la estructura repetitiva for. Bueno y ahora en una matriz como podemos recorrer por cada elemento de la matriz ?. De cuantas formas podemos recorrer por todos los elementos de la matriz [9]
+6. Actividades de evaluación:
+Declare una matriz para almacenar la asistencia a clases de un grupo a una determinada asignatura. La asignatura tendrán 24 clases y el grupo lo componen 30 estudiantes. [9]
+Declare una matriz para almacenar todas notas de las preguntas escritas realizadas a dos grupos en una determinada asignatura. Durante el curso se realizaron 15 preguntas escritas, cada grupo lo componen 30 estudiantes. [10]
+7. Resumen:
+Las matrices son una variación de los arreglos por lo que son una estructura de datos simple que permite organizar los datos de forma tabular. Esta estructura de datos muy utilizada en los videojuegos y en los software de corte científicos matemático y su idea simple a permitido pensar en arreglo tridimensionales o con N dimensiones. [10]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos [11]
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.1. [11]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 7 epigrafes 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. [11]
+
+10. Recursos educativos digitales RED:
+11. Próxima unidad: Matrices. Operaciones y algoritmos básicos. [11]

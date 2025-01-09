@@ -1,0 +1,60 @@
+Algoritmos básicos sobre arreglos
+Tomados del Libro: La Esencia de la Lógica de Programación – Omar Ivan Trejos Buriticá
+
+Leer 10 enteros, almacenarlos en un vector y determinar en qué posición del vector está el mayor número leído.
+Leer 10 enteros, almacenarlos en un vector y determinar en qué posición del vector está el mayor número par leído.
+Leer 10 enteros, almacenarlos en un vector y determinar en qué posición del vector está el mayor número primo leído
+Cargar un vector de 10 posiciones con los 10 primeros elementos de la serie de Fibonacci y mostrarlo en pantalla. [1]
+Almacenar en un vector de 10 posiciones los 10 números primos comprendidos entre 100 y 300. Luego mostrarlos en pantalla. [2]
+Leer dos números enteros y almacenar en un vector los 10 primeros números primos comprendidos entre el menor y el mayor. Luego mostrarlos en pantalla. [2]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones se encuentra el número mayor. [2]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones se encuentran los números terminados en 4. [3]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántas veces está repetido el mayor. [3]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones se encuentran los números con más de 3 dígitos. [3]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números tienen, de los almacenados allí, tienen menos de 3 dígitos. [3]
+Leer 10 números enteros, almacenarlos en un vector y determinar a cuánto es igual el promedio entero de los datos del vector. [3]
+Notas Aclaratorias:
+
+La idea de los ejercicios propuestos es que a partir de los enunciados que se brindan, implementar un programa principal que de solución al problema. [4]
+En los enunciados cuando la palabra vector se refiere a un arreglo. [4]
+Algoritmos básicos sobre arreglos
+Leer 10 números enteros, almacenarlos en un vector y determinar si el promedio entero de estos datos está almacenado en el vector. [4]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántas veces se repite el promedio entero de los datos dentro del vector. [5]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos datos almacenados son múltiplos de 3. [5]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuáles son los datos almacenados múltiplos de 3. [5]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números negativos hay. [5]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones están los números positivos. [5]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuál es el número menor. [6]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posición está el menor número primo. [6]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posición está el número cuya suma de dígitos sea la mayor. [6]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuáles son los números múltiplos de 5 y en qué posiciones están. [6]
+Leer 10 números enteros, almacenarlos en un vector y determinar si existe al menos un número repetido. [6]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posición está el número con mas dígitos. [7]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos de los números leídos son números primos terminados en 3. [7]
+Leer 10 números enteros, almacenarlos en un vector y calcularle el factorial a cada uno de los números leídos almacenándolos en otro vector. [7]
+Leer 10 números enteros, almacenarlos en un vector y determinar a cuánto es igual el promedio entero de los factoriales de cada uno de los números leídos. [7]
+Leer 10 números enteros, almacenarlos en un vector y mostrar en pantalla todos los enteros comprendidos entre 1 y cada uno de los números almacenados en el vector. [8]
+Algoritmos básicos sobre arreglos
+Leer 10 números enteros, almacenarlos en un vector y mostrar en pantalla todos los enteros comprendidos entre 1 y cada uno de los dígitos de cada uno de los números almacenados en el vector. [8]
+Leer 10 números enteros, almacenarlos en un vector. Luego leer un entero y determinar si este último entero se encuentra entre los 10 valores almacenados en el vector. [9]
+Leer 10 números enteros, almacenarlos en un vector. Luego leer un entero y determinar cuántos divisores exactos tiene este último número entre los valores almacenados en el vector. [9]
+Leer 10 números enteros, almacenarlos en un vector. Luego leer un entero y determinar cuántos números de los almacenados en el vector terminan en el mismo dígito que el último valor leído. [9]
+Leer 10 números enteros, almacenarlos en un vector y determinar a cuánto es igual la suma de los dígitos pares de cada uno de los números leídos. [9]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántas veces en el vector se encuentra el dígito 2. No se olvide que el dígito 2 puede estar varias veces en un mismo número. [10]
+Leer 10 números enteros, almacenarlos en un vector y determinar si el promedio entero de dichos números es un número primo. [10]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos dígitos primos hay en los números leídos. [10]
+Leer 10 números enteros, almacenarlos en un vector y determinar a cuántos es igual el cuadrado de cada uno de los números leídos. [10]
+Leer 10 números enteros, almacenarlos en un vector y determinar si la semisuma entre el valor mayor y el valor menor es un número primo. [11]
+Leer 10 números enteros, almacenarlos en un vector y determinar si la semisuma entre el valor mayor y el valor menor es un número par. [11]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números de los almacenados en dicho vector terminan en 15. [11]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números de los almacenados en dicho vector comienzan con 3. [11]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números con cantidad par de dígitos pares hay almacenados en dicho vector. [12]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones se encuentra el número con mayor cantidad de dígitos primos. [12]
+Algoritmos básicos sobre arreglos
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos de los números almacenados en dicho vector pertenecen a los 100 primeros elementos de la serie de Fibonacci. [12]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números de los almacenados en dicho vector comienzan por 34. [13]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números de los almacenados en dicho vector son primos y comienzan por 5. [13]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posiciones se encuentran los números múltiplos de 10. No utilizar el número 10 en ninguna operación. [13]
+Leer 10 números enteros, almacenarlos en un vector y determinar en qué posición se encuentra el número primo con mayor cantidad de dígitos pares. [14]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números terminar en dígito primo. [14]
+Leer 10 números enteros, almacenarlos en un vector y determinar cuántos números de los almacenados en dicho vector comienzan en dígito primo. [14]

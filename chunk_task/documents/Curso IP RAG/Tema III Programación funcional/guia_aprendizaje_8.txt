@@ -1,0 +1,185 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Programación funcional.
+Unidad didáctica: Cuerpos de las funciones y métodos de clase.
+1. Objetivos de la unidad didáctica:
+Caracterizar el cuerpos de una función o método de clase.
+Identificar los principales elementos que componen el cuerpo de una función o método de clase.
+2. Introducción a la unidad didáctica:
+En guías de aprendizajes anteriores se había abordado que la mayoría de los programas de cómputo que resuelven los problemas reales son mucho más extensos que los programas que hemos desarrollado hasta ahora. La experiencia ha demostrado que la mejor manera de desarrollar y mantener un programa extenso es construirlo a partir de pequeñas piezas sencillas, o módulos.
+
+Se había definido que existen tres tipos de módulos en Java: métodos, clases y paquetes. Y que el módulo más pequeño de los tres anteriores era: los métodos. En guía anteriores teníamos como ejemplo de métodos de clase los siguientes métodos:
+
+public static boolean desigualdadTriangular(double ladoA, double ladoB, double ladoC){
+
+  if (ladoA+ladoB>ladoC && ladoA+ladoC>ladoB && ladoB+ladoC>ladoA){
+
+    return true;
+
+  } else {
+
+    return false;
+
+  }
+
+}
+
+public static String clasificarTrianguloPorLados(double ladoA, double ladoB, double ladoC){
+
+  if (ladoA==ladoB && ladoA==ladoC){
+
+    return "Equilatero";
+
+  } else if ( (ladoA==ladoB && ladoA!=ladoC) ||
+
+                                                     (ladoA==ladoC && ladoA!=ladoB) ||
+
+                                                     (ladoC==ladoB && ladoA!=ladoC)){
+
+    return "Isosceles";
+
+  } else {
+
+    return "Escaleno";
+
+  }
+
+}
+
+public static void main(String[] args){
+
+  double A,B,C,x1=0,x2=0;
+
+  Scanner input = new Scanner(System.in);
+
+      System.out.print("Entre el valor de A: ");
+
+  A = input.nextDouble();
+
+  System.out.print("Entre el valor de  B: ");
+
+  B = input.nextDouble();
+
+  System.out.print("Entre el valor de C: ");
+
+  C = input.nextDouble();
+
+  if (desigualdadTriangular(A,B,C) == true){
+
+    System.out.print("Con esos valores se puede conformar un triangulo ");
+
+    System.out.println(clasificarTrianguloPorLados(A,B,C));
+
+  } else {
+
+    System.out.println("Con esos valores no se puede conformar un triangulo");
+
+  }
+
+}
+
+Con la realización de la guías de aprendizaje anteriores se determino que los métodos o funciones de clases en su conformación o implementación se compone de dos secciones o partes esenciales: header/body. El header o cabecera declarativa de una función o método es la sección donde se define los elementos básicos y fundamentales de la función. Mientras en el body o cuerpo de función es donde se define los pasos e instrucciones del algoritmo que ejecutará el método o función una vez que sea invocado, estos pasos e instrucciones van a depender de cierta manera de lo que se defina en el header del método. Aplicando lo anterior en los métodos anteriormente descritos quedaría de la siguiente manera.
+
+public static boolean desigualdadTriangular(double ladoA, double ladoB, double ladoC){
+
+  if (ladoA+ladoB>ladoC && ladoA+ladoC>ladoB && ladoB+ladoC>ladoA){
+
+    return true;
+
+  } else {
+
+    return false;
+
+  }
+
+}
+
+public static String clasificarTrianguloPorLados(double ladoA, double ladoB, double ladoC){
+
+  if (ladoA==ladoB && ladoA==ladoC){
+
+    return "Equilatero";
+
+  } else if ( (ladoA==ladoB && ladoA!=ladoC) || (ladoA==ladoC && ladoA!=ladoB) || (ladoC==ladoB && ladoA!=ladoC)){
+
+    return "Isosceles";
+
+  } else {
+
+    return "Escaleno";
+
+  }
+
+}
+
+public static void main(String[] args){
+
+  double A,B,C,x1=0,x2=0;
+
+  Scanner input = new Scanner(System.in);
+
+      System.out.print("Entre el valor de A: ");
+
+  A = input.nextDouble();
+
+  System.out.print("Entre el valor de  B: ");
+
+  B = input.nextDouble();
+
+  System.out.print("Entre el valor de C: ");
+
+  C = input.nextDouble();
+
+  if (desigualdadTriangular(A,B,C) == true){
+
+    System.out.print("Con esos valores se puede conformar un triangulo ");
+
+    System.out.println(clasificarTrianguloPorLados(A,B,C));
+
+  } else {
+
+    System.out.println("Con esos valores no se puede conformar un triangulo");
+
+  }
+
+}
+
+El texto con color rojo representa la sección representa el header o cabacera del método mientras el color verde representa el body o cuerpo de implementación. En la presente guía abordaremos los elementos presentes en la zona verde del método.
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles.
+Cree hábitos de estudio sistemático; para esto:
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora.
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo.
+Utilice técnicas de estudio:
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes.
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante.
+Interactúe con los materiales de estudio en tres fases:
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone.
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente.
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje.
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico.
+
+5. Actividades de auto-aprendizajes:
+Con que símbolo o elemento comienza el cuerpo de implementación de un método o función de clase. Identifique dicho símbolo o elemento en el código presentado en la Introducción a la unidad didáctica.
+Con que símbolo o elemento termina el cuerpo de implementación de un método o función de clase. Identifique dicho símbolo o elemento en el código presentado en la Introducción a la unidad didáctica.
+Existe alguna limitación en cuanto a la mínima o máxima a la cantidad de instrucciones que puede tener el cuerpo de un método o función de clases.
+Se puede declarar variables dentro del cuerpo de un método o función de clases. Si lo anterior es posible que sucede con el ámbito de vida de dicha variable. Utilice como referencia el código presentado en la Introducción a la unidad didáctica.
+Defina la sintaxis del cuerpo de un método o función de clase en el lenguaje de programación Java a partir de los elementos abordados en la guía de aprendizaje.
+6. Actividades de evaluación:
+1.Declare e implemente una función o método de clase utilizando el lenguaje de programación Java que permita calcular y retornar la cantidad de combinaciones de N en K. Dicha función o método recibe por parámetro los valores de N y K. 2.Declare e implemente una función o método de clase utilizando el lenguaje de programación de Java que permita calcular y retornar el factorial de N. Dicha función o método recibe por parámetro el valor de N. 3.Declare e implemente una función o método de clase utilizando el lenguaje de programación de Java que permita invertir un número entero N. Dicha función o método recibe por parámetro el valor de N. Ejemplo si la función recibe el numero 123 debe retornar el 321. Importante en el cuerpo del método o función solo se puede utilizar o declarar variables enteras.
+
+7. Resumen:
+Un método o función de clase se compone de dos secciones bien definidas como son el header o cabecera y body o cuerpo de implementación. En el body o cuerpo de implementación del método se define el algoritmo y secuencia de instrucciones que se deben ejecutar para que el método lleve a cabo el objetivo con el que fue creado. Aunque no existe limitación en cuanto a la cantidad de instrucciones que puede tener el body o cuerpo de implementación de un método es recomendable no superar las 200 instrucciones, si lo anterior sucediera se recomienda fracciones dicho método en varios métodos. Otra buena práctica es que los métodos siempre deben tratar de resolver un problema, intentar resolver varios problemas o cálculos en un mismo método aunque estos sean similares puede complejizar la solución o el trabajo y utilización de dicho método.
+
+8. Glosario de términos:
+Consulte la bibliografía y defina el concepto del siguiente término: Ámbito de vida de una variable:
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 3 epígrafes 3.1, 3.2, 3.3, 3.4. Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 6 completo
+
+10. Recursos educativos digitales RED:
+11. Próxima unidad: Llamada o invocación de de las funciones y métodos de clase.

@@ -1,0 +1,76 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Arreglos y matrices
+Unidad didáctica: Arreglos. Recorrido, acceso y modificación de sus elementos.
+1. Objetivos de la unidad didáctica:
+Caracterizar la forma de recorrer los elementos de un arreglo en el lenguaje de programación Java.
+Caracterizar la forma de acceder y modificación de los elementos en el lenguaje de programación Java.
+2. Introducción a la unidad didáctica:
+En la guía de aprendizaje anterior se abordó que existe varias formas de declarar un arreglo: Una primera variante donde solo definimos la capacidad del arreglo pero no definimos que valores serán almacenados un ejemplo de esto:
+
+double [] tempPromedio = new double [ 732 ];
+
+Está variante que puede ser una posible variante de solución a la primera actividad de autoevaluación de la guía de aprendizaje anterior. Esta forma define un arreglo capaz de almacenar 732 valores flotantes pero no se define que valores son los almacenados.
+
+Una segunda variante es definir el arreglo con los valores iniciales almacenados como por ejemplo
+
+int [] fibbonacci  = { 1, 1, 2, 3, 5, 8, 13, 21, 34, 54 } ;
+
+Está variante que puede ser una posible variante de solución a segunda actividad de autoevaluación de la guía de aprendizaje anterior. Esta forma define un arreglo con 10 elementos y a su vez cuales serán los valores.
+
+Pero como podemos para el primer caso definir que en determinada posición se quiere almacenar un determinado valor u obtener el valor que se encuentra almacenado en determinada posición del segundo caso.
+Para obtener o modificar un valor dentro del arreglo es necesario nombrar al arreglo y especificar la posición dentro del arreglo a la cual queremos acceder utilizando la pareja de símbolos [ ] dentro de dichos símbolos la posición a la cual queremos acceder, la posición puede estar representada por un valor literal numérico o una variable de tipo entera. [1]
+
+En el caso de los arreglos las posiciones se enumeran a partir del cero es por eso que la primera posición de un arreglo es la posición 0, la segunda la posición 1, la tercera la posición 2 y así de esta forma sucesivamente. [2]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles.
+Cree hábitos de estudio sistemático; para esto:
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [3]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [3]
+Utilice técnicas de estudio:
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan [4]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [4]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [4]
+Interactúe con los materiales de estudio en tres fases:
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [5]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [5]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [5]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [6]
+
+5. Actividades de auto-aprendizajes:
+Se desea almacenar el valor 31.5 en el arreglo tempPromedio presentado en la sección Introducción a la unidad didáctica en el día 105 del primer año cuales de las siguientes instrucciones es la correcta: [6]
+tempPromedio = 31.5;
+
+tempPromedio = 31.5;
+
+tempPromedio = 31.5;
+
+tempPromedio = "31.5";
+
+tempPromedio = "31.5";
+
+Cual sería la instrucción en lenguaje de programación Java para almacenar en la variable entera X el valor almacenado en la posición 6 del arreglo fibbonacci presentado en la sección Introducción a la unidad didáctica. [6]
+Se quiere tener un arreglo de entero que pueda almacenar hasta 100 elementos pero con la siguiente condición: el primer elemento debe almacenar en la posición 1 , el segundo elemento en la posición 2 y así sucesivamente hasta la posición 100 donde se almacena el elemento cien de los valores. Declare un arreglo de entero utilizando el lenguaje de programación Java que permita cumplir con la condición anterior. [7]
+6. Actividades de evaluación:
+Diseñe e implemente un programa utilizando el lenguaje de programación Java que haga uso del arreglo fibbonacci presentado en la sección Introducción a la unidad didáctica. El programa debe solicitar dos números A y B los cuales deben estar entre 1 y 10 al usuario. Una vez introducidos dicho valores el programa validará que ambos valores están en el rango. De estar en el rango el programa imprimirá la suma de los elementos almacenados en la posiciones de los valores de A y B del arreglo sino se imprimirá el mensaje "Posiciones fuera del rango valido del arreglo" [8]
+Diseñe e implemente un programa utilizando el lenguaje de programación Java que haga uso del arreglo fibbonacci presentado en la sección Introducción a la unidad didáctica. El programa debe solicitar dos números A y B los cuales deben estar entre 1 y 10 al usuario. Una vez introducidos dicho valores el programa validará que ambos valores están en el rango. De estar en el rango el programa imprimirá la suma de todos los elementos almacenados entre en la posiciones de los valores de A y B del arreglo sino se imprimirá el mensaje "Posiciones fuera del rango valido del arreglo" [9]
+Diseñe e implemente un programa utilizando el lenguaje de programación Java que haga uso del arreglo fibbonacci presentado en la sección Introducción a la unidad didáctica. El programa debe solicitar un número A. Una vez introducidos dicho valor el programa imprimirá la suma de los valores del arreglo que son divisible por el valor A. [10]
+Diseñe e implemente un programa utilizando el lenguaje de programación Java que haga uso del arreglo fibbonacci presentado en la sección Introducción a la unidad didáctica. El programa debe ser capaz de crear un arreglo de entero llamado invertFibbonacci con la misma capacidad que el arreglo fibbonacci. El programa debe copiar los elementos almacenados en fibbonacci para invertFibbonacci pero deben ser colocados en orden inversos a como están en el arreglo fibbonacci. [11]
+7. Resumen:
+El acceso o modificación de los elementos almacenados en un arreglo se hace a través de nombrar el arreglo y una posición de este. La posición va encerrada entre una pareja de [ ] y la misma se puede especificar a través de un valor numérico natural o una variable de tipo entero. La indexación por defecto de los elementos dentro de un arreglo se hace a partir de la posición 0 pero eso no quita que los programadores puedan realizar su propia indexación lo que por supuesto esto llevará algunas modificaciones. [11]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos [12]
+
+foreach:
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.1. [12]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 7 epigrafes 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. [12]
+
+10. Recursos educativos digitales RED: [12]
+11. Próxima unidad: Arreglo. Algoritmos básicos. [12]

@@ -1,0 +1,61 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Arreglos
+Unidad didáctica: Matrices. Operaciones y algoritmos básicos.
+1. Objetivos de la unidad didáctica:
+Identificar las operaciones básicas que se pueden realizar sobre las matrices del lenguaje de programación Java.
+Caracterizar cada una de las operaciones básicas que se pueden realizar sobre las matrices del lenguaje de programación Java.
+2. Introducción a la unidad didáctica:
+Sobre una matriz de elementos se pueden realizar un grupo de operaciones independientemente del tipo de dato de los elementos del arreglo. Con estas operaciones vamos a poder crear, llenar, buscar, obtener o modificar elementos en la modificar. [1] Cada una de esas operaciones se le puede definir su algoritmo el cual se puede codificar en un método. [1] Antes de empezar a definir cada una de las operaciones es bueno aclarar que siempre que se trabaje con este tipo de estructura la misma debe estar completamente llena, no puede existir capacidades o 'huecos' disponibles como sucede en el arreglo es por eso que las primeras operaciones con una matriz debe ser la de creación y llenado. [1]
+
+3. Operaciones con matrices:
+Las primeras operaciones que vamos a analizar son las que permiten crear y llenar la matriz con valores: [2]
+
+Crear: Esta operación se encarga de crear una matriz con determinadas dimensiones las cuales pueden ser definidas por el usuario o por mismo el programador si es conocido por él los valores de de dichas dimensiones. [2] Cuando se crea una matriz la computadora asigna a cada posición de esta un mismo valor el cual esta en correspondencia con el tipo de dato. [2] Es por eso que de realizar cualquier operación con la matriz la misma sea llenada con con los valores reales para evitar resultados incorrectos. [2]
+Llenar: Esta operación se encarga de colocar en cada posición de la matriz el valor correspondiente. [3] Al igual que la operación anterior se puede llenar solicitando lo valores al usuario donde además de solicitar dicho valor se le debe solicitar o especificar al usuario en que fila y columna de la matriz va ese valor o por mismo el programador si es conocido por él los valores de cada una de las posiciones. [3]
+Otra de las operaciones básicas sobre matrices es la búsqueda; dentro de los elementos almacenados en una matriz se comprueba la existencia o no de un determinado elemento. [3] En dicha operación se comprueba recorriendo todos los elementos de la matriz y comprobando con cada uno de los elementos si es igual a valor que se desea buscar en caso de ser igual se dice que que elemento se encuentra y solo se puede asegurar de la no existencia del valor dentro del arreglo cuando se haya comprobado con todos los elementos. [3] La operación de búsqueda puede tener varias variantes según sea la necesidad y el problema: [3]
+
+Existencia o no: Solo comprueba si el valor buscado esta almacenado en la matriz el mismo retorna un valor lógico verdadero si existe falso en caso contrario. [4]
+Posición de la primera ocurrencia: Retorna la posición dentro de la matriz donde esta almacenado la primera ocurrencia del valor buscado. [4] Aquí lo que sucede es que la posición dentro de la matriz lo define un par ordenado (fila y columna) por los que se retorna un arreglo con dos elementos ; el primer elemento del arreglo indica la fila mientras el segundo elemento indica la columna donde se encuentra ubicado el elemento buscado en caso de no existir el valor en la matriz se retorna [-1,-1] ya que un ese valor es una posición invalida dentro de una matriz en Java. [4]
+Posición de la última ocurrencia: Retorna la posición dentro de la matriz donde esta almacenado la última ocurrencia del valor buscado. [5] Aquí lo que sucede es que la posición dentro de la matriz lo define un par ordenado (fila y columna) por los que se retorna un arreglo con dos elementos ; el primer elemento del arreglo indica la fila mientras el segundo elemento indica la columna donde se encuentra ubicado el elemento buscado en caso de no existir el valor en la matriz se retorna [-1,-1] ya que un ese valor es una posición invalida dentro de una matriz en Java. [5]
+Mayor o menor elemento: Retorna el mayor o el menor valor almacenado en la matriz según sea el caso. [6]
+Mayor o menor elemento de una fila: Retorna el mayor o el menor valor almacenado en la matriz según sea el caso en una determinada fila. [6] Aquí se fija una de las dimensiones de la matriz en este caso la fila y se busca en todas las columnas asociadas a esa fila. [6]
+Mayor o menor elemento de una columna: Retorna el mayor o el menor valor almacenado en la matriz según sea el caso en una determinada columna. [6] Aquí se fija una de las dimensiones de la matriz en este caso la columna y se busca en todas las filas asociadas a esa columna. [6]
+Tanto las operaciones de obtener o modificar permiten obtener o modificar el valor de una determinada posición de la matriz para eso se necesita en conocer la posición (en este caso conformado por el par ordenado fila y columna) en ambas operaciones mientras en la de modificar se necesita conocer el nuevo valor que se desea almacenar en la posición. [7]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles. [7]
+Cree hábitos de estudio sistemático; para esto: [8]
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [8]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [8]
+Utilice técnicas de estudio: [9]
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan [9]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [9]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [9]
+Interactúe con los materiales de estudio en tres fases: [10]
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [10]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. [10] Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [10]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [11]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [11]
+
+5. Actividades de auto-aprendizajes:
+Que prerrequisito se debe cumplir en la matriz para poder llevar a cabo las operación de llenar. [11]
+Que prerrequisito debe cumplir la posición en las operaciones de llenar, obtener y modificar. [12]
+Que ocurre entre la posición del elemento para el usuario y la posición de ese mismo elemento en la matriz. [12]
+6. Actividades de evaluación:
+Descargue el proyecto Laboratorio Operaciones Básicas de Matrices publicado en el espacio de la asignatura en el Entorno Virtual de Aprendizaje de la Universidad de Matanzas ( eva.umcc.cu ) y complete la implementación de los métodos propuestos en dicho proyecto. [12]
+7. Resumen:
+Las matrices son una variación de los arreglos por lo que son una estructura de datos simple que permite ser utilizada para representar grafos, algunos juegos de tablero y una organización tabular de la información. [13]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos [13]
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.1. [13]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 7 epigrafes 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. [13]
+
+10. Recursos educativos digitales RED: [14]
+11. Próxima unidad: Cadenas. [14]

@@ -1,0 +1,67 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Arreglos y matrices
+Unidad didáctica: Arreglo. Algoritmos básicos.
+1. Objetivos de la unidad didáctica:
+Identificar las operaciones básicas que se pueden realizar sobre los arreglos del lenguaje de programación Java.
+Caracterizar cada una de las operaciones básicas que se pueden realizar sobre los arreglos del lenguaje de programación Java.
+2. Introducción a la unidad didáctica:
+Sobre un arreglo o colección de elementos se pueden realizar un grupo de operaciones independientemente del tipo de dato de los elementos del arreglo. Con estas operaciones vamos a poder adicionar, eliminar, buscar, obtener o modificar elementos en el arreglo. Cada una de esas operaciones se le puede definir su algoritmo el cual se puede codificar en un método. [1]
+
+Antes de empezar a definir cada una de las operaciones es bueno aclarar que siempre que se trabaje con este tipo de estructura puede suceder dos tipos de situaciones: [2]
+
+El arreglo tiene todas sus capacidades ocupadas por elementos no existen capacidades o huecos vacíos. Esta situación es muy recomendable para arreglos que van ser pasados por parámetros a una función o método. Pero tienen como desventaja que dicho arreglo no acepta nuevos elementos. [2]
+El arreglo no tiene todas sus capacidades ocupadas por elementos y existen capacidades o huecos vacíos que se encuentran en las últimas posiciones del arreglo. Dichas capacidades o huecos disponibles hacen que cuando se opere con los elementos del arreglo se tenga que conocer la cantidad real de elementos ya que durante una determinada operación se acceda a una posición donde aún no ha sido colocado ningún elemento y provoque un error en cuanto al resultado esperado. Para solventar dicha situación se crea una variable entera casi siempre llamada cantReal asociada al arreglo que su valor indicará cuantos elementos existen realmente en el arreglo. Dicha variable se inicializa en cero y se incrementa o decrementa cada vez que se adiciona o elimina un elemento respectivamente del arreglo. [2]
+Las primeras operaciones que vamos a analizar son las que permiten adicionar nuevos elementos en el arreglo. Lo primero que debemos conocer es que los elementos deben ser colocados de forma consecutiva si dejar capacidad o huecos vacíos entre elementos y siempre comenzando por el principio. Para añadir nuevos elementos existen dos criterios : [3]
+
+Adicionar: El nuevo elemento es colocado en la posición siguiente del último elemento almacenado hasta ese momento en el arreglo en otras palabras se busca la primera posición disponible comenzado desde el principio. [3]
+Insertar: Además del nuevo elemento se necesita una posición dentro del arreglo donde se desea colocar el elemento. Lo anterior provoca que todos los elementos del arreglo almacenados en una posición igual o superior a la posición donde se desea insertar tengan que desplazarse una posición superior para crear la capacidad o hueco al nuevo elemento. [4]
+La siguiente operación que vamos a analizar será la que permite eliminar elementos del arreglo. Para eliminar un elemento se necesita conocer la posición que ocupa el mismo dentro del arreglo una vez conocido la posición que se desea eliminar se siguen dos criterios: [4]
+
+Mantener el orden inicial: Este criterio hace que todos los elementos en una posición superior o mayor que la posición que se desea eliminar tengan que desplazarse una posición inferior y de esta forma sobrescribir el valor que inicialmente quería eliminarse. Esta variante permite mantener el orden inicial existente entre los elementos del arreglo. [5]
+No importa el orden: Este criterio selecciona el último elemento del arreglo y lo asigna a la posición del arreglo que se desea eliminar esto hace que se sobrescribe el valor que estaba en esa posición por el último valor adicionado al arreglo. Esta variante es mas sencilla de implementar pero no es recomendable cuando se desea mantener el orden inicial de los elementos. [5]
+Otra de las operaciones básicas sobre arreglo es la búsqueda; dentro de los elementos almacenados en el arreglo se comprueba la existencia o no de un determinado elemento. En dicha operación se comprueba recorriendo todos los elementos del arreglo y comprobando con cada uno de los elementos si es igual a valor que se desea buscar en caso de ser igual se dice que que elemento se encuentra y solo se puede asegurar de la no existencia del valor dentro del arreglo cuando se haya comprobado con todos los elementos. [6]
+
+La operación de búsqueda puede tener varias variantes según sea la necesidad y el problema: [7]
+
+Existencia o no: Solo comprueba si el valor buscado esta almacenado en el arreglo el mismo retorna un valor lógico verdadero si existe falso en caso contrario. [7]
+Posición de la primera ocurrencia: Retorna la posición dentro del arreglo donde esta almacenado la primera ocurrencia del valor buscado comenzando por la posición cero. en caso de no existir el valor en el arreglo se retorna -1 ya que un ese valor es una posición invalida dentro de un arreglo en Java. [7]
+Posición de la última ocurrencia: Retorna la posición dentro del arreglo donde esta almacenado la última ocurrencia del valor buscado comenzando por la posición cero. en caso de no existir el valor en el arreglo se retorna -1 ya que un ese valor es una posición invalida dentro de un arreglo en Java. [8]
+Tanto las operaciones de obtener o modificar permiten obtener o modificar el valor de una determinada posición del arreglo para eso se necesita en conocer la posición en ambas operaciones mientras en la de modificar se necesita conocer el nuevo valor que se desea almacenar en la posición. [8]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles. [9]
+Cree hábitos de estudio sistemático; para esto: [9]
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [9]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [10]
+Utilice técnicas de estudio: [10]
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan [10]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [10]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [10]
+Interactúe con los materiales de estudio en tres fases: [11]
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [11]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [11]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [12]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [12]
+
+5. Actividades de auto-aprendizajes:
+Que prerrequisito se debe cumplir en el arreglo para poder llevar a cabo las operaciones de adicionar e insertar. [12]
+Que prerrequisito debe cumplir la posición en las operaciones de eliminar, insertar, obtener y modificar. [13]
+Que ocurre entre la posición del elemento para el usuario y la posición de ese mismo elemento en el arreglo. [13]
+6. Actividades de evaluación:
+Descargue el proyecto Laboratorio Operaciones Básicas de Arreglo publicado en el espacio de la asignatura en el Entorno Virtual de Aprendizaje de la Universidad de Matanzas ( eva.umcc.cu ) y complete la implementación de los métodos propuestos en dicho proyecto. [13]
+7. Resumen:
+El conocimiento de algoritmos básicos sobre arreglos permiten la manipulación de los arreglos y son la base para la confección de algoritmos mas complejos sobre dicha estructuras. [14]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos [14]
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.1. [14]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 7 epigrafes 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. [14]
+
+10. Recursos educativos digitales RED: [15]
+11. Próxima unidad: Arreglo. Algoritmos sobre arreglos. [15]

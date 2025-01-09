@@ -1,0 +1,60 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema: Arreglos y matrices
+Unidad didáctica: Arreglos. Introducción a los arreglos en programación.
+1. Objetivos de la unidad didáctica:
+Caracterizar un arreglo en la programación.
+Caracterizar las distintas formas de declarar un arreglo en el lenguaje de programación Java.
+2. Introducción a la unidad didáctica:
+Con los conocimientos que tenemos de programación y del lenguaje de programación Java si nos piden almacenar el valor que representa la temperatura promedio de un día podríamos almacenar dicho valor en una variable flotante que podría ser de esta manera:
+
+double tempProm;
+
+Pero si necesitará almacenar la de dos días o mejor la tres días o 100 días como resolver antes situaciones ?. Es evidente que para los dos primeros casos con dos y tres variables pero ya el último caso sería factible declarar 100 variables ? Sería fácil trabajar con esa cantidad de variables ?. Pues claro que no pero como resolver entonces la situación anterior.
+
+Bueno lo primero que vamos a notar es que la información con que se trabaja se puede clasificar dentro de una misma clase en este caso los valores de las temperaturas son valores numéricos flotante. Por tanto la idea sería tener un solo identificador de memoria de la maquina ( una variable , no se me asusten) en cual pudiéramos almacenar esos valores ya que todos esos valores van ser del mismo tipo de dato. Pues bien lo anterior se resuelve utilizando arreglos. Pero que es un arreglo ?.
+
+Bien según los de trajes y corbata un arreglo es una estructura de datos que hace referencia a varios lugares de la memoria de la computadora que se encuentran de forma consecutivas en los cuales se va almacenar información que pertenecen a una misma clase o clasificación. Vamos a tratar de entender esto mejor lo anterior. Una computadora para almacenar un valor entero utiliza 32bits disponibles en la computadora si fuera a reservar un arreglo de enteros con capacidad de 10 elementos la computadora va a buscar 32x10=320 (del bit 0 al bit 31 para almacenar el primer numero, del bit 32 al bit 63 para el segundo número y así cada 32 bits para cada número) bits disponibles de forma consecutivas en la computadoras. Una forma gráfica de ver esto como una tabla con una sola fila y varias columnas donde la cantidad de columnas es la capacidad o la cantidad máxima de valores que va ser capaz de almacenar el arreglo.
+
+En cada celda de esta tabla se va almacenar un valor. A todas esta celdas de memoria se puede acceder utilizando una sola referencia de memoria o variable. Pero como diferenciar o obtener un determinado valor almacenado dentro del arreglo, bueno por su posición. Si lo anterior no se entendió veamos al siguiente analogía entre una calle residencial y un arreglo. Una arreglo contiene o almacena de forma consecutiva valores que pertenece a un mismo tipo de clase mientras una calle residencial contiene a varias casas de forma consecutivas. Bueno pero como diferenciar o acceder los elementos que almacena un arreglo ? Como sería para el caso de la calle residencial sencillo para la calle residencial solo bastaría con especificar el número de la casa. Pues bien el 'numero de la casa' en el caso del arreglo seria la posición que ocupa el elemento en el arreglo.
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles.
+Cree hábitos de estudio sistemático; para esto:
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora.
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo.
+Utilice técnicas de estudio:
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan.
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes.
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante.
+Interactúe con los materiales de estudio en tres fases:
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone.
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente.
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje.
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico.
+
+5. Actividades de auto-aprendizajes:
+De cuantas formas podemos declarar un arreglo en el lenguaje de programación Java. Defina su sintaxis de declaración y ejemplifique en cada caso.
+Explique como podemos acceder o modificar los valores almacenados en un arreglo.
+Como podemos movernos o iterar sobre todos los elementos del arreglo. Que estructura de las conocidas es la mas idónea.
+El arreglo se le define una capacidad y en cada posición se almacenará un valor. Cual es el rango de posición validas del arreglo.
+Que método o función tienen los arreglos en el lenguaje de programación Java que te permiten conocer la capacidad de de estos.
+6. Actividades de evaluación:
+Declare un arreglo utilizando el lenguaje de programación Java de la forma más conveniente que pueda ser utilizado para almacenar la temperatura promedio diaria durante dos años.
+Declare un arreglo utilizando el lenguaje de programación Java de la forma más conveniente que pueda ser utilizado para almacenar los 10 primeros valores de la sucesión de los números de Fibonacci.
+Declare un arreglo utilizando el lenguaje de programación Java de la forma más conveniente cuya capacidad es definida previamente por un valor introducido por el usuario en el programa.
+Defina como se puede acceder a la ultima, penúltima y antepenúltima posición de un arreglo del cual no se conoce su capacidad.
+7. Resumen:
+Los arreglos son la estructura de datos mas sencilla que existe y es la base para entender y comprender el funcionamiento del restos de las estructuras de datos que le continuaron. Con el vamos a poder manipular un grupo de datos de similares características a través de una sola referencia a memoria (una variable).
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos:
+
+arreglo unidimensional:
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.1.
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 7 epigrafes 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8.
+10. Recursos educativos digitales RED:
+11. Próxima unidad: Arreglo. Recorrido, acceso y modificación de sus elementos.

@@ -1,0 +1,60 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Arreglos y matrices
+Unidad didáctica: Arreglo. Algoritmos sobre arreglos.
+1. Objetivos de la unidad didáctica:
+Identificar las operaciones que se pueden realizar sobre los arreglos del lenguaje de programación Java.
+Caracterizar cada una de las operaciones que se pueden realizar sobre los arreglos del lenguaje de programación Java.
+2. Introducción a la unidad didáctica:
+Sobre un arreglo o colección de elementos se pueden realizar un grupo de operaciones independientemente del tipo de dato de los elementos del arreglo. Con estas operaciones vamos a poder adicionar, eliminar, buscar, obtener o modificar elementos en el arreglo. Cada una de esas operaciones se le puede definir su algoritmo el cual se puede codificar en un método. [1]
+
+Ya acorde al tipo de dato que va almacenar el arreglo se pueden definir un grupo de operaciones que solo son aplicable a ese tipos de datos. Veamos algunas de esas operaciones. [2]
+
+Conteo. Esta operación cuenta la cantidad de elementos dentro del arreglo cumple con determinada condición. La condición de conteo puede cambiar según la situación del problema o ejercicio pero la idea algorítmica del conteo es la misma: Declarar e inicializar un contador entero en cero, recorrer cada elemento del arreglo, si el elemento cumple la condición requerida se incrementa el contador en cero. [2]
+
+Sumador. Esta operación es algo similar a la anterior con la variación que ahora se ir acumulando o sumando aquellos valores de los elementos que dentro del arreglo cumpla con una determinada condición. [3]
+
+Media aritmética. (también llamada promedio o simplemente media) de un arreglo se obtiene a partir de la suma de todos sus valores de los elementos dividida entre el número de elementos del arreglo. [3]
+
+Moda. Implica buscar entre todos los elementos del arreglo aquel elemento que mas se repite. [3]
+
+Mediana. Implica buscar aquel elemento que dentro del arreglo que se ubica en la posición central o mitad del arreglo una vez que los elementos fueron ordenados, de ser la cantidad de elementos par se promedia los dos elementos centrales. [4]
+
+Ordenamiento. Permite ordenar los elementos dentro del arreglo ya sea de una forma ascendente o descendente. [4]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles. [4]
+Cree hábitos de estudio sistemático; para esto: [5]
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [5]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [5]
+Utilice técnicas de estudio: [6]
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan [6]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [6]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [6]
+Interactúe con los materiales de estudio en tres fases: [7]
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [7]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [7]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [8]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [8]
+
+5. Actividades de auto-aprendizajes:
+Que tipo de dato es el más adecuado para retornar la media aritmética. [8]
+Que tipo de datos deben ser los arreglos sobre los cuales se puedan aplicar operaciones como la media aritmética y sumador. [9]
+Investigue sobre los algoritmos de ordenamiento BurbleSort y SelectionSort. Caracterice cada uno de los algoritmos en cuanto a funcionamiento, cantidad de operaciones que realiza y complejidad. [9]
+6. Actividades de evaluación:
+Descargue el proyecto Laboratorio Operaciones Estadísticas de Arreglo publicado en el espacio de la asignatura en el Entorno Virtual de Aprendizaje de la Universidad de Matanzas ( eva.umcc.cu ) y complete la implementación de los métodos propuestos en dicho proyecto. [9]
+7. Resumen:
+El conocimiento de algoritmos básicos o algunos más específicos acorde al tipo de dato que almacenen los arreglos permiten la manipulación de los arreglos y son la base para la confección de algoritmos mas complejos sobre dicha estructuras. [10]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos [10]
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.1. [10]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 7 epigrafes 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8. [10]
+
+10. Recursos educativos digitales RED: [11]
+11. Próxima unidad: Matrices. Introducción a las matrices. [11]

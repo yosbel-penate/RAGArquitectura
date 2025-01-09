@@ -1,0 +1,107 @@
+# Asignatura: Introducción a la Programación
+
+## Ingeniería Informática
+
+**Guía de Aprendizaje**
+
+**Tema:** Algoritmización
+
+**Unidad didáctica:** Algoritmo. Técnicas para representar algoritmos.
+
+## 1. Objetivos de la unidad didáctica:
+
+- Caracterizar un algoritmo.
+- Caracterizar y emplear técnicas para representar algoritmos.
+
+## 2. Introducción a la unidad didáctica:
+
+Siempre que vamos a resolver un problema nos enfrentamos con la dificultad de tener que encontrar precisamente eso: Una Solución. Pocas veces nos detenemos a pensar que existe un camino estructural que nos permite resolver cualquier problema (en términos generales) teniendo, como es obvio, que entrar en la minucia del detalle dependiendo del problema.
+
+Cuál es el primer paso que debemos dar cuando nos enfrentamos a un problema...? Lo primero que debemos tener muy pero muy muy claro es Cual es el problema. Es evidente que no podemos avanzar hacia la casa de un amigo nuestro que no sabemos en donde vive porque las posibilidades de que lleguemos son casi nulas. De manera que lo primero a conocer muy bien es el problema como tal que en nuestros términos lo vamos a ver no como un problema sino como un objetivo.
+
+Tener claro el objetivo nos va a permitir obtener dos beneficios que a la postre serán mas grandes de lo que podemos pensar:
+
+- Tener claro el objetivo nos permite saber hacia donde vamos.
+- Tener claro el objetivo nos permite saber hasta donde debemos llegar.
+
+Estas dos definiciones parecieran ser lo mismo pero en el fondo no lo son. Usted puede tener muy claro hacia donde va pero puede no saber hasta donde debe llegar o, dicho en otras palabras, no saber en donde debe parar ó podría saber en donde debe para pero no tener ni idea por cual ruta llegar. El objetivo se ha de convertir en la razón de ser en la solución de un problema.
+
+En nuestro caso, y mas que nunca, podemos decir que para llegar a la solución de un problema la clave de ello está en Tener muy claro cuál es el objetivo y No perderlo nunca de Vista. Tal vez usted tendrá alguna inquietud en cuanto a la insistencia de este tópico pero la realidad es que muchas veces creemos tener claro el objetivo y solo cuando nos empeñamos en lograrlo vemos que no era así.
+
+Tener claro el objetivo nos permite algo adicional. Aquí voy a utilizar una frase que, aunque un poco romántica, nos va a ilustrar a que me refiero: El objetivo es el faro que solo cuando está bien claro nos ilumina el camino para lograrlo. Cuando el objetivo está suficientemente claro podemos vislumbrar un camino lógico para llegar hasta él. Ese camino lógico va a tener un nombre dado y ese nombre es algoritmo.
+
+Qué es un Algoritmo...? Es un conjunto de pasos secuenciales y ordenados que permiten lograr un objetivo. Que sean pasos secuenciales significa que deben ser ejecutados uno después de otro y que sean pasos ordenados quiere decir que deben llevar un orden quasi-obligatorio (u obligatorio en la mayoría de los casos). Como puede notar el algoritmo permite lograr un objetivo. O sea que éste es el camino que necesitamos para lograrlo.
+
+## 3. Orientaciones para el estudio:
+
+1. Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles.
+2. Cree hábitos de estudio sistemático; para esto:
+   - Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora.
+   - Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo.
+3. Utilice técnicas de estudio:
+   - Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan.
+   - Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes.
+   - Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante.
+4. Interactúe con los materiales de estudio en tres fases:
+   - **Fase de aproximación:** Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone.
+   - **Fase de lectura profunda:** Aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente.
+   - **Fase de evaluación:** Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje.
+
+## 4. Requisitos Previos:
+
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico.
+
+## 5. Actividades de auto-aprendizajes:
+
+1. Consulte la bibliografía citada en esta guía y clasifique los diferentes tipos de algoritmos.
+   - a. Caracterice cada una de las clasificaciones de algoritmo.
+   - b. Mencione tres ejemplos de cada clasificación de algoritmo.
+2. Una de las clasificaciones de los algoritmos es los algoritmos computacionales. Lo mismo presentan una metodología organizada en pasos para su elaboración. De cada paso:
+   - a. Mencione su nombre
+   - b. Caracterice dicho paso
+3. Para representar los algoritmos computacionales existen tres técnicas para representarlo. Mencione dichas técnicas y establezca un cuadro comparativo entre ambas técnicas con sus ventajas y desventajas según su criterio. Dicho cuadro comparativo de quedar de la siguiente manera:
+
+Técnicas Ventajas Desventajas
+
+Seudocódigo
+
+Diagrama de flujo
+
+Diagrama de rectangulares
+
+estructurado
+
+## 6. Actividades de evaluación:
+
+1. Diseñe un algoritmo que permita elaborar una tortilla. Para eso cuenta con huevo, fogón de gas, fósforos, sartén, plato, espumadera, sal y tenedor. Utilice una de las técnicas para representar algoritmo que sea mas de su agrado.
+2. Diseñe un algoritmo que permita calcular el valor del discriminante y mostrarlo por pantalla de una función de la forma ax²+bx+c. Tenga en cuenta que el algoritmo debe solicitar o pedir los valores de los coeficientes por pantalla. Utilice una de las técnicas para representar algoritmo que sea mas de su agrado.
+3. Diseñe un algoritmo que permita calcular la cantidad de soluciones reales y mostrarlo por pantalla de una función de la forma ax²+bx+c. Tenga en cuenta que el algoritmo debe solicitar o pedir los valores de los coeficientes por pantalla. Utilice una de las técnicas para representar algoritmo que sea mas de su agrado.
+4. Diseñe un algoritmo que permita calcular y mostrar por pantalla el factorial de un número natural N. Tenga en cuenta que el algoritmo debe solicitar o pedir el valor N por pantalla. Utilice una de las técnicas para representar algoritmo que sea mas de su agrado.
+5. Diseñe el algoritmo del juego del adivinador. El juego del adivinador consiste en que una persona piensa un número natural en el rango de 1 a 100 incluyendo los extremos mientras la otra persona (en este caso la computadora apoyándose en el algoritmo) le hará la siguiente pregunta "El número pensado es mayor o igual que X" donde X es un número cualquiera que está en el rango de 1 a 100. La persona siempre va responder Si o No en dependencia de que se cumpla la siguiente relación N >= X siendo N el número pensado. El algoritmo debe adivinar el número pensado por la persona realizando no mas de 7 veces la pregunta "El número pensado es mayor o igual que X". Una vez adivinado el número debe mostrarse por pantalla.
+6. Busque e instale en su móvil la aplicación SoloLearn, descargue el curso del lenguaje de programación de Java. Cree su perfil con los datos correctos (nombre y apellidos). En la tabla de posiciones o puntuación (Local/Todo) busque al usuario Luis Andrés Valido Fajardo y comiencen a seguirlo.
+
+## 7. Resumen:
+
+Los algoritmos son un conjunto de pasos secuenciales y ordenados que permiten lograr un objetivo. Que sean pasos secuenciales significa que deben ser ejecutados uno después de otro y que sean pasos ordenados quiere decir que deben llevar un orden quasi-obligatorio (u obligatorio en la mayoría de los casos). Como puede notar el algoritmo permite lograr un objetivo. O sea que éste es el camino que necesitamos para lograrlo. Los mismos se pueden clasificar atendiendo a varios criterios en nuestro caso los vamos a clasificar en informales y computacionales.
+
+Para los algoritmos computacionales existe un metodología para su diseño y técnicas de representarlos. Definir que técnica de representación es mejor es un gran dilema cada una tiene sus ventajas y desventajas. La utilización de una de estas va depender en gran medida de estos dos factores:
+
+- La complejidad algoritmo que se desea diseñar.
+- La facilidad de transcripción que tenga el programador del llevar el algoritmo representado en con una determinada técnica a un lenguaje de programación compresible por el computador.
+
+## 8. Glosario de términos:
+
+Consulte la bibliografía y define los siguientes conceptos
+
+- **Algoritmo:**
+- **Algoritmo computacional:**
+
+## 9. Bibliografía:
+
+La Esencia de la Lógica de Programación-Básico. Omar Ivan Trejos Buriticá. Cap 2 pag 19. Cap 4 pag 45.
+
+## 10. Recursos educativos digitales RED:
+
+## 11. Próxima unidad:
+
+Transcripción de algoritmos a lenguaje de programación Java. Entrada y salida. Tipos de datos. Operadores aritméticos.

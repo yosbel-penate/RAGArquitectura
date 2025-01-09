@@ -1,0 +1,50 @@
+Asignatura Introducción a la Programación
+Ingeniería Informática
+Guía de Aprendizaje
+Tema : Cadenas de caracteres.
+Unidad didáctica: Clase StringBuffer. Sus principales métodos.
+1. Objetivos de la unidad didáctica:
+Caracterizar la clase StringBuffer del lenguaje de programación Java.
+Identificar y caracterizar los principales métodos de la clase StringBuffer.
+2. Introducción a la unidad didáctica:
+La clase StringBuffer permite que el programador cambie la cadena insertando, borrando, etc. [1] La clase StringBuffer se utiliza prácticamente siempre que se desee modificar una cadena de caracteres. Completa los métodos de la clase String ya que éstos realizan sólo operaciones sobre el texto que no conllevan un aumento o disminución del número de letras del String. [2]
+
+3. Orientaciones para el estudio:
+Le sugerimos que para realizar el estudio de una materia debe elegir un lugar agradable, limpio, ventilado, cómodo, iluminado y si necesita recursos tecnológicos deben estar disponibles. [2]
+Cree hábitos de estudio sistemático; para esto: [3]
+Planifique su tiempo y no deje para mañana lo que pueda hacer hoy; una buena planificación hace manejable las responsabilidades diarias que tenemos para con la vida, permite cumplir con todas las tareas programadas y así evita agobios de última hora. [3]
+Calendarice las fechas más importantes de estudio y entrega de tareas. Localice con antelación los materiales que necesita para realizar el estudio individual o colaborativo. [3]
+Utilice técnicas de estudio: [4]
+Elija un entorno de estudio que resulte agradable y sin elementos que lo que distraigan. [4]
+Estudie activamente, para esto lea en voz alta, tome notas, elabore esquemas o mapas conceptuales, realice resúmenes. [4]
+Reflexione sobre lo que va aprendiendo, para esto relacione lo nuevo con lo anterior o conocido, asegúrese de que entiende y es capaz de aplicar lo que está aprendiendo antes de pasar adelante. [4]
+Interactúe con los materiales de estudio en tres fases: [5]
+Fase de aproximación: Revise el objetivo de la unidad y después la acción o acciones a lograr; busque los materiales sugeridos para desarrollar la tarea, verifique cuál es el tiempo de que dispone. [5]
+Fase de lectura profunda: aproxímese al material a través de una lectura ligera, poniendo especial interés en los títulos y subtítulos. Trate de relacionar lo que va leyendo con conocimientos adquiridos previamente. [5]
+Fase de evaluación: Una vez realizada la lectura, intente realizar las actividades de auto-aprendizaje. [6]
+4. Requisitos Previos:
+Tener conocimientos básicos de computación: los estudiantes matriculados deben conocer los procedimientos básicos para el manejo de PC y/o dispositivos móviles, aplicaciones de ofimática; así como uso de navegadores de páginas Web y el correo electrónico. [6]
+
+5. Actividades de auto-aprendizajes:
+Cuales métodos de la clase StringBuffer determinan la longitud de una cadena, obtienen el carácter que se encuentra en una ubicación específica de una cadena y recuperan el conjunto completo de caracteres en una cadena. [6]
+Cuales métodos de la clase StringBuffer permiten modificar la cantidad de caracteres de la cadena y cambiar el carácter en una determinada posición de la cadena. Caracterice el funcionamiento de cada una. [7]
+Cuales métodos de la clase StringBuffer permiten concatenación de cadena. Caracterice el funcionamiento de cada una. [7]
+Establezca diferencia y semejanzas entre las clases StringBuffer y StringBuilder en cuanto a los siguientes aspectos: [7]
+Uso. [7]
+Métodos. [7]
+6. Actividades de evaluación:
+Elabore un programa utilizando el lenguaje de programación Java que permita introducir al usuario una cadena de caracteres. Dicho programa debe imprimir la cadena de caracteres introducida por el usuario es sustituyendo cada carácter de tipo vocal por el símbolo punto (.). [7] Realice dos variantes del mismo programa uno utilizando String y otro usando StringBuffer. [8]
+Elabore un programa utilizando el lenguaje de programación Java que permita introducir al usuario una cadena de caracteres. El programa debe determinar e imprimir cuantas permutaciones diferentes entre si se puede conformar con los caracteres de la cadena introducida. De dichas permutaciones de la cadena el programa debe imprimir la menor y la mayor lexicográficamente. [8]
+7. Resumen:
+Mientras la clase String es más eficiente, StringBuffer permite más posibilidades y es un complemento de la clase String. [8]
+
+8. Glosario de términos:
+Consulte la bibliografía y define los siguientes conceptos: [9]
+
+9. Bibliografía:
+Aprenda Java como si estuviera en primero. Colectivo de autores. Cap 4 epígrafes 4.2. [9]
+
+Cómo programar en Java. Deitel, Paul J. Y Harvey M. Deitel. Cap 30 epigrafes 30.1, 30.2, 30.3 y 30.4. [9]
+
+10. Recursos educativos digitales RED: [9]
+11. Próxima unidad: Clase StringBuilder. [9]
