@@ -12,10 +12,10 @@ app = Flask(__name__)
 
 persist_directory = os.path.join(os.path.dirname(__file__), 'vectorDB')
 
-documentos=[]
 if not os.path.exists(persist_directory):
     os.makedirs(persist_directory)
-    documentos = load_docs_from_json_file()
+
+documentos = load_docs_from_json_file()
 
 vector_store_adapter = ChromaVectorStoreAdapter(persist_directory=persist_directory)
 vector_store_adapter.index_documents(documentos)

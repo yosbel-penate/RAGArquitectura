@@ -22,8 +22,8 @@ def chunk_text(text, chunk_size=5000, overlap=1000):
         start += chunk_size - overlap
     return chunks
 
-def save_chunks_to_file(chunks, output_file):
-    chunks_json = {"docs": [{"doc": chunk} for chunk in chunks]}
+def save_chunks_to_file(chunks, output_file, file_name):
+    chunks_json = {"docs": [{"doc": chunk, "metadata": {"file_name": file_name}} for chunk in chunks]}
     with open(output_file, 'w', encoding='utf-8') as file:
         json.dump(chunks_json, file, ensure_ascii=False, indent=4)
 
@@ -35,8 +35,8 @@ def main():
     for file_path in txt_files:
         text = read_file(file_path)
         chunks = chunk_text(text)
-        all_chunks.extend(chunks)
-    save_chunks_to_file(all_chunks, os.path.join(current_dir, 'chunk.json'))
+        all_chunks.extend([{"doc": chunk, "metadata": {"file_name": os.path.basename(file_path)}} for chunk in chunks])
+    save_chunks_to_file(all_chunks, os.path.join(current_dir, 'chunk.json'), os.path.basename(file_path))
     print(f"Total de fragmentos: {len(all_chunks)}")
 
 if __name__ == "__main__":
