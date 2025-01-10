@@ -1,6 +1,6 @@
 import os
 import requests
-from flask import Flask, request
+from flask import Flask
 import telegram
 from telegram.ext import CommandHandler, MessageHandler, filters, ApplicationBuilder
 
