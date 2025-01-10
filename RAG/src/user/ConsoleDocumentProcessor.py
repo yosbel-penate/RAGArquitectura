@@ -2,6 +2,7 @@ from RAG.src.documents.SimpleDocumentSourceAdapter import SimpleDocumentSourceAd
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.input.SimpleInputAdapter import SimpleInputAdapter
 from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageModelAdapter
+from RAG.src.generation.template_formating_promp import load_template_formating_promp
 
 from RAG.src.retrieval.SimpleRetrievalAdapter import SimpleRetrievalAdapter
 from RAG.src.user.UserRequestAdapter import UserRequestAdapter
@@ -20,7 +21,7 @@ class ConsoleDocumentProcessor:
 
         adapter = UserRequestAdapter(input_adapter=SimpleInputAdapter(),
                                         retrieval_adapter=SimpleRetrievalAdapter(self.vector_store_adapter),
-                                        generation_adapter=SimpleGenerationAdapter(GeminiLanguageModelAdapter()),
+                                        generation_adapter=SimpleGenerationAdapter(GeminiLanguageModelAdapter(), load_template_formating_promp),
                                         output_adapter=self.output_adapter,
                                         vector_store_adapter=self.vector_store_adapter,
                                         document_source_adapter=SimpleDocumentSourceAdapter())

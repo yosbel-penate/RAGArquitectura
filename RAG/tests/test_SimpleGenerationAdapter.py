@@ -2,11 +2,12 @@ import unittest
 from unittest.mock import MagicMock
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.core.ILanguageModelPort import ILanguageModelPort
+from RAG.src.generation.template_formating_promp import load_template_formating_promp
 
 class TestSimpleGenerationAdapter(unittest.TestCase):
     def setUp(self):
         self.mock_language_model = MagicMock(spec=ILanguageModelPort)
-        self.adapter = SimpleGenerationAdapter(self.mock_language_model)
+        self.adapter = SimpleGenerationAdapter(self.mock_language_model, load_template_formating_promp)
 
     def test_generate_response(self):
         documents = ["Documento 1", "Documento 2"]

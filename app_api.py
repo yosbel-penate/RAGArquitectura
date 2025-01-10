@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageModelAdapter
+from RAG.src.generation.template_formating_promp import load_template_formating_promp
 import os
 import logging
 
@@ -18,7 +19,7 @@ if not os.path.exists(persist_directory):
 
 vector_store_adapter = ChromaVectorStoreAdapter(persist_directory=persist_directory)
 vector_store_adapter.index_documents(documentos)
-generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter())
+generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter(), load_template_formating_promp)
 
 
 @app.route('/add_documents', methods=['POST'])
