@@ -1,300 +1,288 @@
-**Tema III Programación funcional
-**Presentación: Métodos y Funciones**
+Tema III Programación funcional
+Presentación: Métodos y Funciones**
 
-**1. Diapositiva: Título (Página 1)**
-*   **Información:**
-    * Logo de la Universidad de Matanzas.
-    *   Título: MÉTODOS Y FUNCIONES.
-    *   Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
-    *   Fecha: Octubre / 2019.
-*   **Descripción:** Esta es la **portada** de la presentación, presentando el tema "Métodos y Funciones" y su contexto dentro del curso.
+1. Diapositiva: Título (Página 1)
 
-**2. Diapositiva: Objetivos (Parte 1) (Página 2)**
-*   **Información:**
-    *   Objetivo: Caracterizar los métodos y funciones como parte de la construcción de un programa computacional.
-*   **Descripción:**  Presenta el primer **objetivo** de la presentación: comprender la importancia y rol de los métodos y funciones en la construcción de programas.
+Información:
+Logo de la Universidad de Matanzas.
+Título: MÉTODOS Y FUNCIONES.
+Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
+Fecha: Octubre / 2019.
+Descripción: Esta es la portada de la presentación, presentando el tema "Métodos y Funciones" y su contexto dentro del curso.
+2. Diapositiva: Objetivos (Parte 1) (Página 2)
 
-**3. Diapositiva: Objetivos (Parte 2) (Página 3)**
-*   **Información:**
-     * Objetivo: Utilizar los métodos comunes de `Math` disponibles en la API de Java.
-*  **Descripción:** Define el segundo **objetivo**: aprender a utilizar los métodos de la clase `Math` de Java.
+Información:
+Objetivo: Caracterizar los métodos y funciones como parte de la construcción de un programa computacional.
+Descripción: Presenta el primer objetivo de la presentación: comprender la importancia y rol de los métodos y funciones en la construcción de programas.
+3. Diapositiva: Objetivos (Parte 2) (Página 3)
 
-**4. Diapositiva: Objetivos (Parte 3) (Página 4)**
-*  **Información:**
-    *   Objetivo: Comprender los mecanismos para pasar información entre métodos.
-*  **Descripción:**  Presenta el tercer **objetivo** de la presentación, que es entender los mecanismos para el intercambio de información entre métodos.
+Información:
+Objetivo: Utilizar los métodos comunes de Math disponibles en la API de Java.
+Descripción: Define el segundo objetivo: aprender a utilizar los métodos de la clase Math de Java.
+4. Diapositiva: Objetivos (Parte 3) (Página 4)
 
-**5. Diapositiva: Objetivos (Parte 4) (Página 5)**
-*   **Información:**
-    *   Objetivo: Comprender cómo se soporta el mecanismo de llamada/retorno de los métodos mediante la pila de llamadas a métodos y los registros de activación.
-*   **Descripción:**  Presenta el cuarto **objetivo** de la presentación: entender el funcionamiento interno de la llamada a métodos.
+Información:
+Objetivo: Comprender los mecanismos para pasar información entre métodos.
+Descripción: Presenta el tercer objetivo de la presentación, que es entender los mecanismos para el intercambio de información entre métodos.
+5. Diapositiva: Objetivos (Parte 4) (Página 5)
 
-**6. Diapositiva: Sumario (Página 6)**
-*  **Información:**
-    * Temas: Módulos de programas en Java, Métodos (Declaración, Invocación), Métodos de la clase `Math`.
-*  **Descripción:**  Resume los temas principales de la presentación: módulos, métodos, su declaración e invocación, y la clase `Math`.
+Información:
+Objetivo: Comprender cómo se soporta el mecanismo de llamada/retorno de los métodos mediante la pila de llamadas a métodos y los registros de activación.
+Descripción: Presenta el cuarto objetivo de la presentación: entender el funcionamiento interno de la llamada a métodos.
+6. Diapositiva: Sumario (Página 6)
 
-**7. Diapositiva: Bibliografía (Página 7)**
-*   **Información:**
-    *   Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
-*   **Descripción:**  Lista las **referencias bibliográficas** utilizadas para la creación de la presentación.
+Información:
+Temas: Módulos de programas en Java, Métodos (Declaración, Invocación), Métodos de la clase Math.
+Descripción: Resume los temas principales de la presentación: módulos, métodos, su declaración e invocación, y la clase Math.
+7. Diapositiva: Bibliografía (Página 7)
 
-**8. Diapositiva: Introducción (Programas Extensos) (Página 8)**
-*   **Información:**
-    *  Definición: La mayoría de los programas de cómputo que resuelven los problemas reales son mucho más extensos que los programas que hemos desarrollado hasta el momento.
-*   **Descripción:**  Comienza la **introducción** indicando que los programas reales son más extensos que los creados hasta el momento.
+Información:
+Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
+Descripción: Lista las referencias bibliográficas utilizadas para la creación de la presentación.
+8. Diapositiva: Introducción (Programas Extensos) (Página 8)
 
-**9. Diapositiva: Introducción (Divide y Vencerás) (Página 9)**
+Información:
+Definición: La mayoría de los programas de cómputo que resuelven los problemas reales son mucho más extensos que los programas que hemos desarrollado hasta el momento.
+Descripción: Comienza la introducción indicando que los programas reales son más extensos que los creados hasta el momento.
+9. Diapositiva: Introducción (Divide y Vencerás) (Página 9)
 
-*   **Información:**
-    *  Definición: La mejor manera de desarrollar y mantener un programa extenso es construirlo a partir de pequeñas piezas sencillas, o módulos. A esta técnica se le llama divide y vencerás.
-*   **Descripción:** Explica la importancia de usar la técnica **"divide y vencerás"**, que consiste en construir programas a partir de módulos más pequeños.
+Información:
+Definición: La mejor manera de desarrollar y mantener un programa extenso es construirlo a partir de pequeñas piezas sencillas, o módulos. A esta técnica se le llama divide y vencerás.
+Descripción: Explica la importancia de usar la técnica "divide y vencerás", que consiste en construir programas a partir de módulos más pequeños.
+10. Diapositiva: Módulos (Tipos) (Página 10)
 
-**10. Diapositiva: Módulos (Tipos) (Página 10)**
-*   **Información:**
-    *  Tipos de módulos: Métodos, Clases, Paquetes.
-*   **Descripción:** Enumera los **tres tipos de módulos** utilizados en Java: métodos, clases y paquetes.
+Información:
+Tipos de módulos: Métodos, Clases, Paquetes.
+Descripción: Enumera los tres tipos de módulos utilizados en Java: métodos, clases y paquetes.
+11. Diapositiva: Métodos (Definición) (Página 11)
 
-**11. Diapositiva: Métodos (Definición) (Página 11)**
-*  **Información:**
-   * Definición: Los métodos (también conocidos como funciones o procedimientos en otros lenguajes) permiten al programador dividir un programa en módulos.
-*  **Descripción:** Define qué son los **métodos**, como una forma de dividir los programas en tareas autónomas.
+Información:
+Definición: Los métodos (también conocidos como funciones o procedimientos en otros lenguajes) permiten al programador dividir un programa en módulos.
+Descripción: Define qué son los métodos, como una forma de dividir los programas en tareas autónomas.
+12. Diapositiva: Métodos (Divide y Vencerás) (Página 12)
 
-**12. Diapositiva: Métodos (Divide y Vencerás) (Página 12)**
-*  **Información:**
-    * Explicación: Una razón para dividir un programa en módulos mediante los métodos es la metodología divide y vencerás, que hace que el desarrollo de programas sea más fácil de administrar.
-*  **Descripción:** Explica que una razón para dividir programas en módulos es la metodología **divide y vencerás**.
+Información:
+Explicación: Una razón para dividir un programa en módulos mediante los métodos es la metodología divide y vencerás, que hace que el desarrollo de programas sea más fácil de administrar.
+Descripción: Explica que una razón para dividir programas en módulos es la metodología divide y vencerás.
+13. Diapositiva: Métodos (Reutilización) (Página 13)
 
-**13. Diapositiva: Métodos (Reutilización) (Página 13)**
-*   **Información:**
-    *   Definición: Otra razón es la reutilización de software (usar los métodos existentes como bloques de construcción para crear nuevos programas).
-*   **Descripción:**  Menciona la **reutilización de código** como otra ventaja de utilizar métodos, ya que estos pueden usarse como componentes en nuevos programas.
+Información:
+Definición: Otra razón es la reutilización de software (usar los métodos existentes como bloques de construcción para crear nuevos programas).
+Descripción: Menciona la reutilización de código como otra ventaja de utilizar métodos, ya que estos pueden usarse como componentes en nuevos programas.
+14. Diapositiva: Métodos (Invocación y Retorno) (Página 14)
 
-**14. Diapositiva: Métodos (Invocación y Retorno) (Página 14)**
-*  **Información:**
-    *  Definición: Un método se invoca mediante una llamada, y cuando el método que se llamó completa su tarea, devuelve un resultado, o simplemente el control al método que lo llamó.
-*  **Descripción:**  Explica que los métodos se activan mediante una llamada y al finalizar pueden retornar un resultado o devolver el control.
+Información:
+Definición: Un método se invoca mediante una llamada, y cuando el método que se llamó completa su tarea, devuelve un resultado, o simplemente el control al método que lo llamó.
+Descripción: Explica que los métodos se activan mediante una llamada y al finalizar pueden retornar un resultado o devolver el control.
+15. Diapositiva: Métodos (Objetos Específicos) (Página 15)
 
-**15. Diapositiva: Métodos (Objetos Específicos) (Página 15)**
+Información:
+Definición: Aunque la mayoría de los métodos se ejecutan en respuesta a las llamadas a métodos en objetos específicos, éste no es siempre el caso. Algunas veces un método realiza una tarea que no depende del contenido de ningún objeto.
+Descripción: Explica que algunos métodos, conocidos como métodos de clase o métodos estáticos, se aplican a toda la clase y no a objetos específicos de ella.
+16. Diapositiva: Métodos (Static) (Página 16)
 
-*  **Información:**
-    * Definición: Aunque la mayoría de los métodos se ejecutan en respuesta a las llamadas a métodos en objetos específicos, éste no es siempre el caso. Algunas veces un método realiza una tarea que no depende del contenido de ningún objeto.
-*   **Descripción:** Explica que algunos métodos, conocidos como **métodos de clase o métodos estáticos**, se aplican a toda la clase y no a objetos específicos de ella.
+Información:
+Definición: Dicho método se aplica a la clase en la que está declarado como un todo, y se conoce como método static o método de clase.
+Descripción: Describe en más detalle los métodos static, explicando que no requieren una instancia de la clase para ser llamados.
+17. Diapositiva: Métodos (Sintaxis de Declaración - Introducción) (Página 17)
 
-**16. Diapositiva: Métodos (Static) (Página 16)**
+Información:
+Sintaxis: <visibilidad> static <TDR> <nombre> (<argumentos >) { <Conjuntos de Instrucciones> }
+Texto: Analicemos cada una de las partes de forma detallada.
+Descripción: Introduce la sintaxis general de la declaración de métodos en Java, indicando sus partes principales y que se van a analizar en detalle.
+18. Diapositiva: Métodos (Sintaxis - Visibilidad) (Página 18)
 
-*   **Información:**
-    *   Definición: Dicho método se aplica a la clase en la que está declarado como un todo, y se conoce como método static o método de clase.
-*   **Descripción:** Describe en más detalle los **métodos `static`**, explicando que no requieren una instancia de la clase para ser llamados.
+Información:
+Definición: <visibilidad>: Hace referencia a la visibilidad que tenga el método con respecto al resto de los módulos que participan en el programa.
+Descripción: Explica qué representa la parte <visibilidad> de la declaración de un método y su significado.
+19. Diapositiva: Métodos (Sintaxis - Visibilidad - Valores) (Página 19)
 
-**17. Diapositiva: Métodos (Sintaxis de Declaración - Introducción) (Página 17)**
-*   **Información:**
-     *  Sintaxis: `<visibilidad> static <TDR> <nombre> (<argumentos >) { <Conjuntos de Instrucciones> }`
-    *   Texto:  Analicemos cada una de las partes de forma detallada.
-*   **Descripción:**  Introduce la **sintaxis general de la declaración de métodos** en Java, indicando sus partes principales y que se van a analizar en detalle.
+Información:
+Definición: <visibilidad>: Los posibles valores son las palabras reservadas del lenguaje private, protected o public.
+Descripción: Enumera los valores posibles que puede tomar la parte <visibilidad> en la declaración de un método.
+20. Diapositiva: Métodos (Sintaxis - static) (Página 20)
 
-**18. Diapositiva: Métodos (Sintaxis - Visibilidad) (Página 18)**
-*   **Información:**
-    *  Definición: `<visibilidad>`: Hace referencia a la visibilidad que tenga el método con respecto al resto de los módulos que participan en el programa.
-*  **Descripción:** Explica qué representa la parte `<visibilidad>` de la declaración de un método y su significado.
+Información:
+Definición: static: Da la posibilidad que el método sea invoca o llamado sin tener que crear un objeto o instancia de la clase donde fue declarado previamente.
+Descripción: Explica el significado de la palabra reservada static en la declaración de un método y cómo afecta la forma en la que se puede invocar al método.
+21. Diapositiva: Métodos (Sintaxis - static - Opcional) (Página 21)
 
-**19. Diapositiva: Métodos (Sintaxis - Visibilidad - Valores) (Página 19)**
+Información:
+Definición: static: Puede ser omitido de la declaración pero entonces para usar o llamar el método sería a través de una instancia u objeto de la clase.
+Descripción: Aclara que la palabra reservada static es opcional y que, si se omite, la invocación del método requiere una instancia u objeto de la clase.
+22. Diapositiva: Métodos (Sintaxis - Tipo de Dato de Retorno) (Página 22)
 
-*   **Información:**
-    *   Definición: `<visibilidad>`: Los posibles valores son las palabras reservadas del lenguaje `private`, `protected` o `public`.
-*   **Descripción:** Enumera los **valores posibles** que puede tomar la parte `<visibilidad>` en la declaración de un método.
+Información:
+Definición: <TDR>: Tipo de dato de retorno hace referencia al tipo de dato que va devolver el método una vez terminadas sus operaciones u instrucciones.
+Descripción: Explica la parte <TDR> de la declaración, que indica el tipo de dato del valor que devuelve el método tras su ejecución.
+23. Diapositiva: Métodos (Sintaxis - return) (Página 23)
 
-**20. Diapositiva: Métodos (Sintaxis - static) (Página 20)**
-*   **Información:**
-    * Definición: `static`: Da la posibilidad que el método sea invoca o llamado sin tener que crear un objeto o instancia de la clase donde fue declarado previamente.
-*  **Descripción:** Explica el significado de la palabra reservada `static` en la declaración de un método y cómo afecta la forma en la que se puede invocar al método.
+Información:
+Definición: <TDR>: Los métodos para retornar o devolver algún valor, dato o variable hace uso de la instrucción return.
+Descripción: Indica que la sentencia return es la que utiliza un método para retornar o devolver un valor.
+24. Diapositiva: Métodos (Sintaxis - Tipo de Dato y void) (Página 24)
 
-**21. Diapositiva: Métodos (Sintaxis - static - Opcional) (Página 21)**
-*  **Información:**
-     * Definición: `static`: Puede ser omitido de la declaración pero entonces para usar o llamar el método sería a través de una instancia u objeto de la clase.
-*  **Descripción:** Aclara que la palabra reservada `static` es **opcional** y que, si se omite, la invocación del método requiere una instancia u objeto de la clase.
+Información:
+Definición: <TDR>: El tipo de dato debe coincidir con el tipo de dato del valor, dato o variable que se va retornar. En caso de que no se retorne nada el valor debe ser void.
+Descripción: Aclara que el tipo de dato de retorno debe coincidir con el valor devuelto y que void se utiliza si el método no devuelve valor.
+25. Diapositiva: Métodos (Sintaxis - Nombre) (Página 25)
 
-**22. Diapositiva: Métodos (Sintaxis - Tipo de Dato de Retorno) (Página 22)**
-*  **Información:**
-    *   Definición: `<TDR>`: Tipo de dato de retorno hace referencia al tipo de dato que va devolver el método una vez terminadas sus operaciones u instrucciones.
-*  **Descripción:**  Explica la parte `<TDR>` de la declaración, que indica el **tipo de dato del valor** que devuelve el método tras su ejecución.
+Información:
+Definición: <nombre>: Va a ser el identificador del método y para su elaboración se cumple con las mismas reglas que para la conformación de los identificadores de las variables.
+Descripción: Describe la parte <nombre>, que es el identificador del método y debe seguir las mismas reglas que las variables.
+26. Diapositiva: Métodos (Sintaxis - Argumentos - Opcionales) (Página 26)
 
-**23. Diapositiva: Métodos (Sintaxis - return) (Página 23)**
+Información:
+Definición: <argumentos>: Este término puede ser nulo en caso que para realizar sus instrucciones el método no necesite información extra.
+Descripción: Explica que la parte <argumentos> es opcional, si un método no requiere datos adicionales para su ejecución.
+27. Diapositiva: Métodos (Sintaxis - Argumentos - Requisitos) (Página 27)
 
-*   **Información:**
-    *   Definición: `<TDR>`: Los métodos para retornar o devolver algún valor, dato o variable hace uso de la instrucción `return`.
-*  **Descripción:**  Indica que la sentencia `return` es la que utiliza un método para **retornar o devolver un valor**.
+Información:
+Definición: <argumentos>: Pero a menudo los métodos requieren más de un dato de información para realizar sus instrucciones.
+Descripción: Aclara que a menudo los métodos requieren datos adicionales para su ejecución.
+28. Diapositiva: Métodos (Sintaxis - Argumentos - Múltiples) (Página 28)
 
-**24. Diapositiva: Métodos (Sintaxis - Tipo de Dato y void) (Página 24)**
-*   **Información:**
-    *  Definición: `<TDR>`: El tipo de dato debe coincidir con el tipo de dato del valor, dato o variable que se va retornar. En caso de que no se retorne nada el valor debe ser `void`.
-*  **Descripción:**  Aclara que el **tipo de dato de retorno** debe coincidir con el valor devuelto y que `void` se utiliza si el método no devuelve valor.
+Información:
+Definición: <argumentos>: Por cada dato que se necesite pasar al método se debe especificar el tipo de dato y el identificador. Si hay mas de un dato separarlos por coma.
+Descripción: Explica que para cada argumento se debe indicar su tipo e identificador, y que se separan con una coma cuando hay varios.
+29. Diapositiva: Métodos (Ejemplo - Argumentos y Retorno) (Página 29)
 
-**25. Diapositiva: Métodos (Sintaxis - Nombre) (Página 25)**
-*   **Información:**
-    *   Definición: `<nombre>`: Va a ser el identificador del método y para su elaboración se cumple con las mismas reglas que para la conformación de los identificadores de las variables.
-*  **Descripción:** Describe la parte `<nombre>`, que es el **identificador del método** y debe seguir las mismas reglas que las variables.
+Información:
+Ejemplo de código:
+ // devuelve el maximo de sus tres parametros int
+ public static int maximo ( int x, int y, int z){
+   int valorMaximo = x;
+   if(y>valorMaximo){
+     valorMaximo=y;
+   }
+   if(z>valorMaximo) {
+    valorMaximo=z;
+   }
+   return valorMaximo;
+ }
+Descripción: Muestra un ejemplo de método que recibe tres argumentos y devuelve un valor (el máximo).
+30. Diapositiva: Métodos (Ejemplo - Sin Argumentos y Sin Retorno) (Página 30)
 
-**26. Diapositiva: Métodos (Sintaxis - Argumentos - Opcionales) (Página 26)**
+Información:
+Ejemplo de código:
+ public static void determinarMaximo(){
+   Scanner entrada = new Scanner(System.in );
+   System.out.print("Escriba tres valores enteros, separados
+   por espacios: ");
+   int nu1 = entrada.nextInt();
+   int nu2 = entrada.nextInt();
+   int nu3 = entrada.nextInt();
+    /*determina el valor maximo llamando al metodo
+     anterior asumiendo que ambos metodos estan
+       declarado en la misma clase*/
+    int resultado=maximo(nul, nu2,nu3);
+    System.out.println( "El maximo es: "+resultado);
+}
+Descripción: Muestra un ejemplo de método que no recibe argumentos ni retorna un valor (void) y hace una llamada al método maximo del ejemplo anterior.
+31. Diapositiva: Métodos (Sintaxis de Declaración - Flexibilidad) (Página 31)
 
-*   **Información:**
-    *  Definición: `<argumentos>`: Este término puede ser nulo en caso que para realizar sus instrucciones el método no necesite información extra.
-*  **Descripción:** Explica que la parte `<argumentos>` es **opcional**, si un método no requiere datos adicionales para su ejecución.
+Información:
+Texto: Lo anterior no es una camisa de fuerza porque pueden existir: Métodos con retorno y con argumentos. Métodos sin retorno y con argumentos. Métodos con retorno y sin argumentos. Métodos sin retorno y sin argumentos.
+Descripción: Indica que la declaración de métodos es flexible y puede combinarse con o sin argumentos y con o sin tipo de retorno.
+32. Diapositiva: Métodos (Sintaxis de Invocación - Introducción) (Página 32)
 
-**27. Diapositiva: Métodos (Sintaxis - Argumentos - Requisitos) (Página 27)**
-*   **Información:**
-    *  Definición: `<argumentos>`: Pero a menudo los métodos requieren más de un dato de información para realizar sus instrucciones.
-*   **Descripción:**  Aclara que **a menudo los métodos requieren datos adicionales** para su ejecución.
+Información:
+Definición: Puede llamar a cualquier método static especificando el nombre de la clase, seguido de un punto y el nombre del método.
+Sintaxis: <NombreClase>.<nombreMetodo>(<argumentos>)
+Texto: Analicemos cada una de las partes de forma detallada.
+Descripción: Introduce la sintaxis de invocación de un método static, explicando la estructura básica y el uso del punto (.).
+33. Diapositiva: Métodos (Sintaxis de Invocación - Nombre de Clase) (Página 33)
 
-**28. Diapositiva: Métodos (Sintaxis - Argumentos - Múltiples) (Página 28)**
-*  **Información:**
-    *  Definición: `<argumentos>`: Por cada dato que se necesite pasar al método se debe especificar el tipo de dato y el identificador. Si hay mas de un dato separarlos por coma.
-*  **Descripción:**  Explica que para cada argumento se debe indicar su tipo e identificador, y que se separan con una coma cuando hay varios.
+Información:
+Definición: <NombreClase>: Se va nombrar el nombre de la clase donde está el método que queremos invocar.
+Descripción: Explica que en la invocación se especifica el nombre de la clase donde está declarado el método.
+34. Diapositiva: Métodos (Sintaxis de Invocación - Nombre de Clase - Opcional) (Página 34)
 
-**29. Diapositiva: Métodos (Ejemplo - Argumentos y Retorno) (Página 29)**
-*  **Información:**
-     * Ejemplo de código:
-    ```java
-     // devuelve el maximo de sus tres parametros int
-     public static int maximo ( int x, int y, int z){
-       int valorMaximo = x;
-       if(y>valorMaximo){
-         valorMaximo=y;
-       }
-       if(z>valorMaximo) {
-        valorMaximo=z;
-       }
-       return valorMaximo;
-     }
-    ```
-*  **Descripción:** Muestra un **ejemplo de método** que recibe tres argumentos y devuelve un valor (el máximo).
+Información:
+Definición: <NombreClase>: En caso de que queramos invocar un método que esta en la misma clase (class) no es necesario ponerla ni el punto (.) pero no esta mal hacerlo de hecho el lenguaje lo reconoce.
+Descripción: Indica que el nombre de la clase es opcional en la invocación de métodos de la misma clase.
+35. Diapositiva: Métodos (Sintaxis de Invocación - Argumentos - Opcional) (Página 35)
 
-**30. Diapositiva: Métodos (Ejemplo - Sin Argumentos y Sin Retorno) (Página 30)**
-*   **Información:**
-     * Ejemplo de código:
-    ```java
-     public static void determinarMaximo(){
-       Scanner entrada = new Scanner(System.in );
-       System.out.print("Escriba tres valores enteros, separados
-       por espacios: ");
-       int nu1 = entrada.nextInt();
-       int nu2 = entrada.nextInt();
-       int nu3 = entrada.nextInt();
-        /*determina el valor maximo llamando al metodo
-         anterior asumiendo que ambos metodos estan
-           declarado en la misma clase*/
-        int resultado=maximo(nul, nu2,nu3);
-        System.out.println( "El maximo es: "+resultado);
-    }
-    ```
-*   **Descripción:** Muestra un **ejemplo de método** que no recibe argumentos ni retorna un valor (void) y hace una llamada al método `maximo` del ejemplo anterior.
+Información:
+Definición: <argumentos>: De igual que sucede en la declaración esto puede ser nulo en caso que el método no necesite datos adicionales.
+Descripción: Explica que la parte de los argumentos en la invocación también es opcional si el método no los necesita.
+36. Diapositiva: Métodos (Sintaxis de Invocación - Argumentos - Uso) (Página 36)
 
-**31. Diapositiva: Métodos (Sintaxis de Declaración - Flexibilidad) (Página 31)**
-*  **Información:**
-    *  Texto: Lo anterior no es una camisa de fuerza porque pueden existir: Métodos con retorno y con argumentos. Métodos sin retorno y con argumentos. Métodos con retorno y sin argumentos. Métodos sin retorno y sin argumentos.
-*  **Descripción:**  Indica que la declaración de métodos es flexible y **puede combinarse** con o sin argumentos y con o sin tipo de retorno.
+Información:
+Definición: <argumentos>: En caso que necesite datos adicionales los mismo se ponen separados por comas pero sin especificar el tipo de dato como si se hace en la declaración.
+Descripción: Explica que en la invocación, si se necesitan argumentos, se escriben separados por comas pero sin especificar el tipo de dato.
+37. Diapositiva: Métodos (Sintaxis de Invocación - Argumentos - Orden) (Página 37)
 
-**32. Diapositiva: Métodos (Sintaxis de Invocación - Introducción) (Página 32)**
+Información:
+Definición: <argumentos>: Si es importante que los datos que se les pase en la invocación coincidan en ese mismo orden con los tipos de datos de los argumentos de la declaración.
+Descripción: Explica que en la invocación, el orden de los argumentos debe coincidir con el orden de sus tipos en la declaración del método.
+38. Diapositiva: Métodos (Ejemplo - Invocación con Math.sqrt - 1) (Página 38)
 
-*  **Información:**
-    * Definición: Puede llamar a cualquier método static especificando el nombre de la clase, seguido de un punto y el nombre del método.
-    * Sintaxis: `<NombreClase>.<nombreMetodo>(<argumentos>)`
-     * Texto: Analicemos cada una de las partes de forma detallada.
-*   **Descripción:**  Introduce la **sintaxis de invocación** de un método `static`, explicando la estructura básica y el uso del punto (`.`).
+Información:
+Ejemplo de código:
+```java
+   Math.sqrt( 900.0 );
+   /*Pero tambien pudo ser*/
+   double a=25;
+   Math.sqrt(a);
+```
+Descripción: Muestra ejemplos de cómo invocar el método sqrt de la clase Math directamente con una constante o con el valor de una variable.
+39. Diapositiva: Métodos (Ejemplo - Invocación con Math.sqrt - 2) (Página 39)
 
-**33. Diapositiva: Métodos (Sintaxis de Invocación - Nombre de Clase) (Página 33)**
-*  **Información:**
-    *   Definición: `<NombreClase>`: Se va nombrar el nombre de la clase donde está el método que queremos invocar.
-*  **Descripción:**  Explica que en la invocación se especifica el **nombre de la clase** donde está declarado el método.
+Información:
+Ejemplo: La expresiónes anteriores se evalúan como 30.0 para 900 y 5.0 para a.
+*Definición: El método sqrt (halla la raíz cuadrada) recibe un argumento de tipo double y devuelve un resultado del mismo tipo.
+Descripción: Explica los resultados de la evaluación del ejemplo de la diapositiva anterior e indica el tipo de argumento y retorno del método sqrt.
+40. Diapositiva: Métodos (Ejemplo - Invocación en println) (Página 40)
 
-**34. Diapositiva: Métodos (Sintaxis de Invocación - Nombre de Clase - Opcional) (Página 34)**
-*  **Información:**
-   *   Definición: `<NombreClase>`: En caso de que queramos invocar un método que esta en la misma clase (class) no es necesario ponerla ni el punto (.) pero no esta mal hacerlo de hecho el lenguaje lo reconoce.
-*   **Descripción:** Indica que el nombre de la clase es **opcional** en la invocación de métodos de la misma clase.
+Información:
+Ejemplo: System.out.println(Math.sqrt(900.0));
+*Texto: En esta instrucción, el valor que devuelve sqrt se convierte en el argumento para el método println.
+Descripción: Muestra cómo invocar el método sqrt e imprimir su resultado utilizando System.out.println.
+41. Diapositiva: Clase Math (Introducción) (Página 41)
 
-**35. Diapositiva: Métodos (Sintaxis de Invocación - Argumentos - Opcional) (Página 35)**
-*  **Información:**
-    *   Definición: `<argumentos>`: De igual que sucede en la declaración esto puede ser nulo en caso que el método no necesite datos adicionales.
-*   **Descripción:**  Explica que la parte de los **argumentos en la invocación también es opcional** si el método no los necesita.
+Información:
+Definición: La clase Math cuenta con una colección de métodos y constantes que nos permiten realizar cálculos matemáticos comunes.
+Descripción: Introduce la clase Math, que cuenta con una colección de métodos y constantes para realizar cálculos matemáticos.
+42. Diapositiva: Clase Math (Métodos - Parte 1) (Página 42)
 
-**36. Diapositiva: Métodos (Sintaxis de Invocación - Argumentos - Uso) (Página 36)**
-*  **Información:**
-     * Definición: `<argumentos>`: En caso que necesite datos adicionales los mismo se ponen separados por comas pero sin especificar el tipo de dato como si se hace en la declaración.
-*  **Descripción:** Explica que en la invocación, si se necesitan argumentos, se escriben separados por comas pero sin especificar el tipo de dato.
+Información:
+Tabla con los métodos: abs(x), ceil(x), cos(x), exp(x), y sus descripciones.
+Descripción: Presenta una tabla con algunos métodos de la clase Math y su descripción.
+43. Diapositiva: Clase Math (Métodos - Parte 2) (Página 43)
 
-**37. Diapositiva: Métodos (Sintaxis de Invocación - Argumentos - Orden) (Página 37)**
-*   **Información:**
-    * Definición: `<argumentos>`: Si es importante que los datos que se les pase en la invocación coincidan en ese mismo orden con los tipos de datos de los argumentos de la declaración.
-*  **Descripción:** Explica que en la invocación, el **orden de los argumentos** debe coincidir con el orden de sus tipos en la declaración del método.
+Información:
+Tabla con los métodos: floor(x), log(x), max(x,y), min(x,y), y sus descripciones.
+Descripción: Continúa la tabla con más métodos de la clase Math y su descripción.
+44. Diapositiva: Clase Math (Métodos - Parte 3) (Página 44)
 
-**38. Diapositiva: Métodos (Ejemplo - Invocación con Math.sqrt - 1) (Página 38)**
-*   **Información:**
-   * Ejemplo de código:
-    ```java
-       Math.sqrt( 900.0 );
-       /*Pero tambien pudo ser*/
-       double a=25;
-       Math.sqrt(a);
-    ```
-*   **Descripción:** Muestra **ejemplos de cómo invocar el método `sqrt`** de la clase `Math` directamente con una constante o con el valor de una variable.
+Información:
+Tabla con los métodos: pow(x,y), sin(x), sqrt(x), tan(x), y sus descripciones.
+Descripción: Finaliza la tabla mostrando más métodos de la clase Math y su descripción.
+45. Diapositiva: Conclusiones (Tarea Única) (Página 45)
 
-**39. Diapositiva: Métodos (Ejemplo - Invocación con Math.sqrt - 2) (Página 39)**
+Información:
+Conclusión: Cada método debe limitarse de manera que realice una sola tarea bien definida, y su nombre debe expresar esa tarea con efectividad.
+Descripción: Presenta una conclusión sobre el propósito de un método, indicando que cada uno debería realizar una sola tarea bien definida.
+46. Diapositiva: Conclusiones (Nombre del Método) (Página 46)
 
-*   **Información:**
-      * Ejemplo: La expresiónes anteriores se evalúan como 30.0 para 900 y 5.0 para a.
-     *Definición: El método `sqrt` (halla la raíz cuadrada) recibe un argumento de tipo double y devuelve un resultado del mismo tipo.
-*  **Descripción:** Explica los **resultados de la evaluación del ejemplo de la diapositiva anterior** e indica el tipo de argumento y retorno del método `sqrt`.
+Información:
+Conclusión: Si no puede elegir un nombre conciso que exprese la tarea de un método, tal vez esté tratando de realizar diversas tareas en un mismo método. Por lo general, es mejor dividirlo en varias declaraciones de métodos más pequeños.
+Descripción: Recomienda que si el nombre del método no describe bien su propósito, lo mejor sería dividir el método en varios más pequeños.
+47. Diapositiva: Conclusiones (Mal Uso de void) (Página 47)
 
-**40. Diapositiva: Métodos (Ejemplo - Invocación en println) (Página 40)**
-*   **Información:**
-    * Ejemplo: `System.out.println(Math.sqrt(900.0));`
-    *Texto: En esta instrucción, el valor que devuelve sqrt se convierte en el argumento para el método println.
-*  **Descripción:** Muestra cómo **invocar el método `sqrt` e imprimir su resultado** utilizando `System.out.println`.
+Información:
+Conclusión: Una mala práctica o una evidencia de que no existe una correcta implementación del método es que el mismo tenga como TDR void y haga uso del sentencia return en su implementación.
+Descripción: Aclara que cuando un método se declara como void, este no debería hacer uso de la instrucción return.
+48. Diapositiva: Conclusiones (Métodos Iguales) (Página 48)
 
-**41. Diapositiva: Clase Math (Introducción) (Página 41)**
-*   **Información:**
-     *   Definición: La clase `Math` cuenta con una colección de métodos y constantes que nos permiten realizar cálculos matemáticos comunes.
-*   **Descripción:**  Introduce la **clase `Math`**, que cuenta con una colección de métodos y constantes para realizar cálculos matemáticos.
+Información:
+Conclusión: No pueden existir dos métodos iguales y para que esto no ocurra tienen que diferir en al menos uno de los siguientes aspectos: paquete o clase, nombre, tipo de dato de retorno, cantidad de argumentos, orden de los tipos de datos de los argumentos.
+Descripción: Indica las condiciones que deben ser diferentes entre dos métodos declarados dentro del mismo contexto, con el fin de que sean diferentes.
+49. Diapositiva: Fin (Página 49)
 
-**42. Diapositiva: Clase Math (Métodos - Parte 1) (Página 42)**
-*   **Información:**
-    *   Tabla con los métodos: `abs(x)`, `ceil(x)`, `cos(x)`, `exp(x)`, y sus descripciones.
-*  **Descripción:** Presenta una tabla con algunos **métodos de la clase `Math` y su descripción**.
-
-**43. Diapositiva: Clase Math (Métodos - Parte 2) (Página 43)**
-*   **Información:**
-    *   Tabla con los métodos: `floor(x)`, `log(x)`, `max(x,y)`, `min(x,y)`, y sus descripciones.
-*   **Descripción:** Continúa la tabla con más **métodos de la clase `Math` y su descripción**.
-
-**44. Diapositiva: Clase Math (Métodos - Parte 3) (Página 44)**
-*   **Información:**
-    *  Tabla con los métodos: `pow(x,y)`, `sin(x)`, `sqrt(x)`, `tan(x)`, y sus descripciones.
-*   **Descripción:** Finaliza la tabla mostrando **más métodos de la clase `Math` y su descripción**.
-
-**45. Diapositiva: Conclusiones (Tarea Única) (Página 45)**
-*   **Información:**
-     * Conclusión: Cada método debe limitarse de manera que realice una sola tarea bien definida, y su nombre debe expresar esa tarea con efectividad.
-*   **Descripción:**  Presenta una **conclusión sobre el propósito de un método**, indicando que cada uno debería realizar una sola tarea bien definida.
-
-**46. Diapositiva: Conclusiones (Nombre del Método) (Página 46)**
-*   **Información:**
-     * Conclusión: Si no puede elegir un nombre conciso que exprese la tarea de un método, tal vez esté tratando de realizar diversas tareas en un mismo método. Por lo general, es mejor dividirlo en varias declaraciones de métodos más pequeños.
-*   **Descripción:** Recomienda que si el nombre del método no describe bien su propósito,  **lo mejor sería dividir el método en varios más pequeños**.
-
-**47. Diapositiva: Conclusiones (Mal Uso de void) (Página 47)**
-
-*   **Información:**
-    *   Conclusión: Una mala práctica o una evidencia de que no existe una correcta implementación del método es que el mismo tenga como TDR void y haga uso del sentencia `return` en su implementación.
-*  **Descripción:**  Aclara que cuando un método se declara como `void`, este no debería hacer uso de la instrucción `return`.
-
-**48. Diapositiva: Conclusiones (Métodos Iguales) (Página 48)**
-*  **Información:**
-    *  Conclusión: No pueden existir dos métodos iguales y para que esto no ocurra tienen que diferir en al menos uno de los siguientes aspectos: paquete o clase, nombre, tipo de dato de retorno, cantidad de argumentos, orden de los tipos de datos de los argumentos.
-*   **Descripción:** Indica las **condiciones** que deben ser diferentes entre dos métodos declarados dentro del mismo contexto, con el fin de que sean diferentes.
-
-**49. Diapositiva: Fin (Página 49)**
-*   **Información:**
-    *  Logo de la Universidad de Matanzas.
-    *   Lema: cosechando el saber.
-    *   Texto: FIN.
-*   **Descripción:** Esta es la diapositiva final, indicando el **cierre de la presentación**.
+Información:
+Logo de la Universidad de Matanzas.
+Lema: cosechando el saber.
+Texto: FIN.
+Descripción: Esta es la diapositiva final, indicando el cierre de la presentación.

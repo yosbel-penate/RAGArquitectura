@@ -1,237 +1,231 @@
-**Tema V Arreglos y Matrices
-**Presentación: Arreglos Unidimensionales**
+Tema V Arreglos y Matrices
+Presentación: Arreglos Unidimensionales**
 
-**1. Diapositiva: Título (Página 1)**
-*   **Información:**
-    *   Logo de la Universidad de Matanzas.
-    *   Título: ARREGLOS UNIDIMENSIONALES.
-    *   Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
-    *   Fecha: Octubre / 2019.
-*   **Descripción:** Esta es la diapositiva de **portada** de la presentación. Muestra el logo de la Universidad de Matanzas, el título principal, el subtítulo con el contexto de la presentación, y la fecha.
+1. Diapositiva: Título (Página 1)
 
-**2. Diapositiva: Objetivos (Parte 1) (Página 2)**
-*   **Información:**
-    *   Objetivo: Caracterizar los arreglos unidimensionales como parte de la construcción de un programa computacional.
-*   **Descripción:**  Presenta el primer **objetivo** de la presentación: comprender la importancia de los arreglos unidimensionales en la construcción de programas.
+Información:
+Logo de la Universidad de Matanzas.
+Título: ARREGLOS UNIDIMENSIONALES.
+Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
+Fecha: Octubre / 2019.
+Descripción: Esta es la diapositiva de portada de la presentación. Muestra el logo de la Universidad de Matanzas, el título principal, el subtítulo con el contexto de la presentación, y la fecha.
+2. Diapositiva: Objetivos (Parte 1) (Página 2)
 
-**3. Diapositiva: Objetivos (Parte 2) (Página 3)**
-*   **Información:**
-    *  Objetivo: Declarar arreglos, inicializarlos y hacer referencia a elementos individuales de los arreglos.
-*   **Descripción:**  Presenta el segundo **objetivo** de la presentación: aprender a declarar arreglos, inicializarlos y acceder a sus elementos.
+Información:
+Objetivo: Caracterizar los arreglos unidimensionales como parte de la construcción de un programa computacional.
+Descripción: Presenta el primer objetivo de la presentación: comprender la importancia de los arreglos unidimensionales en la construcción de programas.
+3. Diapositiva: Objetivos (Parte 2) (Página 3)
 
-**4. Diapositiva: Objetivos (Parte 3) (Página 4)**
-*  **Información:**
-   * Objetivo 1: Utilizar la instrucción `for` mejorada para iterar a través de los arreglos.
-   * Objetivo 2: Pasar arreglos a los métodos como argumentos.
-*   **Descripción:**  Presenta los dos últimos **objetivos** de la presentación: aprender a iterar sobre arreglos utilizando el `for` mejorado y cómo pasar arreglos como argumentos a métodos.
+Información:
+Objetivo: Declarar arreglos, inicializarlos y hacer referencia a elementos individuales de los arreglos.
+Descripción: Presenta el segundo objetivo de la presentación: aprender a declarar arreglos, inicializarlos y acceder a sus elementos.
+4. Diapositiva: Objetivos (Parte 3) (Página 4)
 
-**5. Diapositiva: Sumario (Página 5)**
-*   **Información:**
-    *  Temas: Arreglos (Declaración y creación, Uso de un inicializador, Instrucción `for` mejorada, Paso de arreglos a los métodos), Métodos de la clase `Arrays`.
-*   **Descripción:**  Ofrece un **resumen** de los temas principales a tratar en la presentación.
+Información:
+Objetivo 1: Utilizar la instrucción for mejorada para iterar a través de los arreglos.
+Objetivo 2: Pasar arreglos a los métodos como argumentos.
+Descripción: Presenta los dos últimos objetivos de la presentación: aprender a iterar sobre arreglos utilizando el for mejorado y cómo pasar arreglos como argumentos a métodos.
+5. Diapositiva: Sumario (Página 5)
 
-**6. Diapositiva: Bibliografía (Página 6)**
-*   **Información:**
-    *   Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
-*   **Descripción:**  Lista las **fuentes bibliográficas** utilizadas en la presentación.
+Información:
+Temas: Arreglos (Declaración y creación, Uso de un inicializador, Instrucción for mejorada, Paso de arreglos a los métodos), Métodos de la clase Arrays.
+Descripción: Ofrece un resumen de los temas principales a tratar en la presentación.
+6. Diapositiva: Bibliografía (Página 6)
 
-**7. Diapositiva: Arreglos (Definición) (Página 7)**
-*   **Información:**
-   * Definición: Los arreglos son estructuras de datos que consisten de elementos de datos relacionados, del mismo tipo. Los arreglos son entidades de longitud fija; conservan la misma longitud una vez creados.
-*   **Descripción:** Introduce el concepto de **arreglos**, como colecciones de elementos del mismo tipo y longitud fija.
+Información:
+Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
+Descripción: Lista las fuentes bibliográficas utilizadas en la presentación.
+7. Diapositiva: Arreglos (Definición) (Página 7)
 
-**8. Diapositiva: Arreglos (Reasignación) (Página 8)**
-*   **Información:**
-    * Definición: Aunque puede reasignarse una variable tipo arreglo de tal forma que haga referencia a un nuevo arreglo de distinta longitud.
-*  **Descripción:** Aclara que aunque un arreglo tenga una longitud fija, una variable puede ser reasignada para apuntar a un nuevo arreglo de distinta longitud.
+Información:
+Definición: Los arreglos son estructuras de datos que consisten de elementos de datos relacionados, del mismo tipo. Los arreglos son entidades de longitud fija; conservan la misma longitud una vez creados.
+Descripción: Introduce el concepto de arreglos, como colecciones de elementos del mismo tipo y longitud fija.
+8. Diapositiva: Arreglos (Reasignación) (Página 8)
 
-**9. Diapositiva: Arreglos (Definición en Java) (Página 9)**
-*  **Información:**
-    * Definición: En Java, un arreglo es un grupo de variables (llamadas elementos o componentes) que contienen valores, todos del mismo tipo.
-*   **Descripción:**  Define un **arreglo en Java**, como un conjunto de variables (elementos) del mismo tipo.
+Información:
+Definición: Aunque puede reasignarse una variable tipo arreglo de tal forma que haga referencia a un nuevo arreglo de distinta longitud.
+Descripción: Aclara que aunque un arreglo tenga una longitud fija, una variable puede ser reasignada para apuntar a un nuevo arreglo de distinta longitud.
+9. Diapositiva: Arreglos (Definición en Java) (Página 9)
 
-**10. Diapositiva: Arreglos (Tipos de Referencia) (Página 10)**
-*  **Información:**
-     * Definición: Los tipos en Java se dividen en dos categorías: tipos primitivos y tipos de referencia. Los arreglos son objetos, por lo que se consideran como tipos de referencia.
-*   **Descripción:** Indica que los arreglos en Java son **tipos de referencia**, ya que son objetos.
+Información:
+Definición: En Java, un arreglo es un grupo de variables (llamadas elementos o componentes) que contienen valores, todos del mismo tipo.
+Descripción: Define un arreglo en Java, como un conjunto de variables (elementos) del mismo tipo.
+10. Diapositiva: Arreglos (Tipos de Referencia) (Página 10)
 
-**11. Diapositiva: Arreglos (Referencia a Elementos) (Página 11)**
-*  **Información:**
-    * Definición: Para hacer referencia a un elemento específico en un arreglo, debemos especificar el nombre de la referencia al arreglo y el número de la posición del elemento en el arreglo.
-*   **Descripción:**  Explica cómo **acceder a un elemento específico** de un arreglo, requiriendo el nombre del arreglo y su posición (índice).
+Información:
+Definición: Los tipos en Java se dividen en dos categorías: tipos primitivos y tipos de referencia. Los arreglos son objetos, por lo que se consideran como tipos de referencia.
+Descripción: Indica que los arreglos en Java son tipos de referencia, ya que son objetos.
+11. Diapositiva: Arreglos (Referencia a Elementos) (Página 11)
 
-**12. Diapositiva: Arreglos (Índice) (Página 12)**
-*  **Información:**
-    * Definición: El número de la posición del elemento se conoce formalmente como el índice o subíndice del elemento.
-*   **Descripción:**  Define el concepto de **índice** o subíndice como la forma formal en la que se denota la posición de un elemento dentro de un arreglo.
+Información:
+Definición: Para hacer referencia a un elemento específico en un arreglo, debemos especificar el nombre de la referencia al arreglo y el número de la posición del elemento en el arreglo.
+Descripción: Explica cómo acceder a un elemento específico de un arreglo, requiriendo el nombre del arreglo y su posición (índice).
+12. Diapositiva: Arreglos (Índice) (Página 12)
 
-**13. Diapositiva: Arreglos (Expresión de Acceso) (Página 13)**
-*  **Información:**
-    * Definición: Un programa puede hacer referencia a cualquiera de estos elementos mediante una expresión de acceso a un arreglo que incluye el nombre del arreglo, seguido por el índice del elemento específico encerrado entre corchetes ([ ]).
-*   **Descripción:** Describe la **expresión de acceso a un arreglo**, indicando que se utiliza el nombre del arreglo seguido del índice entre corchetes.
+Información:
+Definición: El número de la posición del elemento se conoce formalmente como el índice o subíndice del elemento.
+Descripción: Define el concepto de índice o subíndice como la forma formal en la que se denota la posición de un elemento dentro de un arreglo.
+13. Diapositiva: Arreglos (Expresión de Acceso) (Página 13)
 
-**14. Diapositiva: Arreglos (Declaración y Creación - Introducción) (Página 14)**
-*   **Información:**
-    *  Definición: Los objetos arreglo ocupan espacio en memoria. Al igual que los demás objetos, los arreglos se crean con la palabra clave new.
-*   **Descripción:** Introduce el tema de cómo **declarar y crear arreglos**, explicando que ocupan espacio en la memoria y se crean con la palabra clave `new`.
+Información:
+Definición: Un programa puede hacer referencia a cualquiera de estos elementos mediante una expresión de acceso a un arreglo que incluye el nombre del arreglo, seguido por el índice del elemento específico encerrado entre corchetes ([ ]).
+Descripción: Describe la expresión de acceso a un arreglo, indicando que se utiliza el nombre del arreglo seguido del índice entre corchetes.
+14. Diapositiva: Arreglos (Declaración y Creación - Introducción) (Página 14)
 
-**15. Diapositiva: Arreglos (Declaración y Creación - new) (Página 15)**
-*  **Información:**
-    * Definición: Para crear un objeto arreglo, el programador especifica el tipo de cada elemento y el número de elementos que se requieren para el arreglo, como parte de una expresión para crear un arreglo que utiliza la palabra clave `new`.
-*  **Descripción:** Aclara que al crear un arreglo se debe indicar el **tipo de datos** que almacenará y la **cantidad de elementos**, usando `new`.
+Información:
+Definición: Los objetos arreglo ocupan espacio en memoria. Al igual que los demás objetos, los arreglos se crean con la palabra clave new.
+Descripción: Introduce el tema de cómo declarar y crear arreglos, explicando que ocupan espacio en la memoria y se crean con la palabra clave new.
+15. Diapositiva: Arreglos (Declaración y Creación - new) (Página 15)
 
-**16. Diapositiva: Arreglos (Declaración y Creación - Sintaxis) (Página 16)**
-*   **Información:**
-    *   Sintaxis: `<TD> <nombre>[] = new <TD> [<capacidad>];`
-    *  Definiciones:
-        *   `<TD>`: Tipo de dato
-        *   `<nombre>`: Nombre del arreglo
-        *   `<capacidad>`: Cantidad de elementos del arreglo.
-*   **Descripción:**  Presenta la **sintaxis formal** de cómo declarar y crear un arreglo en Java, mostrando sus partes principales: tipo de datos, nombre y capacidad del mismo.
+Información:
+Definición: Para crear un objeto arreglo, el programador especifica el tipo de cada elemento y el número de elementos que se requieren para el arreglo, como parte de una expresión para crear un arreglo que utiliza la palabra clave new.
+Descripción: Aclara que al crear un arreglo se debe indicar el tipo de datos que almacenará y la cantidad de elementos, usando new.
+16. Diapositiva: Arreglos (Declaración y Creación - Sintaxis) (Página 16)
 
-**17. Diapositiva: Arreglos (Declaración y Creación - Ejemplo) (Página 17)**
-*  **Información:**
-    *  Ejemplo: `int c[] = new int[12];`
-   *  Texto: La siguiente declaración y expresión crea un arreglo, que contiene 12 elementos int, y almacena la referencia del arreglo en la variable c
-*  **Descripción:** Muestra un **ejemplo de código** donde se declara e inicializa un arreglo de enteros con 12 posiciones.
+Información:
+Sintaxis: <TD> <nombre>[] = new <TD> [<capacidad>];
+Definiciones:
+<TD>: Tipo de dato
+<nombre>: Nombre del arreglo
+<capacidad>: Cantidad de elementos del arreglo.
+Descripción: Presenta la sintaxis formal de cómo declarar y crear un arreglo en Java, mostrando sus partes principales: tipo de datos, nombre y capacidad del mismo.
+17. Diapositiva: Arreglos (Declaración y Creación - Ejemplo) (Página 17)
 
-**18. Diapositiva: Arreglos (Declaración y Creación - Dos Pasos) (Página 18)**
-*  **Información:**
-      * Ejemplo:
-    ```java
-        int c[ ]; // declara la variable arreglo
-        c = new int[ 12 ]; /* crea el arreglo; lo asigna a
-         la variable tipo arreglo*/
-     ```
-*  **Descripción:**  Muestra cómo se puede **crear un arreglo en dos pasos**: primero declarar la variable y luego crear el arreglo con `new` y asignarlo.
+Información:
+Ejemplo: int c[] = new int[12];
+Texto: La siguiente declaración y expresión crea un arreglo, que contiene 12 elementos int, y almacena la referencia del arreglo en la variable c
+Descripción: Muestra un ejemplo de código donde se declara e inicializa un arreglo de enteros con 12 posiciones.
+18. Diapositiva: Arreglos (Declaración y Creación - Dos Pasos) (Página 18)
 
-**19. Diapositiva: Arreglos (Uso de un Inicializador - Introducción) (Página 19)**
-*   **Información:**
-    *   Definición: Un programa puede crear un arreglo e inicializar sus elementos con un inicializador de arreglo, que es una lista de expresiones separadas por comas encerrada entre llaves ({ y });
-*  **Descripción:** Introduce el concepto de **inicializador de arreglo**, como una lista entre llaves que asigna valores iniciales a los elementos del arreglo en el momento de la declaración.
+Información:
+Ejemplo:
+    int c[ ]; // declara la variable arreglo
+    c = new int[ 12 ]; /* crea el arreglo; lo asigna a
+     la variable tipo arreglo*/
+Descripción: Muestra cómo se puede crear un arreglo en dos pasos: primero declarar la variable y luego crear el arreglo con new y asignarlo.
+19. Diapositiva: Arreglos (Uso de un Inicializador - Introducción) (Página 19)
 
-**20. Diapositiva: Arreglos (Uso de un Inicializador - Ejemplo) (Página 20)**
-*   **Información:**
-   * Ejemplo: `int n[] = {10, 20, 30, 40, 50};`
-    * Texto: Crea un arreglo de cinco elementos con los valores de índices 0, 1, 2, 3 y 4. El elemento n[0] se inicializa con 10, n[1] se inicializa con 20, y así en lo sucesivo.
-*   **Descripción:** Muestra un **ejemplo de inicialización de arreglos**, asignando los valores a los elementos de un arreglo.
+Información:
+Definición: Un programa puede crear un arreglo e inicializar sus elementos con un inicializador de arreglo, que es una lista de expresiones separadas por comas encerrada entre llaves ({ y });
+Descripción: Introduce el concepto de inicializador de arreglo, como una lista entre llaves que asigna valores iniciales a los elementos del arreglo en el momento de la declaración.
+20. Diapositiva: Arreglos (Uso de un Inicializador - Ejemplo) (Página 20)
 
-**21. Diapositiva: Arreglos (Instrucción for Mejorada - Introducción) (Página 21)**
-*   **Información:**
-    * Definición: Utilizar las instrucciones for controladas por un contador para iterar a través de los elementos en un arreglo es muy común.
-*  **Descripción:**  Introduce el bucle `for` como forma común de recorrer un arreglo.
+Información:
+Ejemplo: int n[] = {10, 20, 30, 40, 50};
+Texto: Crea un arreglo de cinco elementos con los valores de índices 0, 1, 2, 3 y 4. El elemento n[0] se inicializa con 10, n[1] se inicializa con 20, y así en lo sucesivo.
+Descripción: Muestra un ejemplo de inicialización de arreglos, asignando los valores a los elementos de un arreglo.
+21. Diapositiva: Arreglos (Instrucción for Mejorada - Introducción) (Página 21)
 
-**22. Diapositiva: Arreglos (Instrucción for Mejorada - Ventajas) (Página 22)**
-*  **Información:**
-    * Definición: La instrucción for mejorada, la cual itera a través de los elementos de un arreglo o colección sin utilizar un contador con lo cual, evita la posibilidad de "salirse" del arreglo.
-*   **Descripción:**  Introduce el concepto de **bucle `for` mejorado**, que evita errores comunes al recorrer arreglos, iterando sobre los elementos sin necesidad de un contador explícito.
+Información:
+Definición: Utilizar las instrucciones for controladas por un contador para iterar a través de los elementos en un arreglo es muy común.
+Descripción: Introduce el bucle for como forma común de recorrer un arreglo.
+22. Diapositiva: Arreglos (Instrucción for Mejorada - Ventajas) (Página 22)
 
-**23. Diapositiva: Arreglos (Instrucción for Mejorada - Sintaxis 1) (Página 23)**
-*   **Información:**
-    *   Sintaxis: `for ( <parametro> : <nombreArreglo> ){ <instrucciones> }`
-    *  Definiciones:
-        *   `<parámetro>`: tiene dos partes; un tipo y un identificador
-        *   `<nombreArreglo>`: es el arreglo a través del cual se iterará.
-*   **Descripción:** Muestra la **sintaxis del bucle `for` mejorado**, especificando el uso de dos partes: la declaración de una variable del tipo del arreglo y el nombre de la variable a recorrer.
+Información:
+Definición: La instrucción for mejorada, la cual itera a través de los elementos de un arreglo o colección sin utilizar un contador con lo cual, evita la posibilidad de "salirse" del arreglo.
+Descripción: Introduce el concepto de bucle for mejorado, que evita errores comunes al recorrer arreglos, iterando sobre los elementos sin necesidad de un contador explícito.
+23. Diapositiva: Arreglos (Instrucción for Mejorada - Sintaxis 1) (Página 23)
 
-**24. Diapositiva: Arreglos (Instrucción for Mejorada - Sintaxis 2) (Página 24)**
-*   **Información:**
-    *   Sintaxis: `for ( <parametro> : <nombreArreglo> ){ <instrucciones> }`
-   *  Definiciones:
-        *  `<parámetro>`: tiene dos partes; un tipo y un identificador (por ejemplo, int numero)
-        *  `<nombreArreglo>`: es el arreglo a través del cual se iterará.
-*   **Descripción:**  Muestra nuevamente la sintaxis del bucle `for` mejorado.
+Información:
+Sintaxis: for ( <parametro> : <nombreArreglo> ){ <instrucciones> }
+Definiciones:
+<parámetro>: tiene dos partes; un tipo y un identificador
+<nombreArreglo>: es el arreglo a través del cual se iterará.
+Descripción: Muestra la sintaxis del bucle for mejorado, especificando el uso de dos partes: la declaración de una variable del tipo del arreglo y el nombre de la variable a recorrer.
+24. Diapositiva: Arreglos (Instrucción for Mejorada - Sintaxis 2) (Página 24)
 
-**25. Diapositiva: Arreglos (Instrucción for Mejorada - Tipo) (Página 25)**
-*   **Información:**
-     * Definición: El tipo del parámetro debe concordar con el tipo de los elementos en el arreglo.
-*   **Descripción:** Indica que el **tipo de la variable que se itera** en el bucle `for` mejorado debe coincidir con el tipo de dato de los elementos del arreglo.
+Información:
+Sintaxis: for ( <parametro> : <nombreArreglo> ){ <instrucciones> }
+Definiciones:
+<parámetro>: tiene dos partes; un tipo y un identificador (por ejemplo, int numero)
+<nombreArreglo>: es el arreglo a través del cual se iterará.
+Descripción: Muestra nuevamente la sintaxis del bucle for mejorado.
+25. Diapositiva: Arreglos (Instrucción for Mejorada - Tipo) (Página 25)
 
-**26. Diapositiva: Arreglos (Instrucción for Mejorada - Ejemplo) (Página 26)**
-*  **Información:**
-    * Ejemplo de código:
-    ```java
-    public class PruebaForMejorado{
-      public static void main(String args() ){
-         int arreglo[] = {87,68,94,100,83,78,85,91,76,87};
-         int total = 0;
-          // suma el valor de cada elemento al total
-         for( int numero : arreglo )
-              total += numero;
-         System.out.printf( "Total de elementos del arreglo: %d\n", total );
-       }
-     }
-    ```
-*  **Descripción:** Muestra un **ejemplo del uso del `for` mejorado**, mostrando la forma más sencilla de recorrer un arreglo y sumar sus elementos.
+Información:
+Definición: El tipo del parámetro debe concordar con el tipo de los elementos en el arreglo.
+Descripción: Indica que el tipo de la variable que se itera en el bucle for mejorado debe coincidir con el tipo de dato de los elementos del arreglo.
+26. Diapositiva: Arreglos (Instrucción for Mejorada - Ejemplo) (Página 26)
 
-**27. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Ejemplo) (Página 27)**
-*   **Información:**
-      * Ejemplo de código:
-    ```java
-        double temperaturasPorHora [] = new double[ 24 ];
-        modificarArreglo( temperaturasPorHora );
-    ```
-    * Texto: Para pasar un argumento tipo arreglo a un método, se especifica el nombre del arreglo sin corchetes.
-*  **Descripción:** Indica que para pasar un **arreglo como argumento a un método**, solo debe especificarse el nombre del arreglo, sin corchetes.
+Información:
+Ejemplo de código:
+public class PruebaForMejorado{
+  public static void main(String args() ){
+     int arreglo[] = {87,68,94,100,83,78,85,91,76,87};
+     int total = 0;
+      // suma el valor de cada elemento al total
+     for( int numero : arreglo )
+          total += numero;
+     System.out.printf( "Total de elementos del arreglo: %d\n", total );
+   }
+ }
+Descripción: Muestra un ejemplo del uso del for mejorado, mostrando la forma más sencilla de recorrer un arreglo y sumar sus elementos.
+27. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Ejemplo) (Página 27)
 
-**28. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Longitud) (Página 28)**
-*  **Información:**
-   * Definición: Todo objeto arreglo “conoce” su propia longitud (a través de su campo length). Por ende, cuando pasamos a un método la referencia a un objeto arreglo, no necesitamos pasar la longitud del arreglo como un argumento adicional.
-*   **Descripción:**  Explica que los arreglos tienen una propiedad llamada `length` que permite **obtener la cantidad de elementos**, por lo que no hace falta pasarla explícitamente al método.
+Información:
+Ejemplo de código:
+    double temperaturasPorHora [] = new double[ 24 ];
+    modificarArreglo( temperaturasPorHora );
+Texto: Para pasar un argumento tipo arreglo a un método, se especifica el nombre del arreglo sin corchetes.
+Descripción: Indica que para pasar un arreglo como argumento a un método, solo debe especificarse el nombre del arreglo, sin corchetes.
+28. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Longitud) (Página 28)
 
-**29. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Parámetros) (Página 29)**
-*  **Información:**
-    *   Definición: Para que un método reciba una referencia a un arreglo a través de una llamada a un método, la lista de parámetros del método debe especificar un parámetro tipo arreglo.
-*   **Descripción:** Aclara que para que un método reciba un arreglo como parámetro, debe indicarse que el parámetro es de **tipo arreglo**.
+Información:
+Definición: Todo objeto arreglo “conoce” su propia longitud (a través de su campo length). Por ende, cuando pasamos a un método la referencia a un objeto arreglo, no necesitamos pasar la longitud del arreglo como un argumento adicional.
+Descripción: Explica que los arreglos tienen una propiedad llamada length que permite obtener la cantidad de elementos, por lo que no hace falta pasarla explícitamente al método.
+29. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Parámetros) (Página 29)
 
-**30. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Encabezado) (Página 30)**
+Información:
+Definición: Para que un método reciba una referencia a un arreglo a través de una llamada a un método, la lista de parámetros del método debe especificar un parámetro tipo arreglo.
+Descripción: Aclara que para que un método reciba un arreglo como parámetro, debe indicarse que el parámetro es de tipo arreglo.
+30. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Encabezado) (Página 30)
 
-*   **Información:**
-    * Ejemplo: `public static void modificarArreglo(int [] b){ //.... }`
-    * Texto: lo cual indica que modificarArreglo recibe la referencia de un arreglo de enteros en el parámetro b.
-*  **Descripción:** Muestra la forma de declarar un **método que recibe un arreglo** de enteros como parámetro.
+Información:
+Ejemplo: public static void modificarArreglo(int [] b){ //.... }
+Texto: lo cual indica que modificarArreglo recibe la referencia de un arreglo de enteros en el parámetro b.
+Descripción: Muestra la forma de declarar un método que recibe un arreglo de enteros como parámetro.
+31. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Referencia) (Página 31)
 
-**31. Diapositiva: Arreglos (Paso de Arreglos a Métodos - Referencia) (Página 31)**
-*   **Información:**
-      *Definición: La llamada a este método pasa la referencia al arreglo temperaturasPorHoras , de manera que cuando el método llamado utiliza la variable b tipo arreglo, hace referencia al mismo objeto arreglo como temperaturasPorHora en el método que hizo la llamada.
-*  **Descripción:** Aclara que al pasar un arreglo como argumento se está pasando la **referencia del arreglo**, y no una copia de los datos.
+Información:
+*Definición: La llamada a este método pasa la referencia al arreglo temperaturasPorHoras , de manera que cuando el método llamado utiliza la variable b tipo arreglo, hace referencia al mismo objeto arreglo como temperaturasPorHora en el método que hizo la llamada.
+Descripción: Aclara que al pasar un arreglo como argumento se está pasando la referencia del arreglo, y no una copia de los datos.
+32. Diapositiva: Clase Arrays (Introducción) (Página 32)
 
-**32. Diapositiva: Clase Arrays (Introducción) (Página 32)**
-*  **Información:**
-    *   Definición: Es una clase de utilidad introducida en el JDK 1.2 que contiene métodos static para ordenar, llenar, realizar búsquedas y comparar los arrays clásicos del lenguaje.
-*   **Descripción:** Introduce la **clase `Arrays`**, que ofrece métodos estáticos para operar sobre arreglos.
+Información:
+Definición: Es una clase de utilidad introducida en el JDK 1.2 que contiene métodos static para ordenar, llenar, realizar búsquedas y comparar los arrays clásicos del lenguaje.
+Descripción: Introduce la clase Arrays, que ofrece métodos estáticos para operar sobre arreglos.
+33. Diapositiva: Clase Arrays (Referencia) (Página 33)
 
-**33. Diapositiva: Clase Arrays (Referencia) (Página 33)**
-*   **Información:**
-    * Referencia: Para una mejor compresión puedes consultar el libro "Cómo programar en Java" a partir de la página 794 presente en la bibliografía de la asignatura.
-*   **Descripción:**  Sugiere una **fuente bibliográfica** donde se pueden consultar métodos y funciones de la clase `Arrays` (del libro "Cómo Programar en Java").
+Información:
+Referencia: Para una mejor compresión puedes consultar el libro "Cómo programar en Java" a partir de la página 794 presente en la bibliografía de la asignatura.
+Descripción: Sugiere una fuente bibliográfica donde se pueden consultar métodos y funciones de la clase Arrays (del libro "Cómo Programar en Java").
+34. Diapositiva: Conclusiones (Creación y Acceso) (Página 34)
 
-**34. Diapositiva: Conclusiones (Creación y Acceso) (Página 34)**
-*   **Información:**
-    * Conclusión 1: Los arrays se crean con el operador `new` seguido del tipo y número de elementos.
-    * Conclusión 2: Se puede acceder al número de elementos de un array con la variable miembro implícita `length` (por ejemplo, `vect.length`).
-*  **Descripción:**  Presenta las primeras **conclusiones** de la presentación: cómo se crean los arreglos y cómo obtener su tamaño con `length`.
+Información:
+Conclusión 1: Los arrays se crean con el operador new seguido del tipo y número de elementos.
+Conclusión 2: Se puede acceder al número de elementos de un array con la variable miembro implícita length (por ejemplo, vect.length).
+Descripción: Presenta las primeras conclusiones de la presentación: cómo se crean los arreglos y cómo obtener su tamaño con length.
+35. Diapositiva: Conclusiones (Acceso a Elementos) (Página 35)
 
-**35. Diapositiva: Conclusiones (Acceso a Elementos) (Página 35)**
-*   **Información:**
-   * Conclusión 1: Se accede a los elementos de un array con los corchetes `[ ]` y un índice que varía de 0 a length-1.
-   * Conclusión 2: Se pueden crear arrays de objetos de cualquier tipo. En principio un array de objetos es un array de referencias que hay que completar llamando al operador `new`.
-*   **Descripción:**  Continúa con las **conclusiones** sobre cómo acceder a los elementos de un arreglo y que los arreglos pueden almacenar referencias a objetos.
+Información:
+Conclusión 1: Se accede a los elementos de un array con los corchetes [ ] y un índice que varía de 0 a length-1.
+Conclusión 2: Se pueden crear arrays de objetos de cualquier tipo. En principio un array de objetos es un array de referencias que hay que completar llamando al operador new.
+Descripción: Continúa con las conclusiones sobre cómo acceder a los elementos de un arreglo y que los arreglos pueden almacenar referencias a objetos.
+36. Diapositiva: Conclusiones (Inicialización Implícita) (Página 36)
 
-**36. Diapositiva: Conclusiones (Inicialización Implícita) (Página 36)**
-*  **Información:**
-   * Conclusión: Los elementos de un array se inicializan al valor por defecto del tipo correspondiente (cero para valores numéricos, el carácter nulo para char, false para boolean, null para Strings y para referencias).
-*   **Descripción:** Explica que los arreglos se **inicializan implícitamente** con valores por defecto, diferentes según el tipo de dato almacenado.
+Información:
+Conclusión: Los elementos de un array se inicializan al valor por defecto del tipo correspondiente (cero para valores numéricos, el carácter nulo para char, false para boolean, null para Strings y para referencias).
+Descripción: Explica que los arreglos se inicializan implícitamente con valores por defecto, diferentes según el tipo de dato almacenado.
+37. Diapositiva: Conclusiones (Paso por Referencia y Arreglos Anónimos) (Página 37)
 
-**37. Diapositiva: Conclusiones (Paso por Referencia y Arreglos Anónimos) (Página 37)**
-*  **Información:**
-   * Conclusión 1: Como todos los objetos, los arrays se pasan como argumentos a los métodos por referencia.
-   * Conclusión 2: Se pueden crear arrays anónimos (por ejemplo, crear un nuevo array como argumento actual en la llamada a un método).
-*  **Descripción:** Indica que los arreglos se pasan como **argumentos por referencia** a los métodos y que es posible crear **arreglos anónimos** directamente en la llamada.
+Información:
+Conclusión 1: Como todos los objetos, los arrays se pasan como argumentos a los métodos por referencia.
+Conclusión 2: Se pueden crear arrays anónimos (por ejemplo, crear un nuevo array como argumento actual en la llamada a un método).
+Descripción: Indica que los arreglos se pasan como argumentos por referencia a los métodos y que es posible crear arreglos anónimos directamente en la llamada.
+38. Diapositiva: Fin (Página 38)
 
-**38. Diapositiva: Fin (Página 38)**
-*   **Información:**
-    *   Logo de la Universidad de Matanzas.
-    *   Lema: cosechando el saber.
-    *   Texto: FIN.
-*   **Descripción:** Esta es la diapositiva de **cierre** de la presentación.
+Información:
+Logo de la Universidad de Matanzas.
+Lema: cosechando el saber.
+Texto: FIN.
+Descripción: Esta es la diapositiva de cierre de la presentación.

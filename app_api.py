@@ -50,7 +50,11 @@ def generate_answer():
     """
     query = request.json.get('query')
     results = vector_store_adapter.search_fragments(query)
-    answer = generation_adapter.generate_response(query, results)
+    try:
+        answer = generation_adapter.generate_response(query, results)
+    except ValueError as e:
+        logging.error(f"Error al generar la respuesta: {e}")
+        return jsonify({"error": "No se pudo generar la respuesta. Intente con otra consulta."}), 500
     return jsonify({"answer": answer}), 200
 
 @app.route('/get_document/<doc_id>', methods=['GET'])
