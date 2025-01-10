@@ -1,116 +1,116 @@
-**Tema II Introducción al lenguaje de programación Java
-**Presentación: Tipos de Datos, Variables, Constantes, Identificadores**
+Tema II Introducción al lenguaje de programación Java
+Presentación: Tipos de Datos, Variables, Constantes, Identificadores
 
-**Diapositiva 1: Título**
-*   **Página 1:** Es la **portada** de la presentación. Muestra el logo de la Universidad de Matanzas, el título principal "TIPOS DE DATOS, VARIABLES, CONSTANTES, IDENTIFICADORES", el contexto "INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA" y la fecha "Julio / 2019".
+Diapositiva 1: Título
+Página 1: Es la portada de la presentación. Muestra el logo de la Universidad de Matanzas, el título principal "TIPOS DE DATOS, VARIABLES, CONSTANTES, IDENTIFICADORES", el contexto "INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA" y la fecha "Julio / 2019".
 
-**Diapositiva 2: Objetivos (Parte 1)**
-*   **Página 2:**  Presenta los dos primeros **objetivos** de la presentación: comprender las "variables" como parte esencial de la programación y entender los "tipos de datos" en el desarrollo de programas.
+Diapositiva 2: Objetivos (Parte 1)
+Página 2: Presenta los dos primeros objetivos de la presentación: comprender las "variables" como parte esencial de la programación y entender los "tipos de datos" en el desarrollo de programas.
 
-**Diapositiva 3: Objetivos (Parte 2)**
-*   **Página 3:**  Continúa con los **objetivos**, ahora enfocándose en caracterizar los "identificadores" y las "constantes", también elementos importantes en la programación.
+Diapositiva 3: Objetivos (Parte 2)
+Página 3: Continúa con los objetivos, ahora enfocándose en caracterizar los "identificadores" y las "constantes", también elementos importantes en la programación.
 
-**Diapositiva 4: Sumario**
-*   **Página 4:**  Muestra un **resumen** de los temas principales que se abordarán en la presentación: "Variables", "Tipos de datos", "Constantes" e "Identificadores".
+Diapositiva 4: Sumario
+Página 4: Muestra un resumen de los temas principales que se abordarán en la presentación: "Variables", "Tipos de datos", "Constantes" e "Identificadores".
 
-**Diapositiva 5: Bibliografía**
-*   **Página 5:**  Lista las **referencias** o libros utilizados para crear la presentación: "La Esencia de la Lógica de Programación", "Manual algoritmos" y "Aprenda Java como si estuviera en primero".
+Diapositiva 5: Bibliografía
+Página 5: Lista las referencias o libros utilizados para crear la presentación: "La Esencia de la Lógica de Programación", "Manual algoritmos" y "Aprenda Java como si estuviera en primero".
 
-**Diapositiva 6: Variables (Definición)**
-*   **Página 6:** Explica qué son las **variables** de forma informal (algo que cambia) y técnica (ubicación en memoria que se puede modificar).
+Diapositiva 6: Variables (Definición)
+Página 6: Explica qué son las variables de forma informal (algo que cambia) y técnica (ubicación en memoria que se puede modificar).
 
-**Diapositiva 7: Variables (Declaración)**
-*   **Página 7:** Describe que las variables necesitan **declararse con un tipo de dato** antes de usarse, comparándolas con "cajas" de diferente tamaño en la memoria.
+Diapositiva 7: Variables (Declaración)
+Página 7: Describe que las variables necesitan declararse con un tipo de dato antes de usarse, comparándolas con "cajas" de diferente tamaño en la memoria.
 
-**Diapositiva 8: Variables (Tipo y Nombre)**
-*   **Página 8:** Define cómo se construye una variable, combinando un **tipo de dato** y un **nombre**. Las variables pueden ser de tipos primitivos o referencias a objetos.
+Diapositiva 8: Variables (Tipo y Nombre)
+Página 8: Define cómo se construye una variable, combinando un tipo de dato y un nombre. Las variables pueden ser de tipos primitivos o referencias a objetos.
 
-**Diapositiva 9: Variables (Inicialización Implícita)**
-*   **Página 9:**  Indica que si no se asigna valor a una variable, esta se **inicializa** automáticamente con cero (primitivas) o `null` (referencia).
+Diapositiva 9: Variables (Inicialización Implícita)
+Página 9: Indica que si no se asigna valor a una variable, esta se inicializa automáticamente con cero (primitivas) o `null` (referencia).
 
-**Diapositiva 10: Variables (Ejemplos)**
-*   **Página 10:** Muestra **ejemplos de código** de declaración e inicialización de variables (enteros, arreglos y arreglos con valores iniciales).
+Diapositiva 10: Variables (Ejemplos)
+Página 10: Muestra ejemplos de código de declaración e inicialización de variables (enteros, arreglos y arreglos con valores iniciales).
 
-**Diapositiva 11: Variables (Visibilidad)**
-*   **Página 11:** Introduce el concepto de la **visibilidad** o "scope" de las variables, que es la parte del programa donde se pueden utilizar.
+Diapositiva 11: Variables (Visibilidad)
+Página 11: Introduce el concepto de la visibilidad o "scope" de las variables, que es la parte del programa donde se pueden utilizar.
 
-**Diapositiva 12: Variables (Visibilidad - Regla)**
-*   **Página 12:** Indica que, generalmente, las variables dentro de llaves `{}` solo son **visibles** dentro de esas llaves.
+Diapositiva 12: Variables (Visibilidad - Regla)
+Página 12: Indica que, generalmente, las variables dentro de llaves `{}` solo son visibles dentro de esas llaves.
 
-**Diapositiva 13: Tipo de Datos (Introducción)**
-*   **Página 13:** Explica que todos los datos tienen un **tipo de dato** asociado, el cual define los valores y las operaciones posibles con la variable.
+Diapositiva 13: Tipo de Datos (Introducción)
+Página 13: Explica que todos los datos tienen un tipo de dato asociado, el cual define los valores y las operaciones posibles con la variable.
 
-**Diapositiva 14: Tipo de Datos (Jerarquía)**
-*   **Página 14:** Organiza los tipos de datos en una **jerarquía**, dividiéndolos en "simples" (numéricos, lógicos, carácter, cadena) y "estructurados" (arreglos, clases, TADs).
+Diapositiva 14: Tipo de Datos (Jerarquía)
+Página 14: Organiza los tipos de datos en una jerarquía, dividiéndolos en "simples" (numéricos, lógicos, carácter, cadena) y "estructurados" (arreglos, clases, TADs).
 
-**Diapositiva 15: Tipo de Datos - Numéricos (Introducción)**
-*   **Página 15:** Define los tipos de datos **numéricos** como los que representan valores escalares y permiten operaciones aritméticas.
+Diapositiva 15: Tipo de Datos - Numéricos (Introducción)
+Página 15: Define los tipos de datos numéricos como los que representan valores escalares y permiten operaciones aritméticas.
 
-**Diapositiva 16: Tipo de Datos - Numéricos (Enteros)**
-*   **Página 16:** Describe los **enteros** como números sin decimales y que las operaciones no resultan en decimales. (Ej: 25, -96, 0).
+Diapositiva 16: Tipo de Datos - Numéricos (Enteros)
+Página 16: Describe los enteros como números sin decimales y que las operaciones no resultan en decimales. (Ej: 25, -96, 0).
 
-**Diapositiva 17: Tipo de Datos - Numéricos (Reales)**
-*   **Página 17:** Describe los **reales** como números con punto decimal y que las operaciones pueden resultar en decimales. (Ej: 12.3, -78.56, 45.0).
+Diapositiva 17: Tipo de Datos - Numéricos (Reales)
+Página 17: Describe los reales como números con punto decimal y que las operaciones pueden resultar en decimales. (Ej: 12.3, -78.56, 45.0).
 
-**Diapositiva 18: Tipo de Datos - Lógicos**
-*   **Página 18:** Explica los tipos de datos **lógicos** (booleanos), que solo pueden ser "verdadero" o "falso".
+Diapositiva 18: Tipo de Datos - Lógicos
+Página 18: Explica los tipos de datos lógicos (booleanos), que solo pueden ser "verdadero" o "falso".
 
-**Diapositiva 19: Tipo de Datos - Carácter**
-*   **Página 19:** Indica que los tipos de datos **carácter** son equivalentes al código ASCII para representar letras y símbolos.
+Diapositiva 19: Tipo de Datos - Carácter
+Página 19: Indica que los tipos de datos carácter son equivalentes al código ASCII para representar letras y símbolos.
 
-**Diapositiva 20: Tipo de Datos - Cadena de Caracteres (Introducción)**
-*   **Página 20:** Describe las **cadenas de caracteres** como texto, incluyendo nombres y direcciones.
+Diapositiva 20: Tipo de Datos - Cadena de Caracteres (Introducción)
+Página 20: Describe las cadenas de caracteres como texto, incluyendo nombres y direcciones.
 
-**Diapositiva 21: Tipo de Datos - Cadena de Caracteres (Limitaciones)**
-*   **Página 21:** Aclara que los números en cadenas pierden sus propiedades matemáticas y que estas se escriben entre comillas.
+Diapositiva 21: Tipo de Datos - Cadena de Caracteres (Limitaciones)
+Página 21: Aclara que los números en cadenas pierden sus propiedades matemáticas y que estas se escriben entre comillas.
 
-**Diapositiva 22: Tipos de Datos - Java (Parte 1)**
-*   **Página 22:** Muestra una **tabla con tipos primitivos de Java** y sus rangos: `boolean`, `byte`, `short`, `int`, y `long`.
+Diapositiva 22: Tipos de Datos - Java (Parte 1)
+Página 22: Muestra una tabla con tipos primitivos de Java y sus rangos: `boolean`, `byte`, `short`, `int`, y `long`.
 
-**Diapositiva 23: Tipos de Datos - Java (Parte 2)**
-*   **Página 23:** Continúa la **tabla con tipos primitivos y referencias de Java**, mostrando: `float`, `double`, `char` y `String`.
+Diapositiva 23: Tipos de Datos - Java (Parte 2)
+Página 23: Continúa la tabla con tipos primitivos y referencias de Java, mostrando: `float`, `double`, `char` y `String`.
 
-**Diapositiva 24: Constantes (Definición)**
-*   **Página 24:** Define las **constantes** como valores que no cambian durante la ejecución del programa.
+Diapositiva 24: Constantes (Definición)
+Página 24: Define las constantes como valores que no cambian durante la ejecución del programa.
 
-**Diapositiva 25: Constantes (Almacenamiento)**
-*   **Página 25:**  Explica que las constantes ocupan un espacio **fijo en la memoria**.
+Diapositiva 25: Constantes (Almacenamiento)
+Página 25: Explica que las constantes ocupan un espacio fijo en la memoria.
 
-**Diapositiva 26: Constantes (Java)**
-*   **Página 26:**  Muestra que en Java, la palabra reservada `final` define una **constante**. (Ej: `final double PI`).
+Diapositiva 26: Constantes (Java)
+Página 26: Muestra que en Java, la palabra reservada `final` define una constante. (Ej: `final double PI`).
 
-**Diapositiva 27: Identificadores (Definición)**
-*   **Página 27:**  Define los **identificadores** como los nombres que se usan para referirse a las variables, constantes, funciones, etc.
+Diapositiva 27: Identificadores (Definición)
+Página 27: Define los identificadores como los nombres que se usan para referirse a las variables, constantes, funciones, etc.
 
-**Diapositiva 28: Identificadores (Reglas - Longitud)**
-*   **Página 28:** Indica que los identificadores no pueden tener más de **31 caracteres**.
+Diapositiva 28: Identificadores (Reglas - Longitud)
+Página 28: Indica que los identificadores no pueden tener más de 31 caracteres.
 
-**Diapositiva 29: Identificadores (Reglas - Sensibilidad a Mayúsculas)**
-*   **Página 29:** Indica que los identificadores **distinguen** entre mayúsculas y minúsculas (case-sensitive).
+Diapositiva 29: Identificadores (Reglas - Sensibilidad a Mayúsculas)
+Página 29: Indica que los identificadores distinguen entre mayúsculas y minúsculas (case-sensitive).
 
-**Diapositiva 30: Identificadores (Reglas - Primer Carácter)**
-*   **Página 30:** Aclara que el primer carácter debe ser una **letra o `_`** (guion bajo), no un número.
+Diapositiva 30: Identificadores (Reglas - Primer Carácter)
+Página 30: Aclara que el primer carácter debe ser una letra o `_` (guion bajo), no un número.
 
-**Diapositiva 31: Identificadores (Reglas - Caracteres Válidos)**
-*   **Página 31:**  Enumera los **caracteres válidos** en un identificador: letras minúsculas (a-z), mayúsculas (A-Z), dígitos (0-9) y guion bajo (`_`).
+Diapositiva 31: Identificadores (Reglas - Caracteres Válidos)
+Página 31: Enumera los caracteres válidos en un identificador: letras minúsculas (a-z), mayúsculas (A-Z), dígitos (0-9) y guion bajo (`_`).
 
-**Diapositiva 32: Identificadores (Reglas - Caracteres Inválidos)**
-*   **Página 32:** Indica que **no se permiten** espacios en blanco ni caracteres especiales como `#`, `$`, `%`, `*`, `&`.
+Diapositiva 32: Identificadores (Reglas - Caracteres Inválidos)
+Página 32: Indica que no se permiten espacios en blanco ni caracteres especiales como `#`, `$`, `%`, `*`, `&`.
 
-**Diapositiva 33: Identificadores (Palabras Reservadas)**
-*   **Página 33:**  Advierte que hay **palabras reservadas** en el lenguaje que no pueden usarse como identificadores.
+Diapositiva 33: Identificadores (Palabras Reservadas)
+Página 33: Advierte que hay palabras reservadas en el lenguaje que no pueden usarse como identificadores.
 
-**Diapositiva 34: Identificadores (Ejemplos)**
-*   **Página 34:**  Lista ejemplos de **palabras reservadas**: `class`, `private`, `public`, etc.
+Diapositiva 34: Identificadores (Ejemplos)
+Página 34: Lista ejemplos de palabras reservadas: `class`, `private`, `public`, etc.
 
-**Diapositiva 35: Identificadores (Buenas Prácticas)**
-*   **Página 35:**  Recomienda que los identificadores tengan **nombres claros** que describan lo que representan en el código.
+Diapositiva 35: Identificadores (Buenas Prácticas)
+Página 35: Recomienda que los identificadores tengan nombres claros que describan lo que representan en el código.
 
-**Diapositiva 36: Conclusiones**
-*   **Página 36:**  Resume las **conclusiones** principales: declarar variables requiere tipo de dato e identificador, y variables con el mismo nombre solo pueden existir en distintos alcances.
+Diapositiva 36: Conclusiones
+Página 36: Resume las conclusiones principales: declarar variables requiere tipo de dato e identificador, y variables con el mismo nombre solo pueden existir en distintos alcances.
 
-**Diapositiva 37: Estudio Independiente**
-*   **Página 37:**  Propone un **ejercicio** para definir el tipo de dato e identificador para almacenar datos de personas.
+Diapositiva 37: Estudio Independiente
+Página 37: Propone un ejercicio para definir el tipo de dato e identificador para almacenar datos de personas.
 
-**Diapositiva 38: Fin**
-*   **Página 38:** Es la diapositiva de **cierre**, con el logo de la Universidad y el lema "cosechando el saber".
+Diapositiva 38: Fin
+Página 38: Es la diapositiva de cierre, con el logo de la Universidad y el lema "cosechando el saber".

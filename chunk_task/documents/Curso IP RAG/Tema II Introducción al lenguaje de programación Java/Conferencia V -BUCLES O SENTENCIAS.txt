@@ -1,211 +1,211 @@
 Tema II Introducción al lenguaje de programación Java
-**Presentación: Bucles o Sentencias Repetitivas**
+Presentación: Bucles o Sentencias Repetitivas
 
-**1. Diapositiva: Título (Página 1)**
+1. Diapositiva: Título (Página 1)
 
-*   **Información:**
-    *   Logo de la Universidad de Matanzas.
-    *   Título: BUCLES O SENTENCIAS REPETITIVAS.
-    *   Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
-    *   Fecha: Septiembre / 2019.
-*   **Descripción:** Esta diapositiva es la **portada** de la presentación. Muestra el logo de la Universidad de Matanzas, el título principal, el subtítulo con el contexto de la presentación y la fecha.
+Información:
+    Logo de la Universidad de Matanzas.
+    Título: BUCLES O SENTENCIAS REPETITIVAS.
+    Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
+    Fecha: Septiembre / 2019.
+Descripción: Esta diapositiva es la portada de la presentación. Muestra el logo de la Universidad de Matanzas, el título principal, el subtítulo con el contexto de la presentación y la fecha.
 
-**2. Diapositiva: Objetivos (Parte 1) (Página 2)**
+2. Diapositiva: Objetivos (Parte 1) (Página 2)
 
-*   **Información:**
-    *   Objetivo: Caracterizar los bucles o sentencias repetitivas como parte de la construcción de un programa computacional.
-*   **Descripción:** Esta diapositiva presenta el primer **objetivo** principal de la presentación: entender el papel de los bucles o sentencias repetitivas en el proceso de desarrollo de programas.
+Información:
+    Objetivo: Caracterizar los bucles o sentencias repetitivas como parte de la construcción de un programa computacional.
+Descripción: Esta diapositiva presenta el primer objetivo principal de la presentación: entender el papel de los bucles o sentencias repetitivas en el proceso de desarrollo de programas.
 
-**3. Diapositiva: Objetivos (Parte 2) (Página 3)**
+3. Diapositiva: Objetivos (Parte 2) (Página 3)
 
-*   **Información:**
-    *   Objetivo: Identificar el tipo de bucle o sentencia repetitiva a utilizar en la construcción de un programa computacional.
-*   **Descripción:**  Presenta el segundo **objetivo** de la presentación: saber cómo elegir qué tipo de bucle es el más adecuado para un determinado programa.
+Información:
+    Objetivo: Identificar el tipo de bucle o sentencia repetitiva a utilizar en la construcción de un programa computacional.
+Descripción: Presenta el segundo objetivo de la presentación: saber cómo elegir qué tipo de bucle es el más adecuado para un determinado programa.
 
-**4. Diapositiva: Sumario (Página 4)**
+4. Diapositiva: Sumario (Página 4)
 
-*   **Información:**
-    *   Temas: Sentencia `for`, Sentencia `while`, Sentencia `do ... while`, Sentencia `break` y `continue`.
-*   **Descripción:**  Ofrece un **resumen** de los temas principales que se tratarán: los distintos tipos de bucles y sentencias relacionadas.
+Información:
+    Temas: Sentencia `for`, Sentencia `while`, Sentencia `do ... while`, Sentencia `break` y `continue`.
+Descripción: Ofrece un resumen de los temas principales que se tratarán: los distintos tipos de bucles y sentencias relacionadas.
 
-**5. Diapositiva: Bibliografía (Página 5)**
+5. Diapositiva: Bibliografía (Página 5)
 
-*   **Información:**
-    *   Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
-*   **Descripción:** Lista las **fuentes bibliográficas** utilizadas para la elaboración de la presentación.
+Información:
+    Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
+Descripción: Lista las fuentes bibliográficas utilizadas para la elaboración de la presentación.
 
-**6. Diapositiva: Bucle (Definición) (Página 6)**
+6. Diapositiva: Bucle (Definición) (Página 6)
 
-*   **Información:**
-    *   Definición: Un bucle se utiliza para realizar un proceso repetidas veces. Se denomina también lazo o loop. El código se ejecuta mientras se cumpla una condición.
-*   **Descripción:** Define el concepto general de **bucle**, como una herramienta para repetir un proceso un número determinado de veces, indicando también que se conoce como lazo o loop.
+Información:
+    Definición: Un bucle se utiliza para realizar un proceso repetidas veces. Se denomina también lazo o loop. El código se ejecuta mientras se cumpla una condición.
+Descripción: Define el concepto general de bucle, como una herramienta para repetir un proceso un número determinado de veces, indicando también que se conoce como lazo o loop.
 
-**7. Diapositiva: Bucle (Instrucción de Repetición) (Página 7)**
+7. Diapositiva: Bucle (Instrucción de Repetición) (Página 7)
 
-*   **Información:**
-     *Definición: Una instrucción de repetición permite al programador especificar que un programa debe repetir una acción mientras cierta condición sea verdadera.
-*   **Descripción:** Define los bucles como **instrucciones de repetición**, donde un programa repite una acción mientras cierta condición sea verdadera.
+Información:
+    Definición: Una instrucción de repetición permite al programador especificar que un programa debe repetir una acción mientras cierta condición sea verdadera.
+Descripción: Define los bucles como instrucciones de repetición, donde un programa repite una acción mientras cierta condición sea verdadera.
 
-**8. Diapositiva: Bucle while (Introducción y Seudocódigo) (Página 8)**
+8. Diapositiva: Bucle while (Introducción y Seudocódigo) (Página 8)
 
-*   **Información:**
-    *   Definición: Es una instrucción de repetición que permite repetir ciertas instrucciones mientras cierta condición sea verdadera.
-    *   Seudocódigo: "Mientras tenga artículos en la lista de compras, Comprar el artículo y Quitarlo de mi lista".
-*   **Descripción:** Introduce el **bucle `while`**, explicando que repite instrucciones mientras una condición sea verdadera y presenta un ejemplo de pseudocódigo para ejemplificar su uso.
+Información:
+    Definición: Es una instrucción de repetición que permite repetir ciertas instrucciones mientras cierta condición sea verdadera.
+    Seudocódigo: "Mientras tenga artículos en la lista de compras, Comprar el artículo y Quitarlo de mi lista".
+Descripción: Introduce el bucle `while`, explicando que repite instrucciones mientras una condición sea verdadera y presenta un ejemplo de pseudocódigo para ejemplificar su uso.
 
-**9. Diapositiva: Bucle while (Sintaxis) (Página 9)**
+9. Diapositiva: Bucle while (Sintaxis) (Página 9)
 
-*   **Información:**
-    *   Sintaxis: `while (booleanExpression) { statements; }`.  Donde si la `booleanExpression` devuelve verdadero se ejecutará el grupo de instrucciones.
-*   **Descripción:** Presenta la **sintaxis del bucle `while`**, detallando cómo se utiliza una expresión booleana para controlar la ejecución del bloque de código.
+Información:
+    Sintaxis: `while (booleanExpression) { statements; }`. Donde si la `booleanExpression` devuelve verdadero se ejecutará el grupo de instrucciones.
+Descripción: Presenta la sintaxis del bucle `while`, detallando cómo se utiliza una expresión booleana para controlar la ejecución del bloque de código.
 
-**10. Diapositiva: Bucle while (Ejemplo) (Página 10)**
+10. Diapositiva: Bucle while (Ejemplo) (Página 10)
 
-*   **Información:**
-     * Ejemplo:
-     ```java
-           int producto = 3;
-           while ( producto <= 100 ){
-               producto = 3 * producto;
-           }
-     ```
-     * Texto:  Un segmento de programa diseñado para encontrar la primera potencia de 3 que sea mayor a 100.
-*   **Descripción:**  Muestra un **ejemplo de código del uso del bucle `while`** para encontrar la primera potencia de 3 que sea mayor que 100.
-
-**11. Diapositiva: Bucle for (Introducción y Seudocódigo) (Página 11)**
-
-*   **Información:**
-    *   Definición: Java también cuenta con la instrucción de repetición `for`, que especifica los detalles de la repetición controlada por contador en una sola línea de código.
-    *   Seudocódigo: "Asignar variable factorial el valor 0. Para cada `x` en \[1, 100] con paso 1, Asignar a factorial el valor de factorial * x".
-*   **Descripción:**  Introduce el **bucle `for`**, explicando que permite especificar los detalles de repetición controlada por contador en una sola línea de código, y muestra un ejemplo de pseudocódigo.
-
-**12. Diapositiva: Bucle for (Sintaxis y Equivalencia) (Página 12)**
-
-*   **Información:**
-    *  Sintaxis:
+Información:
+    Ejemplo:
     ```java
-       for(initialization; booleanExpression; increment){
-          statements;
-       }
+        int producto = 3;
+        while ( producto <= 100 ){
+            producto = 3 * producto;
+        }
     ```
-    *   Texto: Es equivalente a utilizar while en la siguiente forma:
-        ```java
-           initialization;
-           while (booleanExpression) {
-              statements;
-              increment;
-           }
-        ```
-*   **Descripción:**  Presenta la **sintaxis del bucle `for`** y su equivalencia utilizando un bucle `while`, mostrando sus tres componentes principales: inicialización, condición y modificación de variable.
+    Texto: Un segmento de programa diseñado para encontrar la primera potencia de 3 que sea mayor a 100.
+Descripción: Muestra un ejemplo de código del uso del bucle `while` para encontrar la primera potencia de 3 que sea mayor que 100.
 
-**13. Diapositiva: Bucle for (Explicación) (Página 13)**
+11. Diapositiva: Bucle for (Introducción y Seudocódigo) (Página 11)
 
-*   **Información:**
-    *  Explicación: La sentencia o sentencias initialization se ejecuta al comienzo del for, e increment después de statements. La booleanExpression se evalúa al comienzo de cada iteración; el bucle termina cuando la expresión de comparación toma el valor false.
-*   **Descripción:** Explica la **secuencia de ejecución** de un bucle `for`: inicialización, condición, cuerpo del bucle y luego el incremento de la variable.
+Información:
+    Definición: Java también cuenta con la instrucción de repetición `for`, que especifica los detalles de la repetición controlada por contador en una sola línea de código.
+    Seudocódigo: "Asignar variable factorial el valor 0. Para cada `x` en [1, 100] con paso 1, Asignar a factorial el valor de factorial * x".
+Descripción: Introduce el bucle `for`, explicando que permite especificar los detalles de repetición controlada por contador en una sola línea de código, y muestra un ejemplo de pseudocódigo.
 
-**14. Diapositiva: Bucle for (Componentes del Encabezado) (Página 14)**
+12. Diapositiva: Bucle for (Sintaxis y Equivalencia) (Página 12)
 
-*  **Información:**
-    * Muestra los diferentes componentes del encabezado de la instrucción `for`
-*  **Descripción:** Muestra de manera visual la estructura del encabezado del bucle `for`, separando cada componente para su fácil entendimiento.
+Información:
+    Sintaxis:
+    ```java
+        for(initialization; booleanExpression; increment){
+            statements;
+        }
+    ```
+    Texto: Es equivalente a utilizar while en la siguiente forma:
+    ```java
+        initialization;
+        while (booleanExpression) {
+            statements;
+            increment;
+        }
+    ```
+Descripción: Presenta la sintaxis del bucle `for` y su equivalencia utilizando un bucle `while`, mostrando sus tres componentes principales: inicialización, condición y modificación de variable.
 
-**15. Diapositiva: Bucle for (Flexibilidad y Ejemplo) (Página 15)**
+13. Diapositiva: Bucle for (Explicación) (Página 13)
 
-*   **Información:**
-    *   Definición: Cualquiera de las tres partes puede estar vacía. La initialization y el increment pueden tener varias expresiones separadas por comas.
-    *   Ejemplo de código:
-     ```java
-       for(int i=1,j=i+10;i<5;i++,j=2*i){
-          System.out.println("i="+i+" j= "+j);
-       }
-     ```
-*   **Descripción:** Explica que todas las partes del encabezado `for` son opcionales y ofrece un **ejemplo** donde varias expresiones pueden estar separadas por comas.
+Información:
+    Explicación: La sentencia o sentencias initialization se ejecuta al comienzo del for, e increment después de statements. La booleanExpression se evalúa al comienzo de cada iteración; el bucle termina cuando la expresión de comparación toma el valor false.
+Descripción: Explica la secuencia de ejecución de un bucle `for`: inicialización, condición, cuerpo del bucle y luego el incremento de la variable.
 
-**16. Diapositiva: Bucle do ... while (Introducción) (Página 16)**
+14. Diapositiva: Bucle for (Componentes del Encabezado) (Página 14)
 
-*   **Información:**
-    *   Definición: Es similar al bucle while pero con la particularidad de que el control está al final del bucle (lo que hace que el bucle se ejecute al menos una vez).
-*   **Descripción:**  Introduce el **bucle `do...while`**, explicando que es similar al `while` pero con la diferencia de que su condición se evalúa al final del bucle.
+Información:
+    Muestra los diferentes componentes del encabezado de la instrucción `for`
+Descripción: Muestra de manera visual la estructura del encabezado del bucle `for`, separando cada componente para su fácil entendimiento.
 
-**17. Diapositiva: Bucle do ... while (Funcionamiento) (Página 17)**
+15. Diapositiva: Bucle for (Flexibilidad y Ejemplo) (Página 15)
 
-*   **Información:**
-     *  Definición: Una vez ejecutados los statements, se evalúa la condición: si resulta true se vuelven a ejecutar las sentencias incluidas en el bucle, mientras que si la condición se evalúa a false finaliza el bucle.
-*   **Descripción:** Describe el **funcionamiento del bucle `do...while`**, indicando que el bloque de código se ejecuta al menos una vez y luego la condición se evalúa para las siguientes iteraciones.
+Información:
+    Definición: Cualquiera de las tres partes puede estar vacía. La initialization y el increment pueden tener varias expresiones separadas por comas.
+    Ejemplo de código:
+    ```java
+        for(int i=1,j=i+10;i<5;i++,j=2*i){
+            System.out.println("i="+i+" j= "+j);
+        }
+    ```
+Descripción: Explica que todas las partes del encabezado `for` son opcionales y ofrece un ejemplo donde varias expresiones pueden estar separadas por comas.
 
-**18. Diapositiva: Bucle do ... while (Seudocódigo) (Página 18)**
+16. Diapositiva: Bucle do ... while (Introducción) (Página 16)
 
-*   **Información:**
-   * Seudocódigo:
-   ```java
-      Hacer:
-      Comprar el artículo
-      Quitarlo de mi lista
-      Mientras tenga artículos en la lista de compras
-   ```
-*   **Descripción:**  Presenta un **ejemplo de pseudocódigo** para el uso del bucle `do...while`.
+Información:
+    Definición: Es similar al bucle while pero con la particularidad de que el control está al final del bucle (lo que hace que el bucle se ejecute al menos una vez).
+Descripción: Introduce el bucle `do...while`, explicando que es similar al `while` pero con la diferencia de que su condición se evalúa al final del bucle.
 
-**19. Diapositiva: Bucle do ... while (Sintaxis y Ejemplo) (Página 19)**
+17. Diapositiva: Bucle do ... while (Funcionamiento) (Página 17)
 
-*   **Información:**
-    *   Sintaxis:
+Información:
+    Definición: Una vez ejecutados los statements, se evalúa la condición: si resulta true se vuelven a ejecutar las sentencias incluidas en el bucle, mientras que si la condición se evalúa a false finaliza el bucle.
+Descripción: Describe el funcionamiento del bucle `do...while`, indicando que el bloque de código se ejecuta al menos una vez y luego la condición se evalúa para las siguientes iteraciones.
+
+18. Diapositiva: Bucle do ... while (Seudocódigo) (Página 18)
+
+Información:
+    Seudocódigo:
+    ```java
+        Hacer:
+        Comprar el artículo
+        Quitarlo de mi lista
+        Mientras tenga artículos en la lista de compras
+    ```
+Descripción: Presenta un ejemplo de pseudocódigo para el uso del bucle `do...while`.
+
+19. Diapositiva: Bucle do ... while (Sintaxis y Ejemplo) (Página 19)
+
+Información:
+    Sintaxis:
     ```java
         do {
-           statements;
-         } while (booleanExpression);
+            statements;
+        } while (booleanExpression);
     ```
-    * Ejemplo:
-     ```java
+    Ejemplo:
+    ```java
         int contador = 1;
         do {
-          System.out.printf("%d ",contador);
-          ++contador;
-         } while ( contador <= 10 );
+            System.out.printf("%d ",contador);
+            ++contador;
+        } while ( contador <= 10 );
         System.out.println();
-      ```
-*   **Descripción:**  Presenta la **sintaxis** del bucle `do...while` con un ejemplo de código.
+    ```
+Descripción: Presenta la sintaxis del bucle `do...while` con un ejemplo de código.
 
-**20. Diapositiva: Sentencia break (Página 20)**
+20. Diapositiva: Sentencia break (Página 20)
 
-*   **Información:**
-    *   Definición: La sentencia `break` es válida tanto para las bifurcaciones como para los bucles. Hace que se salga inmediatamente del bucle o bloque.
-*   **Descripción:** Explica la **sentencia `break`**, cuyo propósito es finalizar la ejecución de un bloque de código o un bucle.
+Información:
+    Definición: La sentencia `break` es válida tanto para las bifurcaciones como para los bucles. Hace que se salga inmediatamente del bucle o bloque.
+Descripción: Explica la sentencia `break`, cuyo propósito es finalizar la ejecución de un bloque de código o un bucle.
 
-**21. Diapositiva: Sentencia continue (Página 21)**
+21. Diapositiva: Sentencia continue (Página 21)
 
-*   **Información:**
-    *   Definición: La sentencia `continue` se utiliza en los bucles. Finaliza la iteración actual y vuelve al comienzo del bucle para continuar con la siguiente iteración.
-*   **Descripción:** Describe la **sentencia `continue`**, que permite saltarse las instrucciones restantes en una iteración de un bucle y continuar con la siguiente iteración.
+Información:
+    Definición: La sentencia `continue` se utiliza en los bucles. Finaliza la iteración actual y vuelve al comienzo del bucle para continuar con la siguiente iteración.
+Descripción: Describe la sentencia `continue`, que permite saltarse las instrucciones restantes en una iteración de un bucle y continuar con la siguiente iteración.
 
-**22. Diapositiva: Conclusiones (Bucle do...while) (Página 22)**
+22. Diapositiva: Conclusiones (Bucle do...while) (Página 22)
 
-*  **Información:**
-    *   Conclusión: El do while se utiliza con frecuencia para controlar la satisfacción de una determinada condición de error o de convergencia.
-*  **Descripción:** Presenta una **conclusión** sobre la aplicación del bucle do...while, explicando en que tipo de situación se utiliza con mayor frecuencia.
+Información:
+    Conclusión: El do while se utiliza con frecuencia para controlar la satisfacción de una determinada condición de error o de convergencia.
+Descripción: Presenta una conclusión sobre la aplicación del bucle do...while, explicando en que tipo de situación se utiliza con mayor frecuencia.
 
-**23. Diapositiva: Conclusiones (Bucles Infinitos) (Página 23)**
+23. Diapositiva: Conclusiones (Bucles Infinitos) (Página 23)
 
-*   **Información:**
-    *   Conclusión: Prestar especial atención a los bucles infinitos, hecho que ocurre cuando la condición de finalizar el bucle no se llega a cumplir nunca.
-*   **Descripción:**  Advierte sobre los **bucles infinitos**, que ocurren cuando la condición de terminación nunca se cumple.
+Información:
+    Conclusión: Prestar especial atención a los bucles infinitos, hecho que ocurre cuando la condición de finalizar el bucle no se llega a cumplir nunca.
+Descripción: Advierte sobre los bucles infinitos, que ocurren cuando la condición de terminación nunca se cumple.
 
-**24. Diapositiva: Conclusiones (Tipos de Estructuras de Control) (Página 24)**
+24. Diapositiva: Conclusiones (Tipos de Estructuras de Control) (Página 24)
 
-*   **Información:**
-    *   Conclusión: Java sólo tiene tres tipos de estructuras de control: Secuencia, Selección (4 tipos) y Repetición (3 tipos).
-*   **Descripción:**  Resume los **tres tipos de estructuras de control** de Java: secuencial, selectiva y repetitiva.
+Información:
+    Conclusión: Java sólo tiene tres tipos de estructuras de control: Secuencia, Selección (4 tipos) y Repetición (3 tipos).
+Descripción: Resume los tres tipos de estructuras de control de Java: secuencial, selectiva y repetitiva.
 
-**25. Diapositiva: Conclusiones (Combinación de Instrucciones) (Página 25)**
+25. Diapositiva: Conclusiones (Combinación de Instrucciones) (Página 25)
 
-*   **Información:**
-    *   Conclusión: Cada programa se forma combinando tantas instrucciones de secuencia, selección y repetición como sea apropiado para el algoritmo que implemente el programa.
-*  **Descripción:** Explica que los programas se forman utilizando una **combinación de instrucciones** de secuencia, selección y repetición.
+Información:
+    Conclusión: Cada programa se forma combinando tantas instrucciones de secuencia, selección y repetición como sea apropiado para el algoritmo que implemente el programa.
+Descripción: Explica que los programas se forman utilizando una combinación de instrucciones de secuencia, selección y repetición.
 
-**26. Diapositiva: Fin (Página 26)**
+26. Diapositiva: Fin (Página 26)
 
-*   **Información:**
-    *   Logo de la Universidad de Matanzas.
-    *   Lema: cosechando el saber.
-    *   Texto: FIN.
-*   **Descripción:** Esta es la diapositiva final, indicando el **cierre de la presentación**.
+Información:
+    Logo de la Universidad de Matanzas.
+    Lema: cosechando el saber.
+    Texto: FIN.
+Descripción: Esta es la diapositiva final, indicando el cierre de la presentación.

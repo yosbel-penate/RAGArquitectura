@@ -1,33 +1,33 @@
-**Tema I Algoritmización
-# UNIVERSIDAD DE MATANZAS
+Tema I Algoritmización
+UNIVERSIDAD DE MATANZAS
 
-## INTRODUCCIÓN A LA SOLUCIÓN DE PROBLEMAS POR MEDIO DE COMPUTADORAS
+INTRODUCCIÓN A LA SOLUCIÓN DE PROBLEMAS POR MEDIO DE COMPUTADORAS
 
-**Septiembre / 2019**
+Septiembre / 2019
 
-**INTRODUCCIÓN A LA PROGRAMACIÓN**
+INTRODUCCIÓN A LA PROGRAMACIÓN
 
-**INGENIERÍA EN INFORMÁTICA**
+INGENIERÍA EN INFORMÁTICA
 
-**Presentación de la Asignatura IP**
+Presentación de la Asignatura IP
 
-**Tema I: Algoritmización**
+   Tema I: Algoritmización
 
-- Solución de problemas mediante algoritmos informales.
+Solución de problemas mediante algoritmos informales.
 
-**Tema II: Estructuras de control**
+   Tema II: Estructuras de control
 
-- Tipos de datos, variables, constantes.
-- Asignación, expresiones.
-- Estructuras de control alternativas y repetitivas.
-- Funciones.
+Tipos de datos, variables, constantes.
+Asignación, expresiones.
+Estructuras de control alternativas y repetitivas.
+Funciones.
 
-**Tema III: Arreglos**
+   Tema III: Arreglos
 
-- Arreglos unidimensionales y bidimensionales.
-- Algoritmos básicos sobre arreglos.
+Arreglos unidimensionales y bidimensionales.
+Algoritmos básicos sobre arreglos.
 
-**Sistema de Evaluación**
+   Sistema de Evaluación
 
 Tipo de Evaluación Semana
 
@@ -41,154 +41,154 @@ Tarea extraclase
 
 Examen Final
 
-**Objetivos**
+   Objetivos
 
-- Caracterizar el proceso de construcción de un programa computacional.
+Caracterizar el proceso de construcción de un programa computacional.
 
-**Sumario**
+   Sumario
 
-- Definición de Computadora.
-- Definición de Programa.
-- Definición de Lenguaje de Programación.
-- Definición de Algoritmo.
-- Etapas en la solución de un problema computacional.
+Definición de Computadora.
+Definición de Programa.
+Definición de Lenguaje de Programación.
+Definición de Algoritmo.
+Etapas en la solución de un problema computacional.
 
-**Bibliografía**
+   Bibliografía
 
-- La Esencia de la Lógica de Programación
-- Manual de Introducción a la Programación
+La Esencia de la Lógica de Programación
+Manual de Introducción a la Programación
 
-**Computadora**
+   Computadora
 
-Es un dispositivo electrónico utilizado para procesar información y obtener resultados. Los datos y la información se pueden introducir en la computadora como entrada (input) y a continuación se procesan para producir una salida (output).
+Es un dispositivo electrónico utilizado para procesar información y obtener resultados. Los datos y la información se pueden introducir en la computadora como entrada input y a continuación se procesan para producir una salida output.
 
-**Componentes de una computadora**
+Componentes de una computadora
 
-- **Hardware**
+      Hardware
 
-**Programa**
+   Programa
 
 Conjunto de instrucciones que van a ser procesadas por la computadora con el objetivo de efectuar determinadas acciones a fin de resolver un problema.
 
 Este conjunto de instrucciones debe ser escrito en algún lenguaje que la computadora pueda entender.
 
-**Lenguaje de programación**
+   Lenguaje de programación
 
 Contiene:
 
-- Símbolos y palabras claves.
-- Reglas gramaticales para construir instrucciones sintáctica y semánticamente correctas.
+Símbolos y palabras claves.
+Reglas gramaticales para construir instrucciones sintáctica y semánticamente correctas.
 
-**Sintaxis**
+Sintaxis
 
 Conjunto de normas que determinan cómo escribir las instrucciones del lenguaje.
 
-**Semántica**
+   Semántica
 
 Interpretación de las instrucciones del lenguaje. Indica el significado de las mismas.
 
-**Clasificación**
+   Clasificación
 
-- Por su nivel de abstracción:
-  - Lenguajes bajo nivel
-  - Lenguajes de alto nivel
-- Por su ejecución:
-  - Compilados
-  - Interpretados
+Por su nivel de abstracción:
+Lenguajes bajo nivel
+Lenguajes de alto nivel
+Por su ejecución:
+Compilados
+Interpretados
 
-**Algoritmo**
+   Algoritmo
 
-Es un conjunto finito de instrucciones (pasos u órdenes) que indican una secuencia de operaciones a ejecutar para alcanzar un resultado que soluciona un problema dado. Pueden incluir secuencias, decisiones e iteraciones.
+Es un conjunto finito de instrucciones pasos u órdenes que indican una secuencia de operaciones a ejecutar para alcanzar un resultado que soluciona un problema dado. Pueden incluir secuencias, decisiones e iteraciones.
 
 Muchas veces existe más de un posible algoritmo para resolver efectivamente un problema.
 
-**Formas de representación**
+   Formas de representación
 
-- Lenguaje natural
-- Pseudocódigo
-- Diagrama de flujo
-- Diagrama de actividades o bloques
-- Lenguaje de programación
+Lenguaje natural
+Pseudocódigo
+Diagrama de flujo
+Diagrama de actividades o bloques
+Lenguaje de programación
 
-**Características**
+   Características
 
 Todo algoritmo tiene tres partes: entrada, proceso y salida, y sus pasos describen la transformación de la entrada en la salida.
 
-- Finalidad
-- Orden
-- Finitud
-- Precisión y claridad
-- Entorno
+Finalidad
+Orden
+Finitud
+Precisión y claridad
+Entorno
 
-**Clasificación**
+   Clasificación
 
-- Algoritmo computacional
-- Algoritmo no computacional
+Algoritmo computacional
+Algoritmo no computacional
 
 Un algoritmo es independiente tanto del lenguaje de programación en que se exprese como de la computadora en la que se ejecute.
 
-**Clasificación según los datos que procesa**
+   Clasificación según los datos que procesa
 
-- Particulares
-- Generales
+Particulares
+Generales
 
-**Clasificación según la estructura de sus instrucciones o pasos**
+   Clasificación según la estructura de sus instrucciones o pasos
 
-1. Lineal
-   - Secuencial
-   - Alternativo
-2. Iterativo
-   - Iterativo
-   - Recursivo
+Lineal
+Secuencial
+Alternativo
+Iterativo
+Iterativo
+Recursivo
 
-**Etapas para resolver problemas computacionales**
+   Etapas para resolver problemas computacionales
 
-1. Comprensión y análisis del problema.
-2. Diseño y análisis del algoritmo.
-3. Implementación del algoritmo en un lenguaje de programación (Programa)
-4. Ejecución y validación del programa
+Comprensión y análisis del problema.
+Diseño y análisis del algoritmo.
+Implementación del algoritmo en un lenguaje de programación Programa
+Ejecución y validación del programa
 
-**Comprensión y análisis del problema**
+   Comprensión y análisis del problema
 
-- Delimitar y entender el problema.
-- Determinar datos de entrada y salida.
-- Verificar restricciones de esos datos de E/S
-- Determinar si existe suficiente información para encontrar una solución
+Delimitar y entender el problema.
+Determinar datos de entrada y salida.
+Verificar restricciones de esos datos de E/S
+Determinar si existe suficiente información para encontrar una solución
 
-**Diseño y análisis del algoritmo**
+   Diseño y análisis del algoritmo
 
-- Hacer una figura, un diagrama.
-- Buscar fórmula.
-- Dividir el problema en varios subproblemas.
-- Ser ingenioso.
+Hacer una figura, un diagrama.
+Buscar fórmula.
+Dividir el problema en varios subproblemas.
+Ser ingenioso.
 
-**Ejecución y validación del programa**
+   Ejecución y validación del programa
 
-- Conocer un lenguaje de programación, las reglas que lo conforman y las particularidades del lenguaje.
+Conocer un lenguaje de programación, las reglas que lo conforman y las particularidades del lenguaje.
 
-**Implementación del algoritmo en un lenguaje de programación**
+Implementación del algoritmo en un lenguaje de programación
 
-- Seleccionar juegos de datos adecuados.
-- Probar el programa.
-- Corregir e ir a la etapa 1 en caso de dar errores.
+Seleccionar juegos de datos adecuados.
+Probar el programa.
+Corregir e ir a la etapa 1 en caso de dar errores.
 
-**Conclusiones**
+   Conclusiones
 
-- ¿Qué es un algoritmo?
-- ¿De qué formas pueden ser representados algoritmos?
-- ¿Qué características tienen los algoritmos?
+¿Qué es un algoritmo?
+¿De qué formas pueden ser representados algoritmos?
+¿Qué características tienen los algoritmos?
 
 Las computadoras no son realmente tan inteligentes. Estas solamente siguen instrucciones, y si no son claras probablemente no funcionen como deben. En la próxima actividad comenzaremos a solucionar problemas mediante algoritmos.
 
-**Estudio independiente**
+   Estudio independiente
 
-1. Desarrolle un algoritmo que permita freír un huevo.
-2. Desarrollar un algoritmo para insertar una tarjeta SIM en un teléfono móvil.
-   - Entrada: tarjeta SIM, teléfono móvil.
-   - Acciones: quitar tapa, insertar tarjeta SIM, poner tapa.
-3. Genere un algoritmo para determinar el saldo de un celular.
-   - Entrada: Celular.
-   - Acciones: Desbloquear o bloquear teléfono, marcar un dígito, marcar un símbolo, llamar o colgar teléfono.
+Desarrolle un algoritmo que permita freír un huevo.
+Desarrollar un algoritmo para insertar una tarjeta SIM en un teléfono móvil.
+Entrada: tarjeta SIM, teléfono móvil.
+Acciones: quitar tapa, insertar tarjeta SIM, poner tapa.
+Genere un algoritmo para determinar el saldo de un celular.
+Entrada: Celular.
+Acciones: Desbloquear o bloquear teléfono, marcar un dígito, marcar un símbolo, llamar o colgar teléfono.
 
 FIN
 

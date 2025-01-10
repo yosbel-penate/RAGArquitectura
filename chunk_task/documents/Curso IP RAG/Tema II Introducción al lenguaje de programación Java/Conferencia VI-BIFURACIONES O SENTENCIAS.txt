@@ -1,329 +1,272 @@
-**Tema II Introducción al lenguaje de programación Java
-**Presentación: Bifurcaciones o Sentencias Condicionales**
+Tema II Introducción al lenguaje de programación Java
+Presentación: Bifurcaciones o Sentencias Condicionales**
 
-**1. Diapositiva: Título (Página 1)**
+1. Diapositiva: Título (Página 1)
 
-*   **Información:**
-    *   Logo de la Universidad de Matanzas.
-    *   Título: BIFURCACIONES O SENTENCIAS CONDICIONALES.
-    *   Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
-    *   Fecha: Septiembre / 2019.
-*   **Descripción:**  Esta es la diapositiva de **portada** de la presentación. Contiene el logo de la Universidad de Matanzas, el título de la presentación, el subtítulo que especifica el contexto y la fecha.
+Información:
+Logo de la Universidad de Matanzas.
+Título: BIFURCACIONES O SENTENCIAS CONDICIONALES.
+Subtítulo: INTRODUCCIÓN A LA PROGRAMACIÓN INGENIERÍA EN INFORMÁTICA.
+Fecha: Septiembre / 2019.
+Descripción: Esta es la diapositiva de portada de la presentación. Contiene el logo de la Universidad de Matanzas, el título de la presentación, el subtítulo que especifica el contexto y la fecha.
+2. Diapositiva: Objetivos (Parte 1) (Página 2)
 
-**2. Diapositiva: Objetivos (Parte 1) (Página 2)**
+Información:
+Objetivo: Caracterizar las bifurcaciones o sentencias condicionales como parte de la construcción de un programa computacional.
+Descripción: Presenta el primer objetivo de la presentación: entender el papel de las bifurcaciones (sentencias condicionales) en la construcción de un programa.
+3. Diapositiva: Objetivos (Parte 2) (Página 3)
 
-*   **Información:**
-    *   Objetivo: Caracterizar las bifurcaciones o sentencias condicionales como parte de la construcción de un programa computacional.
-*  **Descripción:**  Presenta el primer **objetivo** de la presentación: entender el papel de las bifurcaciones (sentencias condicionales) en la construcción de un programa.
+Información:
+Objetivo: Identificar el tipo de bifuración o sentencias condicionales a utilizar en la construcción de un programa computacional.
+Descripción: Presenta el segundo objetivo de la presentación, que es identificar el tipo de sentencia condicional adecuada para construir un programa.
+4. Diapositiva: Objetivos (Parte 3) (Página 4)
 
-**3. Diapositiva: Objetivos (Parte 2) (Página 3)**
+Información:
+Objetivo: Utilizar el tipo de bifurcación o sentencias condicionales para elegir entre distintas acciones alternativas.
+Descripción: Presenta el tercer objetivo de la presentación: cómo utilizar las sentencias condicionales para elegir entre diferentes acciones.
+5. Diapositiva: Sumario (Página 5)
 
-*  **Información:**
-    * Objetivo: Identificar el tipo de bifuración o sentencias condicionales a utilizar en la construcción de un programa computacional.
-*  **Descripción:**  Presenta el segundo **objetivo** de la presentación, que es identificar el tipo de sentencia condicional adecuada para construir un programa.
+Información:
+Temas: Bifurcación if, Bifurcación if else, Bifurcación if elseif else, Sentencia switch.
+Descripción: Presenta un resumen de los temas principales que se tratarán en la presentación: los distintos tipos de sentencias condicionales.
+6. Diapositiva: Bibliografía (Página 6)
 
-**4. Diapositiva: Objetivos (Parte 3) (Página 4)**
+Información:
+Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
+Descripción: Lista las fuentes bibliográficas utilizadas para la preparación de la presentación.
+7. Diapositiva: Estructura de Control (Ejecución Secuencial) (Página 7)
 
-*   **Información:**
-    *   Objetivo: Utilizar el tipo de bifurcación o sentencias condicionales para elegir entre distintas acciones alternativas.
-*  **Descripción:** Presenta el tercer **objetivo** de la presentación:  cómo utilizar las sentencias condicionales para elegir entre diferentes acciones.
+Información:
+Definición: Generalmente, en un programa las instrucciones se ejecutan una después de otra, en el orden en que están escritas. Este proceso se conoce como ejecución secuencial.
+Descripción: Explica la ejecución secuencial, que es el comportamiento por defecto de los programas, donde las instrucciones se ejecutan en orden.
+8. Diapositiva: Estructura de Control (Transferencia de Control) (Página 8)
 
-**5. Diapositiva: Sumario (Página 5)**
+Información:
+Definición: Varias instrucciones en Java permiten al programador especificar que la siguiente instrucción a ejecutarse tal vez no sea la siguiente en la secuencia. Esto se conoce como transferencia de control.
+Descripción: Introduce el concepto de transferencia de control, donde el orden de ejecución de las instrucciones puede variar.
+9. Diapositiva: Estructura de Control (Tipos) (Página 9)
 
-*  **Información:**
-    *   Temas: Bifurcación `if`, Bifurcación `if else`, Bifurcación `if elseif else`, Sentencia `switch`.
-*  **Descripción:** Presenta un **resumen** de los temas principales que se tratarán en la presentación:  los distintos tipos de sentencias condicionales.
+Información:
+Tipos de estructuras de control en Java: La instrucción de secuencia, Las instrucciones de selección, Las instrucciones de repetición.
+Descripción: Indica que Java cuenta con tres tipos de estructuras de control: secuenciales, selectivas y repetitivas.
+10. Diapositiva: Bifurcación (Definición) (Página 10)
 
-**6. Diapositiva: Bibliografía (Página 6)**
+Información:
+Definición: Las bifurcaciones permiten ejecutar una de entre varias acciones en función del valor de una expresión lógica o relacional.
+Descripción: Define el concepto general de bifurcación, como la capacidad de un programa para elegir entre diferentes acciones basándose en el valor de una expresión.
+11. Diapositiva: Bifurcación (Tipos) (Página 11)
 
-*  **Información:**
-    *   Referencias: Como programar en Java. Aprenda Java como si estuviera en primero.
-*   **Descripción:**  Lista las **fuentes bibliográficas** utilizadas para la preparación de la presentación.
+Información:
+Definición: Son las encargadas de controlar el flujo de ejecución de un programa. Existen dos bifurcaciones diferentes: if y switch.
+Descripción: Explica que las bifurcaciones son estructuras de control del flujo del programa, y menciona las dos formas más importantes: if y switch.
+12. Diapositiva: Bifurcación if (Introducción) (Página 12)
 
-**7. Diapositiva: Estructura de Control (Ejecución Secuencial) (Página 7)**
+Información:
+Definición: Permite ejecutar un conjunto de sentencias en función del valor que tenga la expresión de comparación (se ejecuta si es true).
+Descripción: Introduce el bucle if, explicando que permite ejecutar un bloque de código solo si la expresión booleana asociada se evalúa como verdadera.
+13. Diapositiva: Bifurcación if (Sintaxis) (Página 13)
 
-*   **Información:**
-    * Definición: Generalmente, en un programa las instrucciones se ejecutan una después de otra, en el orden en que están escritas. Este proceso se conoce como ejecución secuencial.
-*  **Descripción:** Explica la **ejecución secuencial**, que es el comportamiento por defecto de los programas, donde las instrucciones se ejecutan en orden.
+Información:
+Sintaxis:
+    if (booleanExpression) {
+       statements;
+    }
+Texto: Las llaves {} sirven para agrupar en un bloque las sentencias que se han de ejecutar, y no son necesarias si sólo hay una sentencia dentro del if.
+Descripción: Muestra la sintaxis del if, explicando que las llaves se utilizan para agrupar múltiples sentencias y son opcionales si hay una sola instrucción.
+14. Diapositiva: Bifurcación if (Ejemplo) (Página 14)
 
-**8. Diapositiva: Estructura de Control (Transferencia de Control) (Página 8)**
-
-*   **Información:**
-    *   Definición: Varias instrucciones en Java permiten al programador especificar que la siguiente instrucción a ejecutarse tal vez no sea la siguiente en la secuencia. Esto se conoce como transferencia de control.
-*  **Descripción:** Introduce el concepto de **transferencia de control**, donde el orden de ejecución de las instrucciones puede variar.
-
-**9. Diapositiva: Estructura de Control (Tipos) (Página 9)**
-
-*   **Información:**
-    *   Tipos de estructuras de control en Java: La instrucción de secuencia, Las instrucciones de selección, Las instrucciones de repetición.
-*   **Descripción:**  Indica que Java cuenta con **tres tipos de estructuras de control**: secuenciales, selectivas y repetitivas.
-
-**10. Diapositiva: Bifurcación (Definición) (Página 10)**
-
-*   **Información:**
-    *  Definición: Las bifurcaciones permiten ejecutar una de entre varias acciones en función del valor de una expresión lógica o relacional.
-*   **Descripción:** Define el concepto general de **bifurcación**, como la capacidad de un programa para elegir entre diferentes acciones basándose en el valor de una expresión.
-
-**11. Diapositiva: Bifurcación (Tipos) (Página 11)**
-
-*   **Información:**
-    *  Definición: Son las encargadas de controlar el flujo de ejecución de un programa. Existen dos bifurcaciones diferentes: `if` y `switch`.
-*   **Descripción:**  Explica que las bifurcaciones son **estructuras de control del flujo del programa**, y menciona las dos formas más importantes: `if` y `switch`.
-
-**12. Diapositiva: Bifurcación if (Introducción) (Página 12)**
-
-*   **Información:**
-    *   Definición: Permite ejecutar un conjunto de sentencias en función del valor que tenga la expresión de comparación (se ejecuta si es `true`).
-*   **Descripción:** Introduce el **bucle `if`**, explicando que permite ejecutar un bloque de código solo si la expresión booleana asociada se evalúa como verdadera.
-
-**13. Diapositiva: Bifurcación if (Sintaxis) (Página 13)**
-
-*  **Información:**
-    *  Sintaxis:
-        ```java
-            if (booleanExpression) {
-               statements;
-            }
-        ```
-     * Texto: Las llaves `{}` sirven para agrupar en un bloque las sentencias que se han de ejecutar, y no son necesarias si sólo hay una sentencia dentro del if.
-*  **Descripción:**  Muestra la **sintaxis del `if`**, explicando que las llaves se utilizan para agrupar múltiples sentencias y son opcionales si hay una sola instrucción.
-
-**14. Diapositiva: Bifurcación if (Ejemplo) (Página 14)**
-
-*  **Información:**
-    *   Seudocódigo: "Si la calificación es mayor o igual a 3, Imprimir Aprobado".
-    *   Código:
-    ```java
-      if ( calificacion >= 3 ) {
-           System.out.println( "Aprobado" );
-      }
-    ```
-*   **Descripción:** Muestra un **ejemplo sencillo** de cómo utilizar la instrucción `if` en un programa de Java.
-
-**15. Diapositiva: Bifurcación if else (Introducción) (Página 15)**
-
-*  **Información:**
-    *   Definición: Análoga a la anterior, de la cual es una ampliación. Las sentencias incluidas en el `else` se ejecutan en el caso de no cumplirse la expresión de comparación (false).
-*  **Descripción:** Introduce la bifurcación `if else`, una **extensión del `if`** donde se especifica un bloque de código alternativo a ejecutar cuando la condición es falsa.
-
-**16. Diapositiva: Bifurcación if else (Sintaxis) (Página 16)**
-
-*  **Información:**
-    *  Sintaxis:
-     ```java
-         if (booleanExpression) {
-             statements1;
-          } else {
-            statements2;
-         }
-     ```
-*  **Descripción:** Muestra la **sintaxis de `if else`**, donde un bloque de código (`statements1`) se ejecuta si la condición es verdadera y un bloque alternativo (`statements2`) se ejecuta si la condición es falsa.
-
-**17. Diapositiva: Bifurcación if else (Ejemplo - Seudocódigo) (Página 17)**
-
-*   **Información:**
-    *   Seudocódigo: "Si la calificación es mayor o igual a 3, Imprimir Aprobado. Sino, Imprimir Reprobado".
-*   **Descripción:**  Presenta el **pseudocódigo** de un ejemplo de como utilizar la instrucción `if else`
-
-**18. Diapositiva: Bifurcación if else (Ejemplo - Código) (Página 18)**
-
-*  **Información:**
-   * Ejemplo:
-    ```java
-     if ( calificacion >= 3 ) {
+Información:
+Seudocódigo: "Si la calificación es mayor o igual a 3, Imprimir Aprobado".
+Código:
+  if ( calificacion >= 3 ) {
        System.out.println( "Aprobado" );
-      } else {
-       System.out.println( "Reprobado" );
+  }
+Descripción: Muestra un ejemplo sencillo de cómo utilizar la instrucción if en un programa de Java.
+15. Diapositiva: Bifurcación if else (Introducción) (Página 15)
+
+Información:
+Definición: Análoga a la anterior, de la cual es una ampliación. Las sentencias incluidas en el else se ejecutan en el caso de no cumplirse la expresión de comparación (false).
+Descripción: Introduce la bifurcación if else, una extensión del if donde se especifica un bloque de código alternativo a ejecutar cuando la condición es falsa.
+16. Diapositiva: Bifurcación if else (Sintaxis) (Página 16)
+
+Información:
+Sintaxis:
+    if (booleanExpression) {
+        statements1;
+     } else {
+       statements2;
+    }
+Descripción: Muestra la sintaxis de if else, donde un bloque de código (statements1) se ejecuta si la condición es verdadera y un bloque alternativo (statements2) se ejecuta si la condición es falsa.
+17. Diapositiva: Bifurcación if else (Ejemplo - Seudocódigo) (Página 17)
+
+Información:
+Seudocódigo: "Si la calificación es mayor o igual a 3, Imprimir Aprobado. Sino, Imprimir Reprobado".
+Descripción: Presenta el pseudocódigo de un ejemplo de como utilizar la instrucción if else
+18. Diapositiva: Bifurcación if else (Ejemplo - Código) (Página 18)
+
+Información:
+Ejemplo:
+ if ( calificacion >= 3 ) {
+   System.out.println( "Aprobado" );
+  } else {
+   System.out.println( "Reprobado" );
+  }
+Descripción: Muestra un ejemplo de código utilizando if else para imprimir un mensaje diferente si una calificación es aprobatoria o no.
+19. Diapositiva: Bifurcación if elseif else (Introducción) (Página 19)
+
+Información:
+Definición: Permite introducir más de una expresión de comparación. Si la primera condición no se cumple, se compara la segunda y así sucesivamente.
+Descripción: Introduce la bifurcación if elseif else, explicando que permite introducir múltiples condiciones que serán evaluadas secuencialmente.
+20. Diapositiva: Bifurcación if elseif else (Sintaxis) (Página 20)
+
+Información:
+Sintaxis:
+    if (booleanExpression1) {
+       statements1;
+     } else if (booleanExpression2) {
+       statements2;
+     } else if (booleanExpression3) {
+         statements3;
+     } else {
+         statements4;
+    }
+Descripción: Presenta la sintaxis del if elseif else, mostrando cómo se encadenan múltiples condiciones y la forma de incluir un else opcional al final.
+21. Diapositiva: Bifurcación if elseif else (Ejemplo - Seudocódigo) (Página 21)
+
+Información:
+Seudocódigo:
+     Si la calificación es mayor o igual a 5, Imprimir Excelente
+     Sino, si la calificación es mayor o igual a 4, Imprimir Bien
+     Sino, si la calificación es mayor o igual a 3, Imprimir Regular
+     Sino, Imprimir Mal
+Descripción: Presenta el pseudocódigo de un ejemplo de como utilizar la instrucción if elseif else.
+22. Diapositiva: Bifurcación if elseif else (Ejemplo - Código) (Página 22)
+
+Información:
+Ejemplo:
+   if ( calificacionEstudiante >= 5 )
+    System.out.println( "Excelente" );
+   else if ( calificacionEstudiante >= 4 )
+    System.out.println( "Bien" );
+   else if ( calificacionEstudiante >= 3 )
+    System.out.println( "Regular" );
+   else
+    System.out.println( "Mal" );
+Descripción: Muestra un ejemplo en código del uso de if elseif else para clasificar una calificación en distintas categorías.
+23. Diapositiva: Sentencia switch (Introducción) (Página 23)
+
+Información:
+Definición: Es una alternativa a la bifurcación if elseif else cuando se compara la misma expresión con distintos valores.
+Descripción: Introduce la sentencia switch, como una alternativa a if elseif else cuando se necesita comparar una expresión con diferentes valores concretos.
+24. Diapositiva: Sentencia switch (Sintaxis) (Página 24)
+
+Información:
+Sintaxis:
+switch (expression) {
+      case value1: statements1; break;
+      case value2: statements2; break;
+      case value3: statements3; break;
+      case value4: statements4; break;
+      case value5: statements5; break;
+      default: statements6; break;
+  }
+Descripción: Presenta la sintaxis general de la sentencia switch, mostrando cómo se utilizan case y default.
+25. Diapositiva: Sentencia switch (Características - case) (Página 25)
+
+Información:
+Definición: Cada sentencia case se corresponde con un único valor de expresión. No se pueden establecer rangos sino que se debe comparar con valores concretos.
+Descripción: Explica que en switch, cada case corresponde a un valor específico y que no se pueden comparar rangos.
+26. Diapositiva: Sentencia switch (Características - default) (Página 26)
+
+Información:
+Definición: Los valores no comprendidos en ninguna sentencia case se pueden gestionar en default, que es opcional.
+Descripción: Explica la funcionalidad de default, que es un case opcional que se ejecuta si ningún valor coincide en los case.
+27. Diapositiva: Sentencia switch (Características - break) (Página 27)
+
+Información:
+Definición: En ausencia de break, cuando se ejecuta una sentencia case se ejecutan también todas las case que van a continuación, hasta que se llega a un break o hasta que se termina el switch.
+Descripción: Indica el comportamiento de switch cuando no se incluye la sentencia break, donde se ejecutan todos los case a partir del que coincide.
+28. Diapositiva: Sentencia switch (Ejemplo - Explicación) (Página 28)
+
+Información:
+Ejemplo con explicación:
+char c = (char)(Math.random()%26+'a'); /* Generar
+   una letra minusculas*/
+System.out.println("La letra " + c);
+switch (c) {
+   case 'a': // Se compara con la letra a
+   case 'e': // Se compara con la letra e
+   case 'i': // Se compara con la letra i
+   case 'o': // Se compara con la letra o
+   case 'u': // Se compara con la letra u
+      System.out.println(" Es una vocal "); break;
+   default:
+       System.out.println(" Es una consonante ");
+  }
+Descripción: Muestra un ejemplo donde se utiliza la sentencia switch para determinar si una letra generada aleatoriamente es una vocal o no, mostrando las consecuencias de la falta de break.
+29. Diapositiva: Sentencia switch (Ejemplo - Calificaciones) (Página 29)
+
+Información:
+Ejemplo:
+```java
+    switch ( calificacion ){
+       case 5 : System.out.println("Excelente");break;
+       case 4 : System.out.println("Bien");break;
+       case 3 : System.out.println("Regular");break;
+       case 2 : System.out.println("Mal");break ;
+       default : System.out.println("Nota no valida ");
       }
-    ```
-*  **Descripción:**  Muestra un **ejemplo de código** utilizando `if else` para imprimir un mensaje diferente si una calificación es aprobatoria o no.
+```
+Descripción: Presenta un ejemplo de código de cómo utilizar la sentencia switch para clasificar una calificación.
+30. Diapositiva: Buenas Prácticas (Sangría) (Página 30)
 
-**19. Diapositiva: Bifurcación if elseif else (Introducción) (Página 19)**
+Información:
+Recomandación: Utilice sangría en ambos cuerpos de instrucciones de una estructura if...else. Si hay varios niveles de sangría, en cada nivel debe aplicarse la misma cantidad de espacio adicional.
+Descripción: Recomienda utilizar sangría para mejorar la legibilidad del código en las estructuras if...else.
+31. Diapositiva: Buenas Prácticas (Llaves) (Página 31)
 
-*   **Información:**
-    *  Definición: Permite introducir más de una expresión de comparación. Si la primera condición no se cumple, se compara la segunda y así sucesivamente.
-*  **Descripción:** Introduce la bifurcación `if elseif else`, explicando que permite **introducir múltiples condiciones** que serán evaluadas secuencialmente.
+Información:
+Recomendación: Colocar siempre las llaves en una instrucción if...else ayuda a evitar que se omitan de manera accidental, en especial, cuando posteriormente se agregan instrucciones a una cláusula if o else.
+Descripción: Recomienda el uso de llaves en las estructuras if...else para evitar errores cuando se agreguen sentencias posteriormente.
+32. Diapositiva: Buenas Prácticas (Bloques) (Página 32)
 
-**20. Diapositiva: Bifurcación if elseif else (Sintaxis) (Página 20)**
+Información:
+Recomendación: Para evitar que esto suceda, algunos programadores prefieren escribir la llave inicial y la final de los bloques antes de escribir las instrucciones individuales dentro de ellas.
+Descripción: Recomienda escribir primero las llaves de apertura y cierre de un bloque antes de escribir las sentencias del mismo.
+33. Diapositiva: Operador condicional(?:) (Introducción) (Página 33)
 
-*  **Información:**
-    * Sintaxis:
-    ```java
-        if (booleanExpression1) {
-           statements1;
-         } else if (booleanExpression2) {
-           statements2;
-         } else if (booleanExpression3) {
-             statements3;
-         } else {
-             statements4;
-        }
-     ```
-*  **Descripción:**  Presenta la **sintaxis del `if elseif else`**, mostrando cómo se encadenan múltiples condiciones y la forma de incluir un `else` opcional al final.
+Información:
+Definición: Java cuenta con el operador condicional (?:), que en ocasiones puede utilizarse en lugar de una instrucción if...else. Éste es el único operador ternario en Java.
+Descripción: Introduce el operador condicional (?:), que es un operador ternario, o sea, que opera con tres operandos.
+34. Diapositiva: Operador condicional(?:) (Estructura 1) (Página 34)
 
-**21. Diapositiva: Bifurcación if elseif else (Ejemplo - Seudocódigo) (Página 21)**
+Información:
+Definición: En conjunto, los operandos y el símbolo ?: forman una expresión condicional. El primer operando (a la izquierda del ? ) es una expresión booleana.
+Descripción: Explica que el operador condicional (?:) requiere tres operandos y que el primero de ellos debe ser una expresión booleana.
+35. Diapositiva: Operador condicional(?:) (Estructura 2) (Página 35)
 
-*   **Información:**
-    * Seudocódigo:
-    ```java
-         Si la calificación es mayor o igual a 5, Imprimir Excelente
-         Sino, si la calificación es mayor o igual a 4, Imprimir Bien
-         Sino, si la calificación es mayor o igual a 3, Imprimir Regular
-         Sino, Imprimir Mal
-    ```
-*  **Descripción:** Presenta el **pseudocódigo** de un ejemplo de como utilizar la instrucción `if elseif else`.
+Información:
+Definición: El segundo operando (entre el ? y :) es el valor de la expresión condicional si la expresión booleana es verdadera.
+Descripción: Explica que el segundo operando del operador condicional (?:) es el valor que retornará si la condición es true.
+36. Diapositiva: Operador condicional(?:) (Estructura 3 y Ejemplo) (Página 36)
 
-**22. Diapositiva: Bifurcación if elseif else (Ejemplo - Código) (Página 22)**
+Información:
+Definición: El tercer operando (a la derecha de :) es el valor de la expresión condicional si la expresión booleana se evalúa como false.
+Ejemplo:
+    System.out.println(calificacion >=3 ? "Aprobado":"Reprobado");
+Descripción: Explica que el tercer operando del operador condicional (?:) es el valor que retornará si la condición es false y presenta un ejemplo.
+37. Diapositiva: Estudio Independiente (Página 37)
 
-*  **Información:**
-  * Ejemplo:
-    ```java
-       if ( calificacionEstudiante >= 5 )
-        System.out.println( "Excelente" );
-       else if ( calificacionEstudiante >= 4 )
-        System.out.println( "Bien" );
-       else if ( calificacionEstudiante >= 3 )
-        System.out.println( "Regular" );
-       else
-        System.out.println( "Mal" );
-    ```
-*  **Descripción:** Muestra un **ejemplo en código** del uso de `if elseif else` para clasificar una calificación en distintas categorías.
+Información:
+Ejercicios:
+Leer tres números enteros y determinar cuál es el mayor. Usar solamente dos variables.
+Leer un número entero y determinar si tiene 3 dígitos.
+Leer un número entero y determinar si es múltiplo de 7.
+Descripción: Propone una serie de ejercicios que los estudiantes pueden utilizar para aplicar los conceptos aprendidos.
+38. Diapositiva: Fin (Página 38)
 
-**23. Diapositiva: Sentencia switch (Introducción) (Página 23)**
-
-*   **Información:**
-    *   Definición: Es una alternativa a la bifurcación if elseif else cuando se compara la misma expresión con distintos valores.
-*   **Descripción:** Introduce la **sentencia `switch`**, como una alternativa a `if elseif else` cuando se necesita comparar una expresión con diferentes valores concretos.
-
-**24. Diapositiva: Sentencia switch (Sintaxis) (Página 24)**
-
-*   **Información:**
-    * Sintaxis:
-    ```java
-    switch (expression) {
-          case value1: statements1; break;
-          case value2: statements2; break;
-          case value3: statements3; break;
-          case value4: statements4; break;
-          case value5: statements5; break;
-          default: statements6; break;
-      }
-    ```
-*   **Descripción:** Presenta la **sintaxis general** de la sentencia `switch`, mostrando cómo se utilizan `case` y `default`.
-
-**25. Diapositiva: Sentencia switch (Características - case) (Página 25)**
-
-*   **Información:**
-    *  Definición: Cada sentencia case se corresponde con un único valor de expresión. No se pueden establecer rangos sino que se debe comparar con valores concretos.
-*   **Descripción:** Explica que en `switch`, cada `case` corresponde a un valor específico y que no se pueden comparar rangos.
-
-**26. Diapositiva: Sentencia switch (Características - default) (Página 26)**
-
-*   **Información:**
-    *   Definición: Los valores no comprendidos en ninguna sentencia case se pueden gestionar en default, que es opcional.
-*   **Descripción:**  Explica la funcionalidad de `default`, que es un `case` opcional que se ejecuta si ningún valor coincide en los `case`.
-
-**27. Diapositiva: Sentencia switch (Características - break) (Página 27)**
-
-*   **Información:**
-    *   Definición: En ausencia de `break`, cuando se ejecuta una sentencia case se ejecutan también todas las case que van a continuación, hasta que se llega a un `break` o hasta que se termina el switch.
-*  **Descripción:**  Indica el comportamiento de `switch` cuando **no se incluye la sentencia `break`**, donde se ejecutan todos los `case` a partir del que coincide.
-
-**28. Diapositiva: Sentencia switch (Ejemplo - Explicación) (Página 28)**
-
-*   **Información:**
-    * Ejemplo con explicación:
-    ```java
-    char c = (char)(Math.random()%26+'a'); /* Generar
-       una letra minusculas*/
-    System.out.println("La letra " + c);
-    switch (c) {
-       case 'a': // Se compara con la letra a
-       case 'e': // Se compara con la letra e
-       case 'i': // Se compara con la letra i
-       case 'o': // Se compara con la letra o
-       case 'u': // Se compara con la letra u
-          System.out.println(" Es una vocal "); break;
-       default:
-           System.out.println(" Es una consonante ");
-      }
-    ```
-*  **Descripción:** Muestra un **ejemplo** donde se utiliza la sentencia switch para determinar si una letra generada aleatoriamente es una vocal o no, mostrando las consecuencias de la falta de `break`.
-
-**29. Diapositiva: Sentencia switch (Ejemplo - Calificaciones) (Página 29)**
-
-*   **Información:**
-   * Ejemplo:
-    ```java
-        switch ( calificacion ){
-           case 5 : System.out.println("Excelente");break;
-           case 4 : System.out.println("Bien");break;
-           case 3 : System.out.println("Regular");break;
-           case 2 : System.out.println("Mal");break ;
-           default : System.out.println("Nota no valida ");
-          }
-    ```
-*   **Descripción:**  Presenta un **ejemplo de código** de cómo utilizar la sentencia `switch` para clasificar una calificación.
-
-**30. Diapositiva: Buenas Prácticas (Sangría) (Página 30)**
-
-*  **Información:**
-    * Recomandación: Utilice sangría en ambos cuerpos de instrucciones de una estructura `if...else`. Si hay varios niveles de sangría, en cada nivel debe aplicarse la misma cantidad de espacio adicional.
-*   **Descripción:**  Recomienda utilizar **sangría** para mejorar la legibilidad del código en las estructuras `if...else`.
-
-**31. Diapositiva: Buenas Prácticas (Llaves) (Página 31)**
-
-*  **Información:**
-    *   Recomendación: Colocar siempre las llaves en una instrucción `if...else` ayuda a evitar que se omitan de manera accidental, en especial, cuando posteriormente se agregan instrucciones a una cláusula `if` o `else`.
-*   **Descripción:**  Recomienda el uso de **llaves** en las estructuras `if...else` para evitar errores cuando se agreguen sentencias posteriormente.
-
-**32. Diapositiva: Buenas Prácticas (Bloques) (Página 32)**
-
-*  **Información:**
-   * Recomendación: Para evitar que esto suceda, algunos programadores prefieren escribir la llave inicial y la final de los bloques antes de escribir las instrucciones individuales dentro de ellas.
-*  **Descripción:**  Recomienda **escribir primero las llaves** de apertura y cierre de un bloque antes de escribir las sentencias del mismo.
-
-**33. Diapositiva: Operador condicional(?:) (Introducción) (Página 33)**
-
-*   **Información:**
-    *   Definición: Java cuenta con el operador condicional `(?:)`, que en ocasiones puede utilizarse en lugar de una instrucción `if...else`. Éste es el único operador ternario en Java.
-*   **Descripción:**  Introduce el **operador condicional `(?:)`**, que es un operador ternario, o sea, que opera con tres operandos.
-
-**34. Diapositiva: Operador condicional(?:) (Estructura 1) (Página 34)**
-
-*  **Información:**
-    *   Definición: En conjunto, los operandos y el símbolo ?: forman una expresión condicional. El primer operando (a la izquierda del ? ) es una expresión booleana.
-*  **Descripción:** Explica que el operador condicional `(?:)` requiere **tres operandos** y que el primero de ellos debe ser una expresión booleana.
-
-**35. Diapositiva: Operador condicional(?:) (Estructura 2) (Página 35)**
-
-*   **Información:**
-   *   Definición: El segundo operando (entre el ? y :) es el valor de la expresión condicional si la expresión booleana es verdadera.
-*   **Descripción:** Explica que el **segundo operando** del operador condicional `(?:)` es el valor que retornará si la condición es `true`.
-
-**36. Diapositiva: Operador condicional(?:) (Estructura 3 y Ejemplo) (Página 36)**
-
-*   **Información:**
-    *  Definición: El tercer operando (a la derecha de :) es el valor de la expresión condicional si la expresión booleana se evalúa como `false`.
-    *  Ejemplo:
-         ```java
-             System.out.println(calificacion >=3 ? "Aprobado":"Reprobado");
-        ```
-*   **Descripción:**  Explica que el **tercer operando** del operador condicional `(?:)` es el valor que retornará si la condición es `false` y presenta un ejemplo.
-
-**37. Diapositiva: Estudio Independiente (Página 37)**
-
-*  **Información:**
-    * Ejercicios:
-        *   Leer tres números enteros y determinar cuál es el mayor. Usar solamente dos variables.
-        *   Leer un número entero y determinar si tiene 3 dígitos.
-        *   Leer un número entero y determinar si es múltiplo de 7.
-*  **Descripción:** Propone una serie de **ejercicios** que los estudiantes pueden utilizar para aplicar los conceptos aprendidos.
-
-**38. Diapositiva: Fin (Página 38)**
-
-*   **Información:**
-    *   Logo de la Universidad de Matanzas.
-    *   Lema: cosechando el saber.
-    *   Texto: FIN.
-*   **Descripción:** Esta es la diapositiva final, indicando el **cierre** de la presentación.
+Información:
+Logo de la Universidad de Matanzas.
+Lema: cosechando el saber.
+Texto: FIN.
+Descripción: Esta es la diapositiva final, indicando el cierre de la presentación.
