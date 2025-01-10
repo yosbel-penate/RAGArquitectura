@@ -1,4 +1,4 @@
-Tema II Introducción al lenguaje de programación Java
+Tema 2 Introducción al lenguaje de programación Java
 Presentación: Operadores y Expresiones**
 
 1. Diapositiva: Título (Página 1)

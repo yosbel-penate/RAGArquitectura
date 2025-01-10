@@ -1,4 +1,4 @@
-Tema I Algoritmización
+Tema 1 Algoritmización
  Asignatura Introducción a la Programación
 
  Ingeniería Informática

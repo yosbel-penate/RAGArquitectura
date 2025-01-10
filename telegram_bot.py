@@ -17,13 +17,16 @@ async def start(update, context):
 
 async def handle_message(update, context):
     query = update.message.text
-    response = requests.post(f"{API_URL}/generate_answer", json={'query': query})
-    if response.status_code == 200:
-        answer = response.json().get('answer', 'No se encontró respuesta.😢')
-        formatted_answer = format_for_telegram(answer)
-        await update.message.reply_text(formatted_answer, parse_mode=telegram.constants.ParseMode.HTML)
-    else:
-        await update.message.reply_text('Hubo un error al procesar tu solicitud.😠')
+    try:
+        response = requests.post(f"{API_URL}/generate_answer", json={'query': query})
+        if response.status_code == 200:
+            answer = response.json().get('answer', 'No se encontró respuesta.😢')
+            formatted_answer = format_for_telegram(answer)
+            await update.message.reply_text(formatted_answer, parse_mode=telegram.constants.ParseMode.HTML)
+        else:
+            await update.message.reply_text('Hubo un error al procesar tu solicitud.😠')
+    except requests.exceptions.ConnectionError:
+        await update.message.reply_text('No se pudo conectar con el servidor. Por favor, inténtalo más tarde.😠')
 
 def main():
     application = ApplicationBuilder().token(TELEGRAM_TOKEN).build()

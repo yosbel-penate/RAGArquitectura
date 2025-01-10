@@ -1,4 +1,4 @@
-Tema III Programación funcional
+Tema 3 Programación funcional
 Presentación: Métodos y Funciones**
 
 1. Diapositiva: Título (Página 1)

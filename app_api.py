@@ -51,7 +51,9 @@ def generate_answer():
     query = request.json.get('query')
     results = vector_store_adapter.search_fragments(query)
     try:
-        answer = generation_adapter.generate_response(query, results)
+        answer = generation_adapter.generate_response(results, query)
+        if not answer:
+            raise ValueError("No se pudo generar la respuesta. Intente con otra consulta.")
     except ValueError as e:
         logging.error(f"Error al generar la respuesta: {e}")
         return jsonify({"error": "No se pudo generar la respuesta. Intente con otra consulta."}), 500

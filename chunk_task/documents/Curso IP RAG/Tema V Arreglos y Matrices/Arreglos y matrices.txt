@@ -1,4 +1,4 @@
-Tema V Arreglos y Matrices
+Tema 5 Arreglos y Matrices
 ARREGLOS Y MATRICES
 1. Arreglos
 Un arreglo es una estructura de datos, o más técnicamente, un espacio de memoria que permite almacenar una colección de elementos, todos del mismo tipo. Conviene imaginar un arreglo como una secuencia contigua de celdas (espacios de memoria), o casillas, en cada una de las cuales se puede guardar un elemento de la colección. Además, es usual dibujarlo como lo ilustra la figura siguiente:

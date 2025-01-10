@@ -1,4 +1,4 @@
-Tema IV Cadenas de caracteres
+Tema 4 Cadenas de caracteres
 Asignatura Introducción a la Programación
 Ingeniería Informática
 Guía de Aprendizaje

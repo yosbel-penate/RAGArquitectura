@@ -1,4 +1,4 @@
-Tema V Arreglos y Matrices
+Tema 5 Arreglos y Matrices
 Algoritmos básicos sobre arreglos
 Tomados del Libro: La Esencia de la Lógica de Programación – Omar Ivan Trejos Buriticá
 

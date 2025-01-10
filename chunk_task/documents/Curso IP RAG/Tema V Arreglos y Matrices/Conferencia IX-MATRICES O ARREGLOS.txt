@@ -1,4 +1,4 @@
-Tema V Arreglos y Matrices
+Tema 5 Arreglos y Matrices
 Presentación: Matrices o Arreglos Bidimensionales**
 
 1. Diapositiva: Título (Página 1)

@@ -1,4 +1,4 @@
-Tema V Arreglos y Matrices
+Tema 5 Arreglos y Matrices
 Asignatura Introducción a la Programación
 Ingeniería Informática
 Guía de Aprendizaje

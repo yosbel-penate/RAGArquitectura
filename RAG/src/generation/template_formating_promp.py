@@ -28,10 +28,11 @@ Instrucciones:
 - Citas: Usa para citas:
   Esta es una cita
 
-- Bloques de Código: Para bloques de código, usa :
+- Bloques de Código java: Garantiza de los bloques de codigo siempre esten entre etiquetas <pre> Para bloques de código, usa este ejemplo:
 
 <pre>
-print("Hola, Mundo!")
+System.out.println("Introduce un año:");
+int anio = entrada.nextInt();
 </pre>
 
 -Para codigo en linea usa:
