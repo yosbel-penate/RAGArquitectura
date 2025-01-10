@@ -3,6 +3,7 @@ from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapt
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageModelAdapter
 import os
+import logging
 
 from tools import load_docs_from_json_file
 
@@ -68,4 +69,8 @@ def delete_document(doc_id):
     return jsonify({"status": "success"}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    try:
+        app.run(debug=True)
+    except Exception as e:
+        logging.error(f"Error al iniciar el servidor Flask: {e}")
+        raise
