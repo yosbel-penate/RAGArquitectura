@@ -2,18 +2,23 @@ from flask import Flask, request, jsonify
 from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageModelAdapter
+import os
+
+from tools import load_docs_from_json_file
 
 app = Flask(__name__)
 
-vector_store_adapter = ChromaVectorStoreAdapter()
+persist_directory = os.path.join(os.path.dirname(__file__), 'vectorDB')
+
+documentos=[]
+if not os.path.exists(persist_directory):
+    os.makedirs(persist_directory)
+    documentos = load_docs_from_json_file()
+
+vector_store_adapter = ChromaVectorStoreAdapter(persist_directory=persist_directory)
+vector_store_adapter.index_documents(documentos)
 generation_adapter = SimpleGenerationAdapter(GeminiLanguageModelAdapter())
 
-documentos = [
-        "París es la capital de Francia.",
-        "Berlín es la capital de Alemania.",
-        "Madrid es la capital de España."
-    ]
-vector_store_adapter.index_documents(documentos)
 
 @app.route('/add_documents', methods=['POST'])
 def add_documents():
