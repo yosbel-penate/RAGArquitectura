@@ -1,11 +1,9 @@
-import gradio as gr
-import time
-
 from RAG.src.vector_store.ChromaVectorStoreAdapter import ChromaVectorStoreAdapter
 from RAG.src.generation.SimpleGenerationAdapter import SimpleGenerationAdapter
 from RAG.src.language_model.GeminiLanguageModelAdapter import GeminiLanguageModelAdapter
 from RAG.src.generation.template_formating_promp import load_template_formating_promp
 from tools import load_docs_from_json_file
+import gradio as gr
 import os
 
 persist_directory = os.path.join(os.path.dirname(__file__), 'vectorDB')
@@ -30,7 +28,6 @@ with gr.Blocks(fill_height=True) as demo:
         query=history[-1][0]
         results = vector_store_adapter.search_fragments(query)
         bot_message = generation_adapter.generate_response(results, query)
-        time.sleep(2)
         history[-1][1] = bot_message
         return history
 
