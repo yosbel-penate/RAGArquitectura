@@ -14,9 +14,9 @@ class ChromaVectorStoreAdapter(IVectorStorePort):
         # Implementación de la búsqueda de fragmentos utilizando Chroma
         results = self.collection.query(query_texts=[query])
         if "documents" in results:
-            return results['documents']
+            return [{"document": doc, "metadata": meta} for doc, meta in zip(results['documents'], results['metadatas'])]
         else:
-            return [result['documents'] for result in results['results']]
+            return [{"document": result['documents'], "metadata": result['metadatas']} for result in results['results']]
 
     def index_documents(self, documents: list) -> None:
         # Implementación de la indexación de documentos utilizando Chroma

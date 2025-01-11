@@ -1,5 +1,4 @@
 import logging
-import json
 import os
 
 # Configurar logging
@@ -21,7 +20,6 @@ if __name__ == "__main__":
 
     vector_store_adapter = ChromaVectorStoreAdapter(persist_directory=persist_directory)
     output_adapter = ConsoleOutputAdapter()
-
 
     processor = ConsoleDocumentProcessor(vector_store_adapter, documentos, output_adapter=output_adapter)
     processor.process_documents_and_get_answer("qué es una Computadora?")
