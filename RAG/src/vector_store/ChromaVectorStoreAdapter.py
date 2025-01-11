@@ -22,6 +22,6 @@ class ChromaVectorStoreAdapter(IVectorStorePort):
         # Implementación de la indexación de documentos utilizando Chroma
         if documents:
             ids = [str(i) for i in range(len(documents))]
-            docs_to_index = [doc["doc"]["doc"] for doc in documents]
+            docs_to_index = [doc["doc"] for doc in documents]
             metadata_to_index = [doc["metadata"] for doc in documents]
             self.collection.add(documents=docs_to_index, ids=ids, metadatas=metadata_to_index)
